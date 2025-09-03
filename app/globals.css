@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* 基础颜色 */
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    /* 主题颜色 - 基于新的 Leto AI logo */
+    --primary: 24 97% 49%; /* letoWarmStart: #F75C03 */
+    --primary-foreground: 0 0% 100%;
+
+    --accent: 196 100% 49%; /* letoCoolEnd: #00BBF9 */
+    --accent-foreground: 0 0% 100%;
+
+    /* 辅助颜色 */
+    --secondary: 42 100% 50%; /* letoWarmMid: #FFB100 */
+    --secondary-foreground: 240 5.9% 10%;
+
+    /* 其他界面元素颜色 */
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 24 97% 49%; /* 使用 letoWarmStart 作为聚焦环颜色 */
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* 暗色主题基础颜色 */
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    /* 暗色主题主色调 - 调亮以增加可见度 */
+    --primary: 24 97% 55%; /* 亮一点的 letoWarmStart */
+    --primary-foreground: 0 0% 100%;
+
+    --accent: 196 100% 55%; /* 亮一点的 letoCoolEnd */
+    --accent-foreground: 240 5.9% 10%;
+
+    /* 暗色主题辅助颜色 */
+    --secondary: 42 100% 55%; /* 亮一点的 letoWarmMid */
+    --secondary-foreground: 0 0% 98%;
+
+    /* 其他界面元素暗色主题颜色 */
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 24 97% 55%; /* 使用亮一点的 letoWarmStart 作为暗色主题聚焦环颜色 */
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: background-color 0.3s ease;
+}
+
+body {
+  background-color: white;
+  color: #0f172a;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark body {
+  background-color: #030314;
+  color: white;
+}
+
+/* 确保暗色模式下的背景色正确应用 */
+html.dark {
+  background-color: #030314;
+}
+
+html.dark body {
+  background-color: #030314;
+}
+
+/* 强制应用暗色主题背景 */
+html.dark,
+html.dark body,
+html.dark #__next,
+html.dark main {
+  background-color: #030314 !important;
+}
+
+/* 确保几何形状在暗色主题下可见 */
+html.dark .from-blue-400\/\[0\.4\],
+html.dark .from-purple-400\/\[0\.4\],
+html.dark .from-indigo-400\/\[0\.4\],
+html.dark .from-yellow-400\/\[0\.4\],
+html.dark .from-teal-400\/\[0\.4\] {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* 确保渐变覆盖层不会完全遮挡几何形状 */
+.dark .bg-gradient-to-t.from-\[\#030303\] {
+  opacity: 0.7;
+}
+
+/* Leto AI 主题渐变 - 更新为新的渐变色 */
+.leto-gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-letoWarmStart via-letoPink to-letoCoolEnd;
+}
+
+.leto-gradient-bg {
+  @apply bg-gradient-to-r from-letoWarmStart via-letoPink to-letoCoolEnd;
+}
+
+/* 温暖渐变 */
+.leto-warm-gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-warm;
+}
+
+.leto-warm-gradient-bg {
+  @apply bg-gradient-warm;
+}
+
+/* 冷色渐变 */
+.leto-cool-gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-cool;
+}
+
+.leto-cool-gradient-bg {
+  @apply bg-gradient-cool;
+}
+
+.leto-gradient-border {
+  @apply border-2 border-transparent;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  background-image: linear-gradient(to right, transparent, transparent),
+    linear-gradient(to right, #f75c03, #f15bb5, #00bbf9);
+}
