@@ -218,12 +218,10 @@ export default function GlobalToolsPage() {
               <GradientHoverButton href="/contact?from=/solutions/global-tools" size="lg" className="shadow-lg shadow-green-500/25">
                 立即体验
               </GradientHoverButton>
-              <Button variant="outline" size="lg" asChild className="bg-white/80 dark:bg-white/10 backdrop-blur-sm border-white/30 hover:bg-white dark:hover:bg-white/20">
-                <Link href="#apps" className="flex items-center gap-2">
-                  <Globe className="w-4 h-4" />
-                  了解产品功能
-                </Link>
-              </Button>
+              <Link href="#apps" className="inline-flex items-center gap-2 px-6 py-3 bg-white/80 dark:bg-white/10 backdrop-blur-sm border border-white/30 rounded-lg text-slate-700 dark:text-white font-medium hover:bg-white dark:hover:bg-white/20 hover:shadow-lg hover:gap-3 transition-all duration-300 group">
+                <Globe className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
+                了解产品功能
+              </Link>
             </motion.div>
           </div>
         </div>

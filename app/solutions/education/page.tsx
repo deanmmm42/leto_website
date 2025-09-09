@@ -258,12 +258,10 @@ export default function EducationPage() {
               <GradientHoverButton href="/contact?from=/solutions/education" size="lg" className="shadow-lg shadow-blue-500/25">
                 立即咨询
               </GradientHoverButton>
-              <Button variant="outline" size="lg" asChild className="bg-white/80 dark:bg-white/10 backdrop-blur-sm border-white/30 hover:bg-white dark:hover:bg-white/20">
-                <Link href="#cases" className="flex items-center gap-2">
-                  <Star className="w-4 h-4" />
-                  查看成功案例
-                </Link>
-              </Button>
+              <Link href="#cases" className="inline-flex items-center gap-2 px-6 py-3 bg-white/80 dark:bg-white/10 backdrop-blur-sm border border-white/30 rounded-lg text-slate-700 dark:text-white font-medium hover:bg-white dark:hover:bg-white/20 hover:shadow-lg hover:gap-3 transition-all duration-300 group">
+                <Star className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
+                查看成功案例
+              </Link>
             </motion.div>
           </div>
         </div>
@@ -406,15 +404,6 @@ export default function EducationPage() {
                                 alt={product.title}
                                 className="w-full h-auto rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-500"
                               />
-                              
-                              {/* 悬浮信息卡片 */}
-                              <div className="absolute -bottom-4 -right-4 bg-white dark:bg-gray-800 p-4 rounded-xl shadow-xl border border-gray-200 dark:border-gray-700">
-                                <div className="flex items-center gap-2">
-                                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-                                  <span className="text-sm font-semibold text-gray-700 dark:text-gray-200">AI智能评价</span>
-                                </div>
-                                <div className="text-xs text-gray-500 dark:text-gray-400 mt-1">实时数据分析</div>
-                              </div>
                             </div>
                           </div>
                           

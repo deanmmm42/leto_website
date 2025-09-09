@@ -19,28 +19,15 @@ export default function FeaturesSection() {
     }),
   }
 
-  const missionPoints = [
-    {
-      icon: <Target className="h-6 w-6" />,
-      title: "AI技术重塑",
-      description: "运用前沿AI技术，深度变革传统行业运作模式"
-    },
-    {
-      icon: <Globe className="h-6 w-6" />,
-      title: "多领域覆盖",
-      description: "电商营销、教育评估、海外工具三大核心应用领域"
-    },
-    {
-      icon: <Zap className="h-6 w-6" />,
-      title: "智能化方案",
-      description: "为各行各业提供定制化的AI智能解决方案"
-    },
-    {
-      icon: <Users className="h-6 w-6" />,
-      title: "价值创造",
-      description: "助力客户实现商业价值最大化，推动行业发展"
-    }
-  ]
+  const missionPoints = mission.points.map((point, index) => ({
+    icon: [
+      <Target className="h-6 w-6" key="target" />,
+      <Globe className="h-6 w-6" key="globe" />,
+      <Zap className="h-6 w-6" key="zap" />,
+      <Users className="h-6 w-6" key="users" />
+    ][index],
+    ...point
+  }))
 
   return (
     <section id="features" className="relative py-20 md:py-32 bg-gradient-to-br from-orange-50/40 via-white to-yellow-50/30 dark:from-[#020210] dark:to-[#030314] overflow-hidden">
@@ -135,7 +122,7 @@ export default function FeaturesSection() {
             className="text-center mt-16"
           >
             <div className="inline-flex items-center gap-2 text-letoOrange dark:text-letoTurquoise font-medium hover:gap-4 transition-all duration-300 cursor-pointer group">
-              <span>携手共创AI未来</span>
+              <span>{mission.cta}</span>
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
             </div>
           </motion.div>

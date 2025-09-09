@@ -4,7 +4,6 @@ import { motion } from "framer-motion"
 import { cn } from "@/lib/utils"
 import { ShoppingCart, GraduationCap, Globe, ArrowRight } from "lucide-react"
 import { DescriptionText } from "@/components/description-text"
-import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { solutions } from "@/config/text"
 
@@ -89,12 +88,10 @@ export default function AboutSection() {
               <h3 className="text-2xl font-semibold mb-4 text-slate-900 dark:text-white">{card.title}</h3>
               <DescriptionText size="small" className="mb-6">{card.description}</DescriptionText>
               
-              <Button asChild variant="ghost" className="group/btn p-0 h-auto hover:bg-transparent">
-                <Link href={card.href} className="flex items-center gap-2 text-letoOrange dark:text-letoTurquoise font-medium">
-                  {card.buttonText}
-                  <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform duration-200" />
-                </Link>
-              </Button>
+              <Link href={card.href} className="inline-flex items-center gap-2 text-letoOrange dark:text-letoTurquoise font-medium hover:gap-3 transition-all duration-300 group/btn">
+                {card.buttonText}
+                <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform duration-300" />
+              </Link>
             </motion.div>
           ))}
         </div>
