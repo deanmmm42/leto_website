@@ -35,8 +35,10 @@ export default function AboutSection() {
   ]
 
   return (
-    <section id="about" className="relative py-20 md:py-32 bg-white dark:bg-[#030314] overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-letoWarmStart/[0.02] via-transparent to-letoCoolEnd/[0.02]" />
+    <section id="about" className="relative py-20 md:py-32 bg-gradient-to-br from-gray-50/50 via-white to-blue-50/30 dark:bg-gradient-to-br dark:from-[#030314] dark:via-[#040419] dark:to-[#050520] overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-letoWarmStart/[0.05] via-transparent to-letoCoolEnd/[0.05]" />
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-letoOrange/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-letoCoolEnd/5 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-3xl mx-auto text-center mb-16">
@@ -73,12 +75,12 @@ export default function AboutSection() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="bg-white dark:bg-white/[0.03] backdrop-blur-sm border border-gray-100 dark:border-white/10 rounded-xl p-8 hover:shadow-lg dark:hover:bg-white/[0.05] transition-all duration-300 group"
+              className="bg-white/80 dark:bg-white/[0.05] backdrop-blur-md border border-white/20 dark:border-white/10 rounded-2xl p-8 hover:shadow-2xl hover:shadow-letoOrange/10 dark:hover:bg-white/[0.08] transition-all duration-500 group hover:-translate-y-2"
             >
               <div
                 className={cn(
-                  "inline-flex items-center justify-center p-4 rounded-2xl mb-6",
-                  "bg-gradient-to-r text-white group-hover:scale-110 transition-transform duration-300",
+                  "inline-flex items-center justify-center p-5 rounded-3xl mb-6 shadow-lg",
+                  "bg-gradient-to-r text-white group-hover:scale-125 group-hover:rotate-3 transition-transform duration-500",
                   gradients[index],
                 )}
               >

@@ -43,11 +43,12 @@ export default function FeaturesSection() {
   ]
 
   return (
-    <section id="features" className="relative py-20 md:py-32 bg-gradient-to-br from-slate-50 to-white dark:from-[#020210] dark:to-[#030314] overflow-hidden">
+    <section id="features" className="relative py-20 md:py-32 bg-gradient-to-br from-orange-50/40 via-white to-yellow-50/30 dark:from-[#020210] dark:to-[#030314] overflow-hidden">
       {/* 背景装饰 */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-br from-letoOrange/10 to-letoWarmStart/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-letoCoolEnd/10 to-letoTurquoise/10 rounded-full blur-3xl" />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-br from-letoOrange/15 to-letoWarmStart/15 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-letoCoolEnd/15 to-letoTurquoise/15 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-gradient-to-br from-purple-400/10 to-pink-400/10 rounded-full blur-2xl animate-bounce" />
       </div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
@@ -103,10 +104,10 @@ export default function FeaturesSection() {
                 viewport={{ once: true }}
                 className="group"
               >
-                <div className="bg-white dark:bg-white/[0.03] backdrop-blur-sm border border-gray-200 dark:border-white/10 rounded-2xl p-8 h-full hover:shadow-xl dark:hover:bg-white/[0.05] transition-all duration-500 hover:-translate-y-2">
+                <div className="bg-white/80 dark:bg-white/[0.05] backdrop-blur-lg border border-white/30 dark:border-white/10 rounded-3xl p-10 h-full hover:shadow-2xl hover:shadow-letoOrange/15 dark:hover:bg-white/[0.08] transition-all duration-700 hover:-translate-y-4 hover:scale-105">
                   <div className="flex items-start gap-6">
                     <div className="flex-shrink-0">
-                      <div className="w-14 h-14 bg-gradient-to-r from-letoOrange to-letoWarmStart rounded-2xl flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
+                      <div className="w-16 h-16 bg-gradient-to-r from-letoOrange to-letoWarmStart rounded-3xl flex items-center justify-center text-white shadow-xl group-hover:scale-125 group-hover:rotate-12 transition-transform duration-500">
                         {point.icon}
                       </div>
                     </div>

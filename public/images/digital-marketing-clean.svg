@@ -1,0 +1,116 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#f8fafc"/>
+  
+  <!-- Main Dashboard -->
+  <rect x="100" y="80" width="600" height="440" rx="20" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- Header -->
+  <rect x="120" y="100" width="560" height="60" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>
+  <rect x="140" y="120" width="100" height="20" rx="10" fill="#f97316"/>
+  <text x="190" y="132" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">营销中心</text>
+  
+  <!-- Search Bar -->
+  <rect x="260" y="125" width="200" height="15" rx="7" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="270" y="134" fill="#64748b" font-family="Arial, sans-serif" font-size="9">搜索权益产品...</text>
+  
+  <!-- Notification -->
+  <circle cx="580" cy="132" r="8" fill="#ef4444"/>
+  <text x="580" y="135" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="7" font-weight="bold">3</text>
+  
+  <!-- Main Content -->
+  <text x="140" y="190" fill="#374151" font-family="Arial, sans-serif" font-size="14" font-weight="bold">热门权益产品</text>
+  
+  <!-- Product Cards -->
+  <!-- Card 1 - Phone Credit -->
+  <rect x="140" y="200" width="120" height="100" rx="8" fill="#fff7ed" stroke="#fed7aa"/>
+  <rect x="150" y="210" width="30" height="25" rx="4" fill="#f97316"/>
+  <text x="165" y="226" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8" font-weight="bold">话费</text>
+  <text x="150" y="250" fill="#374151" font-family="Arial, sans-serif" font-size="12" font-weight="bold">话费充值</text>
+  <text x="150" y="265" fill="#64748b" font-family="Arial, sans-serif" font-size="9">5-500元面额</text>
+  <text x="150" y="280" fill="#64748b" font-family="Arial, sans-serif" font-size="9">转化率 85%</text>
+  <rect x="150" y="285" width="50" height="12" rx="6" fill="#3b82f6"/>
+  <text x="175" y="293" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="7">立即配置</text>
+  
+  <!-- Card 2 - Gas Card -->
+  <rect x="280" y="200" width="120" height="100" rx="8" fill="#eff6ff" stroke="#bfdbfe"/>
+  <rect x="290" y="210" width="30" height="25" rx="4" fill="#3b82f6"/>
+  <text x="305" y="226" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8" font-weight="bold">油卡</text>
+  <text x="290" y="250" fill="#374151" font-family="Arial, sans-serif" font-size="12" font-weight="bold">油卡充值</text>
+  <text x="290" y="265" fill="#64748b" font-family="Arial, sans-serif" font-size="9">50-1000元面额</text>
+  <text x="290" y="280" fill="#64748b" font-family="Arial, sans-serif" font-size="9">转化率 72%</text>
+  <rect x="290" y="285" width="50" height="12" rx="6" fill="#f97316"/>
+  <text x="315" y="293" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="7">立即配置</text>
+  
+  <!-- Card 3 - VIP -->
+  <rect x="420" y="200" width="120" height="100" rx="8" fill="#faf5ff" stroke="#e9d5ff"/>
+  <rect x="430" y="210" width="30" height="25" rx="4" fill="#a855f7"/>
+  <text x="445" y="226" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8" font-weight="bold">VIP</text>
+  <text x="430" y="250" fill="#374151" font-family="Arial, sans-serif" font-size="12" font-weight="bold">会员权益</text>
+  <text x="430" y="265" fill="#64748b" font-family="Arial, sans-serif" font-size="9">视频/外卖会员</text>
+  <text x="430" y="280" fill="#64748b" font-family="Arial, sans-serif" font-size="9">转化率 91%</text>
+  <rect x="430" y="285" width="50" height="12" rx="6" fill="#3b82f6"/>
+  <text x="455" y="293" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="7">立即配置</text>
+  
+  <!-- Stats Section -->
+  <text x="140" y="335" fill="#374151" font-family="Arial, sans-serif" font-size="14" font-weight="bold">营销数据概览</text>
+  
+  <!-- Stats Cards -->
+  <rect x="140" y="345" width="100" height="50" rx="6" fill="#f97316"/>
+  <text x="190" y="360" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="9" font-weight="bold">日活用户</text>
+  <text x="190" y="380" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">5000万+</text>
+  
+  <rect x="250" y="345" width="100" height="50" rx="6" fill="#3b82f6"/>
+  <text x="300" y="360" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="9" font-weight="bold">转化率</text>
+  <text x="300" y="380" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">85.2%</text>
+  
+  <rect x="360" y="345" width="100" height="50" rx="6" fill="#16a34a"/>
+  <text x="410" y="360" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="9" font-weight="bold">营销ROI</text>
+  <text x="410" y="380" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">300%+</text>
+  
+  <rect x="470" y="345" width="70" height="50" rx="6" fill="#a855f7"/>
+  <text x="505" y="360" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="9" font-weight="bold">订单量</text>
+  <text x="505" y="380" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">1.2M</text>
+  
+  <!-- Chart Area -->
+  <rect x="140" y="410" width="400" height="80" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="145" y="425" fill="#64748b" font-family="Arial, sans-serif" font-size="10">营销效果趋势图</text>
+  
+  <!-- Simple Line Chart -->
+  <polyline points="150,470 180,465 210,460 240,455 270,450 300,445 330,440 360,435 390,430 420,425 450,420 480,415 510,410" 
+            stroke="#f97316" stroke-width="3" fill="none"/>
+  
+  <!-- Chart Points -->
+  <circle cx="210" cy="460" r="3" fill="#f97316"/>
+  <circle cx="270" cy="450" r="3" fill="#f97316"/>
+  <circle cx="330" cy="440" r="3" fill="#f97316"/>
+  <circle cx="390" cy="430" r="3" fill="#f97316"/>
+  <circle cx="450" cy="420" r="3" fill="#f97316"/>
+  <circle cx="510" cy="410" r="3" fill="#f97316"/>
+  
+  <!-- Chart Labels -->
+  <text x="210" y="485" text-anchor="middle" fill="#64748b" font-family="Arial, sans-serif" font-size="8">周一</text>
+  <text x="270" y="485" text-anchor="middle" fill="#64748b" font-family="Arial, sans-serif" font-size="8">周三</text>
+  <text x="330" y="485" text-anchor="middle" fill="#64748b" font-family="Arial, sans-serif" font-size="8">周五</text>
+  <text x="390" y="485" text-anchor="middle" fill="#64748b" font-family="Arial, sans-serif" font-size="8">周日</text>
+  <text x="450" y="485" text-anchor="middle" fill="#64748b" font-family="Arial, sans-serif" font-size="8">今日</text>
+  
+  <!-- Side Panel -->
+  <rect x="560" y="200" width="120" height="290" rx="8" fill="white" stroke="#e2e8f0"/>
+  <text x="570" y="220" fill="#374151" font-family="Arial, sans-serif" font-size="12" font-weight="bold">实时数据</text>
+  
+  <!-- Mini Charts -->
+  <rect x="570" y="230" width="100" height="60" rx="4" fill="#f8fafc"/>
+  <text x="575" y="245" fill="#64748b" font-family="Arial, sans-serif" font-size="8">用户活跃度</text>
+  <polyline points="575,265 590,260 605,255 620,250 635,245 650,240" stroke="#16a34a" stroke-width="2" fill="none"/>
+  <text x="620" y="285" text-anchor="middle" fill="#16a34a" font-family="Arial, sans-serif" font-size="10" font-weight="bold">↑ 12%</text>
+  
+  <rect x="570" y="300" width="100" height="60" rx="4" fill="#f8fafc"/>
+  <text x="575" y="315" fill="#64748b" font-family="Arial, sans-serif" font-size="8">收入增长</text>
+  <polyline points="575,335 590,330 605,325 620,320 635,315 650,310" stroke="#f97316" stroke-width="2" fill="none"/>
+  <text x="620" y="355" text-anchor="middle" fill="#f97316" font-family="Arial, sans-serif" font-size="10" font-weight="bold">↑ 28%</text>
+  
+  <rect x="570" y="370" width="100" height="60" rx="4" fill="#f8fafc"/>
+  <text x="575" y="385" fill="#64748b" font-family="Arial, sans-serif" font-size="8">转化提升</text>
+  <polyline points="575,405 590,400 605,395 620,390 635,385 650,380" stroke="#3b82f6" stroke-width="2" fill="none"/>
+  <text x="620" y="425" text-anchor="middle" fill="#3b82f6" font-family="Arial, sans-serif" font-size="10" font-weight="bold">↑ 15%</text>
+</svg>

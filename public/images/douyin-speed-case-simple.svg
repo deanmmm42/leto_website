@@ -1,0 +1,115 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff3e0"/>
+      <stop offset="100%" style="stop-color:#f8f9fa"/>
+    </linearGradient>
+    <linearGradient id="douyinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b35"/>
+      <stop offset="100%" style="stop-color:#f7931e"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd700"/>
+      <stop offset="100%" style="stop-color:#ffa500"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg)"/>
+  
+  <!-- Phone Frame -->
+  <rect x="320" y="80" width="160" height="280" rx="20" fill="#333" filter="url(#shadow)"/>
+  <rect x="330" y="95" width="140" height="250" rx="15" fill="white"/>
+  
+  <!-- App Header -->
+  <rect x="330" y="95" width="140" height="40" rx="15" fill="url(#douyinGrad)"/>
+  <circle cx="345" y="115" r="8" fill="white"/>
+  <text x="345" y="118" text-anchor="middle" fill="url(#douyinGrad)" font-size="6" font-weight="bold">抖</text>
+  <text x="365" y="118" fill="white" font-size="10" font-weight="bold">抖音极速版</text>
+  
+  <!-- Gold Coin Section -->
+  <rect x="340" y="150" width="120" height="50" rx="8" fill="url(#goldGrad)"/>
+  <circle cx="360" cy="175" r="12" fill="#ffd700"/>
+  <text x="360" y="179" text-anchor="middle" fill="#b8860b" font-size="8" font-weight="bold">金币</text>
+  <text x="385" y="170" fill="white" font-size="10" font-weight="bold">今日收益</text>
+  <text x="385" y="182" fill="white" font-size="9">8,520 金币</text>
+  
+  <!-- Task Items -->
+  <rect x="340" y="210" width="120" height="30" rx="4" fill="#f5f5f5"/>
+  <text x="350" y="222" fill="#333" font-size="8" font-weight="bold">看视频得金币</text>
+  <text x="350" y="232" fill="#666" font-size="7">观看30秒 +50金币</text>
+  
+  <rect x="340" y="250" width="120" height="30" rx="4" fill="#f0f9ff"/>
+  <text x="350" y="262" fill="#333" font-size="8" font-weight="bold">每日签到</text>
+  <text x="350" y="272" fill="#666" font-size="7">连续7天 +500金币</text>
+  
+  <!-- Left Stats Panel -->
+  <rect x="100" y="150" width="180" height="200" rx="12" fill="white" filter="url(#shadow)"/>
+  <text x="120" y="175" fill="#333" font-size="14" font-weight="bold">抖音极速版数据</text>
+  
+  <!-- User Stats -->
+  <rect x="120" y="185" width="140" height="30" rx="4" fill="#fff3e0"/>
+  <text x="130" y="200" fill="#333" font-size="10" font-weight="bold">日活跃用户</text>
+  <text x="130" y="212" fill="#ff6b35" font-size="12" font-weight="bold">5000万+</text>
+  
+  <rect x="120" y="225" width="140" height="30" rx="4" fill="#fff9c4"/>
+  <text x="130" y="240" fill="#333" font-size="10" font-weight="bold">用户增长</text>
+  <text x="130" y="252" fill="#f7931e" font-size="12" font-weight="bold">显著提升</text>
+  
+  <rect x="120" y="265" width="140" height="30" rx="4" fill="#e3f2fd"/>
+  <text x="130" y="280" fill="#333" font-size="10" font-weight="bold">留存优化</text>
+  <text x="130" y="292" fill="#2196f3" font-size="12" font-weight="bold">长期活跃</text>
+  
+  <rect x="120" y="305" width="140" height="30" rx="4" fill="#e8f5e8"/>
+  <text x="130" y="320" fill="#333" font-size="10" font-weight="bold">营销ROI</text>
+  <text x="130" y="332" fill="#4caf50" font-size="12" font-weight="bold">300%+</text>
+  
+  <!-- Right Analytics Panel -->
+  <rect x="520" y="150" width="180" height="200" rx="12" fill="white" filter="url(#shadow)"/>
+  <text x="540" y="175" fill="#333" font-size="14" font-weight="bold">金币激励体系</text>
+  
+  <!-- Reward Structure -->
+  <rect x="540" y="185" width="140" height="25" rx="4" fill="#fff9c4"/>
+  <circle cx="550" cy="197" r="6" fill="url(#goldGrad)"/>
+  <text x="565" y="195" fill="#333" font-size="9" font-weight="bold">观看视频</text>
+  <text x="565" y="205" fill="#666" font-size="7">+50金币/次</text>
+  
+  <rect x="540" y="220" width="140" height="25" rx="4" fill="#fff9c4"/>
+  <circle cx="550" cy="232" r="6" fill="url(#goldGrad)"/>
+  <text x="565" y="230" fill="#333" font-size="9" font-weight="bold">每日签到</text>
+  <text x="565" y="240" fill="#666" font-size="7">+100金币/天</text>
+  
+  <rect x="540" y="255" width="140" height="25" rx="4" fill="#fff9c4"/>
+  <circle cx="550" cy="267" r="6" fill="url(#goldGrad)"/>
+  <text x="565" y="265" fill="#333" font-size="9" font-weight="bold">邀请好友</text>
+  <text x="565" y="275" fill="#666" font-size="7">+1000金币/人</text>
+  
+  <!-- Conversion Chart -->
+  <text x="540" y="295" fill="#666" font-size="8">金币提现转化率</text>
+  
+  <!-- Simple Bar Chart -->
+  <rect x="545" y="310" width="15" height="15" fill="#ff6b35"/>
+  <text x="545" y="305" fill="#666" font-size="6">85%</text>
+  <rect x="565" y="305" width="15" height="20" fill="#ffd700"/>
+  <text x="565" y="300" fill="#666" font-size="6">92%</text>
+  <rect x="585" y="300" width="15" height="25" fill="#2196f3"/>
+  <text x="585" y="295" fill="#666" font-size="6">96%</text>
+  <rect x="605" y="295" width="15" height="30" fill="#4caf50"/>
+  <text x="605" y="290" fill="#666" font-size="6">98%</text>
+  
+  <!-- Bottom Label -->
+  <rect x="200" y="450" width="400" height="80" rx="12" fill="white" filter="url(#shadow)"/>
+  <text x="400" y="480" text-anchor="middle" fill="#333" font-size="16" font-weight="bold">金币补贴拉新促活解决方案</text>
+  <text x="400" y="500" text-anchor="middle" fill="#666" font-size="11">通过智能化金币激励机制</text>
+  <text x="400" y="515" text-anchor="middle" fill="#666" font-size="11">实现精准用户拉新和深度促活</text>
+  
+  <!-- Success Indicators -->
+  <circle cx="160" cy="490" r="12" fill="#ff6b35"/>
+  <text x="160" y="495" text-anchor="middle" fill="white" font-size="8" font-weight="bold">成功</text>
+  
+  <circle cx="640" cy="490" r="12" fill="#ff6b35"/>
+  <text x="640" y="495" text-anchor="middle" fill="white" font-size="8" font-weight="bold">验证</text>
+</svg>

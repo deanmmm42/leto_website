@@ -1,0 +1,123 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#f8fafc"/>
+  
+  <!-- Main Dashboard -->
+  <rect x="100" y="80" width="600" height="440" rx="20" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- Header -->
+  <rect x="120" y="100" width="560" height="60" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>
+  <rect x="140" y="120" width="100" height="20" rx="10" fill="#ef4444"/>
+  <text x="190" y="132" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">AI风控中心</text>
+  
+  <!-- Status Indicator -->
+  <circle cx="580" cy="132" r="6" fill="#16a34a"/>
+  <text x="595" y="135" fill="#16a34a" font-family="Arial, sans-serif" font-size="10" font-weight="bold">实时监控中</text>
+  
+  <!-- Left Panel - Alerts -->
+  <rect x="140" y="180" width="180" height="320" rx="8" fill="white" stroke="#e2e8f0"/>
+  <text x="150" y="200" fill="#374151" font-family="Arial, sans-serif" font-size="12" font-weight="bold">风险预警</text>
+  
+  <!-- High Risk Alert -->
+  <rect x="150" y="210" width="160" height="50" rx="6" fill="#fef2f2" stroke="#fecaca"/>
+  <circle cx="160" cy="230" r="6" fill="#ef4444"/>
+  <text x="175" y="225" fill="#ef4444" font-family="Arial, sans-serif" font-size="10" font-weight="bold">高风险</text>
+  <text x="175" y="237" fill="#64748b" font-family="Arial, sans-serif" font-size="8">检测到异常刷单行为</text>
+  <text x="175" y="248" fill="#64748b" font-family="Arial, sans-serif" font-size="8">IP: 192.168.1.***</text>
+  <text x="175" y="255" fill="#64748b" font-family="Arial, sans-serif" font-size="7">风险评分: 95/100</text>
+  
+  <!-- Medium Risk Alert -->
+  <rect x="150" y="270" width="160" height="50" rx="6" fill="#fef3c7" stroke="#fde68a"/>
+  <circle cx="160" cy="290" r="6" fill="#f59e0b"/>
+  <text x="175" y="285" fill="#f59e0b" font-family="Arial, sans-serif" font-size="10" font-weight="bold">中风险</text>
+  <text x="175" y="297" fill="#64748b" font-family="Arial, sans-serif" font-size="8">频繁小额充值</text>
+  <text x="175" y="308" fill="#64748b" font-family="Arial, sans-serif" font-size="8">用户: 139****8888</text>
+  <text x="175" y="315" fill="#64748b" font-family="Arial, sans-serif" font-size="7">风险评分: 72/100</text>
+  
+  <!-- Low Risk Alert -->
+  <rect x="150" y="330" width="160" height="50" rx="6" fill="#f0fdf4" stroke="#bbf7d0"/>
+  <circle cx="160" cy="350" r="6" fill="#16a34a"/>
+  <text x="175" y="345" fill="#16a34a" font-family="Arial, sans-serif" font-size="10" font-weight="bold">低风险</text>
+  <text x="175" y="357" fill="#64748b" font-family="Arial, sans-serif" font-size="8">正常交易行为</text>
+  <text x="175" y="368" fill="#64748b" font-family="Arial, sans-serif" font-size="8">用户: 158****6666</text>
+  <text x="175" y="375" fill="#64748b" font-family="Arial, sans-serif" font-size="7">风险评分: 15/100</text>
+  
+  <!-- System Status -->
+  <text x="150" y="405" fill="#374151" font-family="Arial, sans-serif" font-size="11" font-weight="bold">系统状态</text>
+  
+  <rect x="150" y="410" width="160" height="25" rx="4" fill="#f0fdf4" stroke="#bbf7d0"/>
+  <circle cx="160" cy="422" r="4" fill="#16a34a"/>
+  <text x="170" y="425" fill="#16a34a" font-family="Arial, sans-serif" font-size="9" font-weight="bold">AI模型运行正常</text>
+  
+  <rect x="150" y="440" width="160" height="25" rx="4" fill="#f0fdf4" stroke="#bbf7d0"/>
+  <circle cx="160" cy="452" r="4" fill="#16a34a"/>
+  <text x="170" y="455" fill="#16a34a" font-family="Arial, sans-serif" font-size="9" font-weight="bold">数据同步正常</text>
+  
+  <rect x="150" y="470" width="160" height="25" rx="4" fill="#f0fdf4" stroke="#bbf7d0"/>
+  <circle cx="160" cy="482" r="4" fill="#16a34a"/>
+  <text x="170" y="485" fill="#16a34a" font-family="Arial, sans-serif" font-size="9" font-weight="bold">风控引擎运行中</text>
+  
+  <!-- Main Content Area -->
+  <rect x="340" y="180" width="340" height="320" rx="8" fill="white" stroke="#e2e8f0"/>
+  
+  <!-- Real-time Chart -->
+  <text x="350" y="200" fill="#374151" font-family="Arial, sans-serif" font-size="14" font-weight="bold">实时风险监控</text>
+  
+  <!-- Chart Background -->
+  <rect x="350" y="210" width="320" height="150" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+  
+  <!-- Grid Lines -->
+  <line x1="350" y1="240" x2="670" y2="240" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="350" y1="270" x2="670" y2="270" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="350" y1="300" x2="670" y2="300" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="350" y1="330" x2="670" y2="330" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <!-- Risk Chart Line -->
+  <polyline points="360,340 390,325 420,310 450,295 480,285 510,275 540,265 570,255 600,245 630,235 660,225" 
+            stroke="#ef4444" stroke-width="3" fill="none"/>
+  
+  <!-- Normal Traffic Line -->
+  <polyline points="360,345 390,342 420,339 450,336 480,333 510,330 540,327 570,324 600,321 630,318 660,315" 
+            stroke="#16a34a" stroke-width="2" fill="none"/>
+  
+  <!-- Chart Legend -->
+  <rect x="470" y="215" width="12" height="3" fill="#ef4444"/>
+  <text x="490" y="220" fill="#64748b" font-family="Arial, sans-serif" font-size="8">风险事件</text>
+  <rect x="540" y="215" width="12" height="3" fill="#16a34a"/>
+  <text x="560" y="220" fill="#64748b" font-family="Arial, sans-serif" font-size="8">正常流量</text>
+  
+  <!-- Time Labels -->
+  <text x="360" y="375" fill="#64748b" font-family="Arial, sans-serif" font-size="8">00:00</text>
+  <text x="450" y="375" fill="#64748b" font-family="Arial, sans-serif" font-size="8">04:00</text>
+  <text x="540" y="375" fill="#64748b" font-family="Arial, sans-serif" font-size="8">08:00</text>
+  <text x="630" y="375" fill="#64748b" font-family="Arial, sans-serif" font-size="8">12:00</text>
+  
+  <!-- Statistics Cards -->
+  <text x="350" y="400" fill="#374151" font-family="Arial, sans-serif" font-size="12" font-weight="bold">今日风控统计</text>
+  
+  <!-- Stat Cards -->
+  <rect x="350" y="410" width="70" height="40" rx="4" fill="#ef4444"/>
+  <text x="385" y="422" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8" font-weight="bold">拦截风险</text>
+  <text x="385" y="435" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">1,247</text>
+  <text x="385" y="445" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="6">次</text>
+  
+  <rect x="430" y="410" width="70" height="40" rx="4" fill="#f97316"/>
+  <text x="465" y="422" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8" font-weight="bold">处理时间</text>
+  <text x="465" y="435" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">0.3</text>
+  <text x="465" y="445" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="6">毫秒</text>
+  
+  <rect x="510" y="410" width="70" height="40" rx="4" fill="#3b82f6"/>
+  <text x="545" y="422" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8" font-weight="bold">准确率</text>
+  <text x="545" y="435" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">99.7</text>
+  <text x="545" y="445" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="6">%</text>
+  
+  <rect x="590" y="410" width="70" height="40" rx="4" fill="#16a34a"/>
+  <text x="625" y="422" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8" font-weight="bold">节省成本</text>
+  <text x="625" y="435" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">8.6M</text>
+  <text x="625" y="445" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="6">元</text>
+  
+  <!-- AI Analysis Alert -->
+  <rect x="350" y="460" width="320" height="30" rx="4" fill="#eff6ff" stroke="#bfdbfe"/>
+  <circle cx="365" cy="475" r="6" fill="#3b82f6"/>
+  <text x="380" y="470" fill="#1e40af" font-family="Arial, sans-serif" font-size="9" font-weight="bold">AI智能分析</text>
+  <text x="380" y="482" fill="#64748b" font-family="Arial, sans-serif" font-size="8">检测到新型欺诈模式，已自动更新算法模型，预计可提升识别准确率3.2%</text>
+</svg>

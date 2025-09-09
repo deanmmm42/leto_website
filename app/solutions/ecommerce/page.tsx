@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowRight, Shield, Bot, TrendingUp, FileText, Lock } from "lucide-react"
+import { ArrowRight, Shield, Bot, TrendingUp, FileText, Lock, CheckCircle, Star, Users, TrendingDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import Header from "@/components/header"
@@ -136,38 +136,84 @@ export default function EcommercePage() {
   ]
 
   return (
-    <div className="min-h-screen bg-white dark:bg-[#030314]">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50/30 dark:from-[#030314] dark:via-[#040419] dark:to-[#050520]">
       <Header />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-letoWarmStart/[0.03] via-transparent to-letoCoolEnd/[0.03]" />
+      <section className="relative pt-32 pb-32 overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-gradient-to-br from-letoWarmStart/[0.08] via-transparent to-letoCoolEnd/[0.08]" />
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-letoOrange/5 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-letoCoolEnd/5 rounded-full blur-3xl" />
+        </div>
         
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <motion.h1
+            <motion.div
               custom={0}
               variants={fadeInVariants}
               initial="hidden"
               animate="visible"
-              className="text-4xl md:text-6xl font-bold mb-6"
+              className="text-center mb-8"
             >
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-letoOrange to-letoWarmStart">
-                数字权益智能营销
-              </span>
-              <br />
-              驱动GMV百亿级增长
-            </motion.h1>
+              <div className="inline-flex items-center gap-2 bg-white/80 dark:bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-letoOrange/20 mb-6">
+                <div className="w-2 h-2 bg-letoOrange rounded-full animate-pulse" />
+                <span className="text-sm font-medium text-letoOrange">电商行业AI解决方案</span>
+              </div>
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-letoOrange via-letoWarmStart to-letoPink">
+                  数字权益智能营销
+                </span>
+                <br />
+                <span className="text-slate-900 dark:text-white">驱动</span>
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-letoCoolEnd to-letoTurquoise">GMV百亿级</span>
+                <span className="text-slate-900 dark:text-white">增长</span>
+              </h1>
+            </motion.div>
             
             <motion.div
               custom={1}
               variants={fadeInVariants}
               initial="hidden"
               animate="visible"
+              className="max-w-4xl mx-auto"
             >
-              <DescriptionText size="large" className="text-xl mb-8 max-w-3xl mx-auto">
+              <DescriptionText size="large" className="text-xl md:text-2xl mb-12 leading-relaxed text-slate-700 dark:text-white/80">
                 基于私有化AI大模型，为头部企业提供安全、高效的拉新促活与用户留存方案
               </DescriptionText>
+              
+              {/* Key Benefits */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <div className="flex items-center gap-3 bg-white/60 dark:bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-white/20">
+                  <div className="w-10 h-10 bg-gradient-to-r from-letoOrange to-letoWarmStart rounded-lg flex items-center justify-center">
+                    <TrendingUp className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <div className="font-semibold text-slate-900 dark:text-white">300%+ ROI</div>
+                    <div className="text-sm text-slate-600 dark:text-white/60">营销投资回报率</div>
+                  </div>
+                </div>
+                
+                <div className="flex items-center gap-3 bg-white/60 dark:bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-white/20">
+                  <div className="w-10 h-10 bg-gradient-to-r from-letoCoolEnd to-letoTurquoise rounded-lg flex items-center justify-center">
+                    <Users className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <div className="font-semibold text-slate-900 dark:text-white">5000万+</div>
+                    <div className="text-sm text-slate-600 dark:text-white/60">日活跃用户</div>
+                  </div>
+                </div>
+                
+                <div className="flex items-center gap-3 bg-white/60 dark:bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-white/20">
+                  <div className="w-10 h-10 bg-gradient-to-r from-letoPink to-letoWarmStart rounded-lg flex items-center justify-center">
+                    <Shield className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <div className="font-semibold text-slate-900 dark:text-white">99.7%</div>
+                    <div className="text-sm text-slate-600 dark:text-white/60">风控准确率</div>
+                  </div>
+                </div>
+              </div>
             </motion.div>
 
             <motion.div
@@ -175,14 +221,15 @@ export default function EcommercePage() {
               variants={fadeInVariants}
               initial="hidden"
               animate="visible"
-              className="flex flex-col sm:flex-row gap-4 justify-center"
+              className="flex flex-col sm:flex-row gap-6 justify-center items-center"
             >
-              <GradientHoverButton href="/contact?from=/solutions/ecommerce" size="lg">
-                立即咨询
+              <GradientHoverButton href="/contact?from=/solutions/ecommerce" size="lg" className="shadow-lg shadow-letoOrange/25">
+                免费咨询方案
               </GradientHoverButton>
-              <Button variant="outline" size="lg" asChild>
-                <Link href="#cases">
-                  查看案例 <ArrowRight className="ml-2 h-4 w-4" />
+              <Button variant="outline" size="lg" asChild className="bg-white/80 dark:bg-white/10 backdrop-blur-sm border-white/30 hover:bg-white dark:hover:bg-white/20">
+                <Link href="#cases" className="flex items-center gap-2">
+                  <Star className="w-4 h-4" />
+                  查看成功案例
                 </Link>
               </Button>
             </motion.div>
@@ -191,32 +238,56 @@ export default function EcommercePage() {
       </section>
 
       {/* Challenges Section */}
-      <section className="py-20 bg-gray-50 dark:bg-[#020210]">
+      <section className="py-32 bg-white/50 dark:bg-[#020210]/80 backdrop-blur-sm">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-4xl mx-auto">
-            <motion.h2
-              custom={0}
-              variants={fadeInVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              className="text-3xl md:text-4xl font-bold text-center mb-12"
-            >
-              解决方案挑战
-            </motion.h2>
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <motion.div
+                custom={0}
+                variants={fadeInVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="inline-flex items-center gap-2 bg-red-50 dark:bg-red-900/20 px-4 py-2 rounded-full border border-red-200 dark:border-red-800 mb-6"
+              >
+                <TrendingDown className="w-4 h-4 text-red-500" />
+                <span className="text-sm font-medium text-red-600 dark:text-red-400">电商行业痛点</span>
+              </motion.div>
+              <motion.h2
+                custom={1}
+                variants={fadeInVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="text-3xl md:text-5xl font-bold mb-6"
+              >
+                <span className="text-slate-900 dark:text-white">电商营销面临的</span>
+                <br />
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-orange-500">核心挑战</span>
+              </motion.h2>
+            </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {challenges.map((challenge, index) => (
                 <motion.div
                   key={index}
-                  custom={index + 1}
+                  custom={index + 2}
                   variants={fadeInVariants}
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
-                  className="bg-white dark:bg-white/[0.03] p-6 rounded-xl border border-gray-200 dark:border-white/10"
+                  className="relative group"
                 >
-                  <p className="text-slate-700 dark:text-white/80">{challenge}</p>
+                  <div className="bg-white dark:bg-white/[0.05] p-8 rounded-2xl border border-gray-200 dark:border-white/10 shadow-lg hover:shadow-xl transition-all duration-300 group-hover:border-red-200 dark:group-hover:border-red-800/50">
+                    <div className="flex items-start gap-4">
+                      <div className="w-12 h-12 bg-gradient-to-r from-red-500 to-orange-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <span className="text-white font-bold text-lg">{String(index + 1).padStart(2, '0')}</span>
+                      </div>
+                      <div>
+                        <p className="text-lg font-semibold text-slate-900 dark:text-white leading-relaxed">{challenge}</p>
+                      </div>
+                    </div>
+                  </div>
                 </motion.div>
               ))}
             </div>
@@ -309,7 +380,7 @@ export default function EcommercePage() {
               核心产品
             </motion.h2>
             
-            <div className="space-y-12">
+            <div className="space-y-16">
               {coreProducts.map((product, index) => (
                 <motion.div
                   key={index}
@@ -318,19 +389,50 @@ export default function EcommercePage() {
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
-                  className="bg-white dark:bg-white/[0.03] p-8 rounded-2xl border border-gray-200 dark:border-white/10"
+                  className={`flex flex-col lg:flex-row items-center gap-12 ${
+                    index % 2 !== 0 ? 'lg:flex-row-reverse' : ''
+                  }`}
                 >
-                  <h3 className="text-2xl font-bold mb-4">{product.title}</h3>
-                  <p className="text-slate-700 dark:text-white/80 mb-4">{product.description}</p>
-                  <p className="text-slate-600 dark:text-white/60 mb-6">{product.target}</p>
+                  {/* Product Image */}
+                  <div className="w-full lg:w-1/2">
+                    <div className="bg-gradient-to-br from-white to-gray-50/50 dark:from-white/[0.05] dark:to-white/[0.02] p-8 rounded-3xl border border-gray-200/50 dark:border-white/10 shadow-2xl hover:shadow-3xl transition-all duration-500">
+                      <img
+                        src={index === 0 ? "/images/digital-marketing-clean.svg" : "/images/ai-risk-control-clean.svg"}
+                        alt={product.title}
+                        className="w-full h-auto rounded-2xl"
+                      />
+                    </div>
+                  </div>
                   
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {product.advantages.map((advantage, advIndex) => (
-                      <div key={advIndex} className="flex items-start gap-3">
-                        <div className="w-2 h-2 bg-letoOrange rounded-full mt-2 flex-shrink-0" />
-                        <p className="text-sm text-slate-600 dark:text-white/60">{advantage}</p>
+                  {/* Product Content */}
+                  <div className="w-full lg:w-1/2">
+                    <div className="bg-gradient-to-br from-white to-gray-50/30 dark:from-white/[0.05] dark:to-white/[0.02] p-10 rounded-3xl border border-gray-200/50 dark:border-white/10 h-full shadow-xl">
+                      <div className="mb-6">
+                        <div className="inline-flex items-center gap-2 bg-letoOrange/10 dark:bg-letoOrange/20 px-3 py-1 rounded-full mb-4">
+                          <div className="w-2 h-2 bg-letoOrange rounded-full" />
+                          <span className="text-sm font-medium text-letoOrange">核心产品</span>
+                        </div>
+                        <h3 className="text-2xl md:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-letoOrange via-letoWarmStart to-letoPink">
+                          {product.title}
+                        </h3>
                       </div>
-                    ))}
+                      
+                      <div className="space-y-6">
+                        <p className="text-xl text-slate-700 dark:text-white/80 leading-relaxed font-medium">{product.description}</p>
+                        <p className="text-lg text-slate-600 dark:text-white/60 leading-relaxed">{product.target}</p>
+                        
+                        <div className="grid grid-cols-1 gap-4 mt-8">
+                          {product.advantages.map((advantage, advIndex) => (
+                            <div key={advIndex} className="flex items-start gap-4 p-5 bg-gradient-to-r from-gray-50 to-white dark:from-white/[0.03] dark:to-white/[0.01] rounded-xl border border-gray-100 dark:border-white/5 hover:shadow-md transition-all duration-300">
+                              <div className="w-6 h-6 bg-gradient-to-r from-letoOrange to-letoWarmStart rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <CheckCircle className="w-3 h-3 text-white" />
+                              </div>
+                              <p className="text-base text-slate-700 dark:text-white/80 leading-relaxed font-medium">{advantage}</p>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </motion.div>
               ))}
@@ -354,7 +456,7 @@ export default function EcommercePage() {
               成功案例
             </motion.h2>
             
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="space-y-16">
               {cases.map((caseItem, index) => (
                 <motion.div
                   key={index}
@@ -363,28 +465,66 @@ export default function EcommercePage() {
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
+                  className={`flex flex-col lg:flex-row items-center gap-12 ${
+                    index % 2 !== 0 ? 'lg:flex-row-reverse' : ''
+                  }`}
                 >
-                  <Card className="h-full">
-                    <CardHeader>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="px-2 py-1 bg-letoOrange/10 text-letoOrange text-xs rounded-full">
-                          {caseItem.tag}
-                        </span>
-                      </div>
-                      <CardTitle className="text-xl">{caseItem.title}</CardTitle>
-                      <CardDescription>{caseItem.subtitle}</CardDescription>
-                    </CardHeader>
-                    <CardContent className="space-y-4">
-                      <p className="text-slate-600 dark:text-white/60">{caseItem.description}</p>
-                      <div className="grid grid-cols-2 gap-3">
-                        {caseItem.metrics.map((metric, metricIndex) => (
-                          <div key={metricIndex} className="text-sm">
-                            <span className="text-slate-500 dark:text-white/50">• {metric}</span>
+                  {/* Case Image */}
+                  <div className="w-full lg:w-1/2">
+                    <div className="bg-gradient-to-br from-white to-gray-50/50 dark:from-white/[0.05] dark:to-white/[0.02] p-8 rounded-3xl border border-gray-200/50 dark:border-white/10 shadow-2xl hover:shadow-3xl transition-all duration-500">
+                      <img
+                        src={index === 0 ? "/images/douyin-speed-clean.svg" : "/images/pingan-car-clean.svg"}
+                        alt={caseItem.title}
+                        className="w-full h-auto rounded-2xl"
+                      />
+                    </div>
+                  </div>
+                  
+                  {/* Case Content */}
+                  <div className="w-full lg:w-1/2">
+                    <Card className="h-full bg-white/60 dark:bg-white/[0.05] backdrop-blur-sm border-white/20 dark:border-white/10 shadow-2xl hover:shadow-3xl transition-all duration-500">
+                      <CardHeader className="pb-6">
+                        <div className="flex items-center gap-3 mb-4">
+                          <span className="px-4 py-2 bg-gradient-to-r from-green-500 to-emerald-500 text-white text-sm font-bold rounded-full shadow-lg">
+                            {caseItem.tag}
+                          </span>
+                          <div className="flex items-center gap-1">
+                            {[...Array(5)].map((_, i) => (
+                              <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
+                            ))}
                           </div>
-                        ))}
-                      </div>
-                    </CardContent>
-                  </Card>
+                        </div>
+                        <CardTitle className="text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-500 via-emerald-500 to-teal-500 mb-2">
+                          {caseItem.title}
+                        </CardTitle>
+                        <CardDescription className="text-xl text-slate-600 dark:text-white/70 font-medium">
+                          {caseItem.subtitle}
+                        </CardDescription>
+                      </CardHeader>
+                      <CardContent className="space-y-8">
+                        <p className="text-lg text-slate-700 dark:text-white/80 leading-relaxed font-medium">
+                          {caseItem.description}
+                        </p>
+                        
+                        <div className="bg-gradient-to-br from-green-50 to-emerald-50/50 dark:from-green-900/10 dark:to-emerald-900/5 p-8 rounded-2xl border border-green-100 dark:border-green-800/30">
+                          <div className="flex items-center gap-2 mb-6">
+                            <TrendingUp className="w-5 h-5 text-green-500" />
+                            <h4 className="text-xl font-bold text-slate-900 dark:text-white">核心成果</h4>
+                          </div>
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            {caseItem.metrics.map((metric, metricIndex) => (
+                              <div key={metricIndex} className="flex items-center gap-4 p-4 bg-white dark:bg-white/[0.05] rounded-xl border border-green-100 dark:border-green-800/20 hover:shadow-md transition-all duration-300">
+                                <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                  <CheckCircle className="w-4 h-4 text-white" />
+                                </div>
+                                <span className="text-base font-semibold text-slate-700 dark:text-white/90">{metric}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </div>
                 </motion.div>
               ))}
             </div>
@@ -393,33 +533,58 @@ export default function EcommercePage() {
       </section>
 
       {/* Tech Advantages Section */}
-      <section className="py-20 bg-gray-50 dark:bg-[#020210]">
+      <section className="py-32 bg-gradient-to-br from-purple-50/50 via-white to-blue-50/30 dark:from-[#030314] dark:via-[#0a0420] dark:to-[#041420]">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
-            <motion.h2
-              custom={0}
-              variants={fadeInVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              className="text-3xl md:text-4xl font-bold text-center mb-12"
-            >
-              技术优势
-            </motion.h2>
+            <div className="text-center mb-20">
+              <motion.div
+                custom={0}
+                variants={fadeInVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="inline-flex items-center gap-2 bg-purple-50 dark:bg-purple-900/20 px-4 py-2 rounded-full border border-purple-200 dark:border-purple-800 mb-6"
+              >
+                <TrendingUp className="w-4 h-4 text-purple-500" />
+                <span className="text-sm font-medium text-purple-600 dark:text-purple-400">技术优势</span>
+              </motion.div>
+              <motion.h2
+                custom={1}
+                variants={fadeInVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="text-3xl md:text-5xl font-bold mb-6"
+              >
+                <span className="text-slate-900 dark:text-white">领先的</span>
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-blue-500 to-indigo-500">技术优势</span>
+              </motion.h2>
+            </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               {techAdvantages.map((advantage, index) => (
                 <motion.div
                   key={index}
-                  custom={index + 1}
+                  custom={index + 2}
                   variants={fadeInVariants}
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
-                  className="bg-white dark:bg-white/[0.03] p-6 rounded-xl border border-gray-200 dark:border-white/10"
+                  className="group"
                 >
-                  <h3 className="text-xl font-semibold mb-3">{advantage.title}</h3>
-                  <p className="text-slate-600 dark:text-white/60">{advantage.description}</p>
+                  <div className="bg-white/60 dark:bg-white/[0.05] backdrop-blur-sm p-8 rounded-3xl border border-white/20 dark:border-white/10 shadow-xl hover:shadow-2xl transition-all duration-500 group-hover:border-purple-200 dark:group-hover:border-purple-800/50">
+                    <div className="flex items-start gap-4">
+                      <div className="w-14 h-14 bg-gradient-to-r from-purple-500 via-blue-500 to-indigo-500 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                        <span className="text-white font-bold text-xl">{String(index + 1).padStart(2, '0')}</span>
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
+                          {advantage.title}
+                        </h3>
+                        <p className="text-lg text-slate-600 dark:text-white/70 leading-relaxed">{advantage.description}</p>
+                      </div>
+                    </div>
+                  </div>
                 </motion.div>
               ))}
             </div>
@@ -428,16 +593,20 @@ export default function EcommercePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-4xl mx-auto text-center">
+      <section className="py-32 bg-gradient-to-br from-letoOrange/5 via-white to-letoCoolEnd/5 dark:from-letoOrange/10 dark:via-[#030314] dark:to-letoCoolEnd/10 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-letoOrange/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-letoCoolEnd/10 rounded-full blur-3xl" />
+        </div>
+        <div className="container mx-auto px-4 md:px-6 relative z-10">
+          <div className="max-w-5xl mx-auto text-center">
             <motion.h2
               custom={0}
               variants={fadeInVariants}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="text-3xl md:text-4xl font-bold mb-8"
+              className="text-4xl md:text-6xl font-bold mb-12 leading-tight text-slate-900 dark:text-slate-900"
             >
               准备开启您的数字化转型之旅？
             </motion.h2>
@@ -448,8 +617,9 @@ export default function EcommercePage() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
+              className="flex justify-center"
             >
-              <GradientHoverButton href="/contact?from=/solutions/ecommerce" size="lg">
+              <GradientHoverButton href="/contact?from=/solutions/ecommerce" size="lg" className="shadow-2xl shadow-letoOrange/30">
                 立即咨询
               </GradientHoverButton>
             </motion.div>

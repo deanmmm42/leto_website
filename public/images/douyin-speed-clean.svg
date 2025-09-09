@@ -1,0 +1,111 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#f8fafc"/>
+  
+  <!-- Main Container -->
+  <rect x="50" y="80" width="700" height="440" rx="20" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- Left Stats Panel -->
+  <rect x="80" y="120" width="200" height="280" rx="12" fill="white" stroke="#e2e8f0"/>
+  <text x="90" y="145" fill="#374151" font-family="Arial, sans-serif" font-size="16" font-weight="bold">抖音极速版数据</text>
+  
+  <!-- Stats Items -->
+  <rect x="90" y="160" width="180" height="50" rx="8" fill="#fff7ed"/>
+  <text x="100" y="175" fill="#ea580c" font-family="Arial, sans-serif" font-size="12">日活跃用户</text>
+  <text x="100" y="195" fill="#ea580c" font-family="Arial, sans-serif" font-size="20" font-weight="bold">5000万+</text>
+  
+  <rect x="90" y="220" width="180" height="50" rx="8" fill="#fef3c7"/>
+  <text x="100" y="235" fill="#d97706" font-family="Arial, sans-serif" font-size="12">用户增长</text>
+  <text x="100" y="255" fill="#d97706" font-family="Arial, sans-serif" font-size="20" font-weight="bold">显著提升</text>
+  
+  <rect x="90" y="280" width="180" height="50" rx="8" fill="#dbeafe"/>
+  <text x="100" y="295" fill="#2563eb" font-family="Arial, sans-serif" font-size="12">留存优化</text>
+  <text x="100" y="315" fill="#2563eb" font-family="Arial, sans-serif" font-size="20" font-weight="bold">长期活跃</text>
+  
+  <rect x="90" y="340" width="180" height="50" rx="8" fill="#dcfce7"/>
+  <text x="100" y="355" fill="#16a34a" font-family="Arial, sans-serif" font-size="12">营销ROI</text>
+  <text x="100" y="375" fill="#16a34a" font-family="Arial, sans-serif" font-size="20" font-weight="bold">300%+</text>
+  
+  <!-- Phone Mockup -->
+  <rect x="320" y="140" width="160" height="280" rx="20" fill="#1f2937"/>
+  <rect x="330" y="160" width="140" height="240" rx="15" fill="white"/>
+  
+  <!-- App Header -->
+  <rect x="330" y="160" width="140" height="40" rx="15" fill="#ea580c"/>
+  <circle cx="350" cy="180" r="8" fill="white"/>
+  <text x="350" y="184" text-anchor="middle" fill="#ea580c" font-family="Arial, sans-serif" font-size="8" font-weight="bold">抖</text>
+  <text x="375" y="184" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">抖音极速版</text>
+  
+  <!-- Gold Coin Section -->
+  <rect x="340" y="210" width="120" height="60" rx="8" fill="#fbbf24"/>
+  <circle cx="365" cy="240" r="15" fill="#f59e0b"/>
+  <text x="365" y="245" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">金币</text>
+  <text x="390" y="230" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">今日收益</text>
+  <text x="390" y="245" fill="white" font-family="Arial, sans-serif" font-size="11">8,520 金币</text>
+  <rect x="390" y="250" width="40" height="15" rx="7" fill="white"/>
+  <text x="410" y="260" text-anchor="middle" fill="#ea580c" font-family="Arial, sans-serif" font-size="8" font-weight="bold">立即提现</text>
+  
+  <!-- Task List -->
+  <rect x="340" y="280" width="120" height="40" rx="6" fill="#f3f4f6"/>
+  <circle cx="355" cy="295" r="8" fill="#ea580c"/>
+  <text x="355" y="299" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8" font-weight="bold">视频</text>
+  <text x="370" y="290" fill="#374151" font-family="Arial, sans-serif" font-size="10" font-weight="bold">看视频得金币</text>
+  <text x="370" y="302" fill="#6b7280" font-family="Arial, sans-serif" font-size="8">观看30秒 +50金币</text>
+  <rect x="370" y="305" width="30" height="12" rx="6" fill="#fbbf24"/>
+  <text x="385" y="313" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="7">去赚钱</text>
+  
+  <rect x="340" y="330" width="120" height="40" rx="6" fill="#eff6ff"/>
+  <circle cx="355" cy="345" r="8" fill="#3b82f6"/>
+  <text x="355" y="349" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8" font-weight="bold">任务</text>
+  <text x="370" y="340" fill="#374151" font-family="Arial, sans-serif" font-size="10" font-weight="bold">每日签到</text>
+  <text x="370" y="352" fill="#6b7280" font-family="Arial, sans-serif" font-size="8">连续7天 +500金币</text>
+  <rect x="370" y="355" width="30" height="12" rx="6" fill="#fbbf24"/>
+  <text x="385" y="363" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="7">已签到</text>
+  
+  <!-- Right Panel - Incentive System -->
+  <rect x="520" y="120" width="200" height="280" rx="12" fill="white" stroke="#e2e8f0"/>
+  <text x="530" y="145" fill="#374151" font-family="Arial, sans-serif" font-size="16" font-weight="bold">金币激励体系</text>
+  
+  <!-- Incentive Items -->
+  <rect x="530" y="160" width="180" height="35" rx="6" fill="#fef3c7"/>
+  <circle cx="545" cy="177" r="8" fill="#fbbf24"/>
+  <text x="560" y="173" fill="#374151" font-family="Arial, sans-serif" font-size="11" font-weight="bold">观看视频</text>
+  <text x="560" y="185" fill="#6b7280" font-family="Arial, sans-serif" font-size="9">+50金币/次</text>
+  
+  <rect x="530" y="205" width="180" height="35" rx="6" fill="#fef3c7"/>
+  <circle cx="545" cy="222" r="8" fill="#fbbf24"/>
+  <text x="560" y="218" fill="#374151" font-family="Arial, sans-serif" font-size="11" font-weight="bold">每日签到</text>
+  <text x="560" y="230" fill="#6b7280" font-family="Arial, sans-serif" font-size="9">+100金币/天</text>
+  
+  <rect x="530" y="250" width="180" height="35" rx="6" fill="#fef3c7"/>
+  <circle cx="545" cy="267" r="8" fill="#fbbf24"/>
+  <text x="560" y="263" fill="#374151" font-family="Arial, sans-serif" font-size="11" font-weight="bold">邀请好友</text>
+  <text x="560" y="275" fill="#6b7280" font-family="Arial, sans-serif" font-size="9">+1000金币/人</text>
+  
+  <!-- Conversion Chart -->
+  <text x="530" y="305" fill="#6b7280" font-family="Arial, sans-serif" font-size="10">金币提现转化率</text>
+  
+  <!-- Bar Chart -->
+  <rect x="535" y="330" width="15" height="25" fill="#ea580c"/>
+  <text x="535" y="325" fill="#6b7280" font-family="Arial, sans-serif" font-size="8">85%</text>
+  
+  <rect x="560" y="325" width="15" height="30" fill="#fbbf24"/>
+  <text x="560" y="320" fill="#6b7280" font-family="Arial, sans-serif" font-size="8">92%</text>
+  
+  <rect x="585" y="320" width="15" height="35" fill="#3b82f6"/>
+  <text x="585" y="315" fill="#6b7280" font-family="Arial, sans-serif" font-size="8">96%</text>
+  
+  <rect x="610" y="315" width="15" height="40" fill="#16a34a"/>
+  <text x="610" y="310" fill="#6b7280" font-family="Arial, sans-serif" font-size="8">98%</text>
+  
+  <!-- Bottom Label -->
+  <rect x="200" y="450" width="400" height="60" rx="12" fill="white" stroke="#e2e8f0"/>
+  <text x="400" y="475" text-anchor="middle" fill="#374151" font-family="Arial, sans-serif" font-size="18" font-weight="bold">金币补贴拉新促活解决方案</text>
+  <text x="400" y="495" text-anchor="middle" fill="#6b7280" font-family="Arial, sans-serif" font-size="12">通过智能化金币激励机制，实现精准用户拉新和深度促活</text>
+  
+  <!-- Success Badges -->
+  <circle cx="150" cy="480" r="15" fill="#ea580c"/>
+  <text x="150" y="485" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">成功</text>
+  
+  <circle cx="650" cy="480" r="15" fill="#ea580c"/>
+  <text x="650" y="485" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">验证</text>
+</svg>

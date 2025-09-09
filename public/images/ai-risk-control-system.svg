@@ -1,0 +1,169 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F75C03;stop-opacity:0.05"/>
+      <stop offset="100%" style="stop-color:#00BBF9;stop-opacity:0.05"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.95"/>
+      <stop offset="100%" style="stop-color:#f8f9fa;stop-opacity:0.95"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EF4444"/>
+      <stop offset="100%" style="stop-color:#DC2626"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F75C03"/>
+      <stop offset="100%" style="stop-color:#FFB100"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00BBF9"/>
+      <stop offset="100%" style="stop-color:#8E8EFF"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg)"/>
+  
+  <!-- Header -->
+  <rect x="40" y="40" width="720" height="80" rx="12" fill="url(#cardGrad)" filter="url(#shadow)"/>
+  <rect x="60" y="60" width="120" height="40" rx="20" fill="url(#redGrad)"/>
+  <text x="120" y="82" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-weight="bold" font-size="14">AI风控中心</text>
+  
+  <!-- Real-time Status -->
+  <circle cx="680" cy="80" r="8" fill="#10B981" filter="url(#glow)"/>
+  <text x="700" y="85" fill="#10B981" font-family="Arial, sans-serif" font-size="12" font-weight="bold">实时监控中</text>
+  
+  <!-- Main Dashboard -->
+  <rect x="40" y="140" width="720" height="420" rx="12" fill="url(#cardGrad)" filter="url(#shadow)"/>
+  
+  <!-- Left Panel - Risk Alerts -->
+  <rect x="60" y="160" width="220" height="380" rx="8" fill="white" stroke="#e5e7eb"/>
+  <text x="70" y="180" fill="#333" font-family="Arial, sans-serif" font-size="14" font-weight="bold">风险预警</text>
+  
+  <!-- High Risk Alert -->
+  <rect x="70" y="190" width="200" height="60" rx="6" fill="#FEF2F2" stroke="#FECACA"/>
+  <circle cx="85" cy="210" r="6" fill="#EF4444"/>
+  <text x="100" y="208" fill="#EF4444" font-family="Arial, sans-serif" font-size="11" font-weight="bold">高风险</text>
+  <text x="100" y="220" fill="#666" font-family="Arial, sans-serif" font-size="10">检测到异常刷单行为</text>
+  <text x="100" y="232" fill="#666" font-family="Arial, sans-serif" font-size="10">IP: 192.168.1.***</text>
+  <text x="100" y="244" fill="#666" font-family="Arial, sans-serif" font-size="9">风险评分: 95/100</text>
+  
+  <!-- Medium Risk Alert -->
+  <rect x="70" y="260" width="200" height="60" rx="6" fill="#FEF3C7" stroke="#FDE68A"/>
+  <circle cx="85" cy="280" r="6" fill="#F59E0B"/>
+  <text x="100" y="278" fill="#F59E0B" font-family="Arial, sans-serif" font-size="11" font-weight="bold">中风险</text>
+  <text x="100" y="290" fill="#666" font-family="Arial, sans-serif" font-size="10">频繁小额充值</text>
+  <text x="100" y="302" fill="#666" font-family="Arial, sans-serif" font-size="10">用户: 139****8888</text>
+  <text x="100" y="314" fill="#666" font-family="Arial, sans-serif" font-size="9">风险评分: 72/100</text>
+  
+  <!-- Low Risk Alert -->
+  <rect x="70" y="330" width="200" height="60" rx="6" fill="#F0FDF4" stroke="#BBF7D0"/>
+  <circle cx="85" cy="350" r="6" fill="#10B981"/>
+  <text x="100" y="348" fill="#10B981" font-family="Arial, sans-serif" font-size="11" font-weight="bold">低风险</text>
+  <text x="100" y="360" fill="#666" font-family="Arial, sans-serif" font-size="10">正常交易行为</text>
+  <text x="100" y="372" fill="#666" font-family="Arial, sans-serif" font-size="10">用户: 158****6666</text>
+  <text x="100" y="384" fill="#666" font-family="Arial, sans-serif" font-size="9">风险评分: 15/100</text>
+  
+  <!-- System Status -->
+  <text x="70" y="415" fill="#333" font-family="Arial, sans-serif" font-size="12" font-weight="bold">系统状态</text>
+  <rect x="70" y="420" width="200" height="30" rx="4" fill="#F0FDF4" stroke="#BBF7D0"/>
+  <circle cx="85" cy="435" r="4" fill="#10B981"/>
+  <text x="95" y="438" fill="#10B981" font-family="Arial, sans-serif" font-size="10" font-weight="bold">AI模型运行正常</text>
+  
+  <rect x="70" y="455" width="200" height="30" rx="4" fill="#F0FDF4" stroke="#BBF7D0"/>
+  <circle cx="85" cy="470" r="4" fill="#10B981"/>
+  <text x="95" y="473" fill="#10B981" font-family="Arial, sans-serif" font-size="10" font-weight="bold">数据同步正常</text>
+  
+  <rect x="70" y="490" width="200" height="30" rx="4" fill="#F0FDF4" stroke="#BBF7D0"/>
+  <circle cx="85" cy="505" r="4" fill="#10B981"/>
+  <text x="95" y="508" fill="#10B981" font-family="Arial, sans-serif" font-size="10" font-weight="bold">风控引擎运行中</text>
+  
+  <!-- Main Content Area -->
+  <rect x="300" y="160" width="440" height="380" rx="8" fill="white"/>
+  
+  <!-- Real-time Monitoring Chart -->
+  <text x="320" y="180" fill="#333" font-family="Arial, sans-serif" font-size="16" font-weight="bold">实时风险监控</text>
+  
+  <!-- Chart Background -->
+  <rect x="320" y="190" width="400" height="200" rx="6" fill="#f8f9fa" stroke="#e5e7eb"/>
+  
+  <!-- Chart Grid Lines -->
+  <line x1="320" y1="230" x2="720" y2="230" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="320" y1="270" x2="720" y2="270" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="320" y1="310" x2="720" y2="310" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="320" y1="350" x2="720" y2="350" stroke="#e5e7eb" stroke-width="1"/>
+  
+  <!-- Risk Level Chart -->
+  <polyline points="330,360 360,340 390,320 420,300 450,280 480,290 510,270 540,260 570,250 600,240 630,220 660,210 690,200" 
+            stroke="url(#redGrad)" stroke-width="3" fill="none"/>
+  
+  <!-- Normal Traffic Chart -->
+  <polyline points="330,370 360,365 390,360 420,355 450,350 480,345 510,340 540,335 570,330 600,325 630,320 660,315 690,310" 
+            stroke="url(#greenGrad)" stroke-width="2" fill="none"/>
+  
+  <!-- Chart Legend -->
+  <rect x="520" y="200" width="12" height="3" fill="url(#redGrad)"/>
+  <text x="540" y="205" fill="#666" font-family="Arial, sans-serif" font-size="10">风险事件</text>
+  <rect x="580" y="200" width="12" height="3" fill="url(#greenGrad)"/>
+  <text x="600" y="205" fill="#666" font-family="Arial, sans-serif" font-size="10">正常流量</text>
+  
+  <!-- Time Labels -->
+  <text x="330" y="385" fill="#666" font-family="Arial, sans-serif" font-size="8">00:00</text>
+  <text x="420" y="385" fill="#666" font-family="Arial, sans-serif" font-size="8">04:00</text>
+  <text x="510" y="385" fill="#666" font-family="Arial, sans-serif" font-size="8">08:00</text>
+  <text x="600" y="385" fill="#666" font-family="Arial, sans-serif" font-size="8">12:00</text>
+  <text x="690" y="385" fill="#666" font-family="Arial, sans-serif" font-size="8">16:00</text>
+  
+  <!-- Statistics Cards -->
+  <text x="320" y="415" fill="#333" font-family="Arial, sans-serif" font-size="14" font-weight="bold">今日风控统计</text>
+  
+  <!-- Stats Row -->
+  <rect x="320" y="425" width="90" height="60" rx="6" fill="url(#redGrad)"/>
+  <text x="365" y="442" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">拦截风险</text>
+  <text x="365" y="460" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="bold">1,247</text>
+  <text x="365" y="475" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="9">次</text>
+  
+  <rect x="425" y="425" width="90" height="60" rx="6" fill="url(#orangeGrad)"/>
+  <text x="470" y="442" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">处理时间</text>
+  <text x="470" y="460" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="bold">0.3</text>
+  <text x="470" y="475" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="9">毫秒</text>
+  
+  <rect x="530" y="425" width="90" height="60" rx="6" fill="url(#blueGrad)"/>
+  <text x="575" y="442" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">准确率</text>
+  <text x="575" y="460" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="bold">99.7</text>
+  <text x="575" y="475" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="9">%</text>
+  
+  <rect x="635" y="425" width="85" height="60" rx="6" fill="url(#greenGrad)"/>
+  <text x="677" y="442" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">节省成本</text>
+  <text x="677" y="460" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">8.6M</text>
+  <text x="677" y="475" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="9">元</text>
+  
+  <!-- AI Analysis Section -->
+  <rect x="320" y="500" width="400" height="35" rx="6" fill="#F0F9FF" stroke="#BFDBFE"/>
+  <circle cx="335" cy="517" r="6" fill="url(#blueGrad)"/>
+  <text x="350" y="512" fill="#1E40AF" font-family="Arial, sans-serif" font-size="10" font-weight="bold">AI智能分析</text>
+  <text x="350" y="525" fill="#666" font-family="Arial, sans-serif" font-size="9">检测到新型欺诈模式，已自动更新算法模型，预计可提升识别准确率3.2%</text>
+  
+  <!-- Floating Alert Indicators -->
+  <circle cx="650" cy="180" r="4" fill="#EF4444" filter="url(#glow)">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="580" cy="200" r="3" fill="#F59E0B" filter="url(#glow)">
+    <animate attributeName="opacity" values="1;0.5;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>
