@@ -20,7 +20,7 @@ export function ContactFormCard({ customIndex = 2, className = "" }: ContactForm
       transition: {
         duration: 0.6,
         delay: 0.15 * i,
-        ease: [0.25, 0.4, 0.25, 1],
+        ease: "easeOut" as const,
       },
     }),
   }
@@ -35,7 +35,7 @@ export function ContactFormCard({ customIndex = 2, className = "" }: ContactForm
       className={className}
     >
       <div className="bg-white dark:bg-white/[0.03] backdrop-blur-sm border border-gray-100 dark:border-white/10 rounded-xl p-8 shadow-sm">
-        <h3 className="text-2xl font-semibold mb-6 text-slate-900 dark:text-white">{contact.form.submit}</h3>
+        <h3 className="text-2xl font-semibold mb-6 text-slate-900 dark:text-white">{contact.form.title}</h3>
 
         <form className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -85,7 +85,7 @@ export function ContactFormCard({ customIndex = 2, className = "" }: ContactForm
             />
           </div>
 
-          <Button className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white">
+          <Button className="w-full bg-gradient-to-r from-letoOrange to-letoWarmStart hover:from-letoOrange/90 hover:to-letoWarmStart/90 text-white">
             {contact.form.submit}
           </Button>
         </form>

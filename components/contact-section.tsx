@@ -16,7 +16,7 @@ export default function ContactSection() {
       transition: {
         duration: 0.6,
         delay: 0.15 * i,
-        ease: [0.25, 0.4, 0.25, 1],
+        ease: "easeOut" as const,
       },
     }),
   }
@@ -46,9 +46,7 @@ export default function ContactSection() {
             viewport={{ once: true }}
           >
             <DescriptionText size="medium" className="text-lg text-slate-600 dark:text-white/60 leading-relaxed">
-              {contact.description.replace(/Leto AI/g, () => "")}
-              <LetoBrandText />
-              {contact.description.split("Leto AI")[1] || ""}
+              {contact.description}
             </DescriptionText>
           </motion.div>
         </div>

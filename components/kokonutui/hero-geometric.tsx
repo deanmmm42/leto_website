@@ -113,15 +113,20 @@ function ElegantShape({
   )
 }
 
-export default function HeroGeometric({
-  badge = "Kokonut UI",
-  title1 = "Elevate Your",
-  title2 = "Digital Vision",
-}: {
-  badge?: string
-  title1?: string
-  title2?: string
-}) {
+export default function HeroGeometric() {
+  const [currentSlide, setCurrentSlide] = useState(0)
+  
+  const carousels = home.hero.carousels
+  
+  // 自动轮播
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % carousels.length)
+    }, 5000) // 5秒切换一次
+    
+    return () => clearInterval(timer)
+  }, [carousels.length])
+  
   const fadeUpVariants = {
     hidden: { opacity: 0, y: 30 },
     visible: (i: number) => ({
@@ -130,13 +135,15 @@ export default function HeroGeometric({
       transition: {
         duration: 1,
         delay: 0.5 + i * 0.2,
-        ease: [0.25, 0.4, 0.25, 1],
+        ease: "easeOut" as const,
       },
     }),
   }
+  
+  const currentCarousel = carousels[currentSlide]
 
   return (
-    <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-white dark:bg-[#030303]">
+    <section id="home" className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-white dark:bg-[#030303]">
       {/* 背景渐变 - 降低 z-index 确保在几何形状下方 */}
       <div className="absolute inset-0 z-0 bg-gradient-to-br from-letoWarmStart/[0.03] via-transparent to-letoCoolEnd/[0.03] blur-3xl" />
 
@@ -197,20 +204,26 @@ export default function HeroGeometric({
       <div className="relative z-30 container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center">
           <motion.div
+            key={`badge-${currentSlide}`}
             custom={0}
             variants={fadeUpVariants}
             initial="hidden"
             animate="visible"
             className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100/[0.7] dark:bg-white/[0.03] border border-slate-200 dark:border-white/[0.08] mb-8 md:mb-12"
           >
-            <Image src="https://kokonutui.com/logo.svg" alt="Kokonut UI" width={20} height={20} />
-            <span className="text-sm text-slate-700 dark:text-white/60 tracking-wide">{badge || common.tagline}</span>
+            <span className="text-sm text-slate-700 dark:text-white/60 tracking-wide">{currentCarousel.badge}</span>
           </motion.div>
 
-          <motion.div custom={1} variants={fadeUpVariants} initial="hidden" animate="visible">
+          <motion.div 
+            key={`title-${currentSlide}`}
+            custom={1} 
+            variants={fadeUpVariants} 
+            initial="hidden" 
+            animate="visible"
+          >
             <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold mb-6 md:mb-8 tracking-tight">
               <span className="bg-clip-text text-transparent bg-gradient-to-b from-slate-900 to-slate-700 dark:from-white dark:to-white/80 font-medium">
-                {title1 || home.hero.title1}
+                {currentCarousel.title1}
               </span>
               <br />
               <span
@@ -220,14 +233,20 @@ export default function HeroGeometric({
                 )}
                 style={{ fontWeight: 700 }}
               >
-                {title2 || home.hero.title2}
+                {currentCarousel.title2}
               </span>
             </h1>
           </motion.div>
 
-          <motion.div custom={2} variants={fadeUpVariants} initial="hidden" animate="visible">
+          <motion.div 
+            key={`desc-${currentSlide}`}
+            custom={2} 
+            variants={fadeUpVariants} 
+            initial="hidden" 
+            animate="visible"
+          >
             <DescriptionText size="medium" className="mb-8 max-w-xl mx-auto px-4">
-              {home.hero.description}
+              {currentCarousel.description}
             </DescriptionText>
           </motion.div>
 
@@ -238,7 +257,7 @@ export default function HeroGeometric({
             animate="visible"
             className="flex flex-col sm:flex-row gap-4 justify-center relative z-40 border-2 border-transparent"
           >
-            <GradientHoverButton href="/explore" size="lg">
+            <GradientHoverButton href="/#about" size="lg">
               {common.cta.explore}
             </GradientHoverButton>
             <Button
@@ -246,16 +265,38 @@ export default function HeroGeometric({
               variant="outline"
               className="border-letoWarmStart/30 text-letoWarmStart hover:text-letoWarmStart hover:bg-letoWarmStart/10 dark:border-letoCoolEnd/30 dark:text-letoCoolEnd dark:hover:text-letoCoolEnd dark:hover:bg-letoCoolEnd/10 px-8 py-6 text-lg"
             >
-              <Link href="/learn-more">
+              <Link href="/contact">
                 {common.cta.learnMore} <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
+          </motion.div>
+          
+          {/* 轮播指示器 */}
+          <motion.div 
+            custom={4}
+            variants={fadeUpVariants}
+            initial="hidden"
+            animate="visible"
+            className="flex justify-center gap-2 mt-8"
+          >
+            {carousels.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentSlide(index)}
+                className={cn(
+                  "w-3 h-3 rounded-full transition-all duration-300",
+                  currentSlide === index 
+                    ? "bg-letoOrange dark:bg-letoTurquoise" 
+                    : "bg-slate-300 dark:bg-white/30 hover:bg-slate-400 dark:hover:bg-white/50"
+                )}
+              />
+            ))}
           </motion.div>
         </div>
       </div>
 
       {/* 渐变覆盖 - 降低 z-index 确保不会覆盖按钮 */}
       <div className="absolute inset-0 z-4 bg-gradient-to-t from-white dark:from-[#030303] via-transparent to-white/80 dark:to-[#030303]/80 pointer-events-none" />
-    </div>
+    </section>
   )
 }

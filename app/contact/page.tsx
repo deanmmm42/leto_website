@@ -3,6 +3,8 @@
 import { motion } from "framer-motion"
 import { ArrowLeft } from "lucide-react"
 import Link from "next/link"
+import { useRouter, useSearchParams } from "next/navigation"
+import { Suspense } from "react"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { cn } from "@/lib/utils"
@@ -11,6 +13,37 @@ import { LetoBrandText } from "@/components/leto-brand-text"
 import { DescriptionText } from "@/components/description-text"
 import { ContactFormCard } from "@/components/contact/contact-form-card"
 import { ContactInfoCard } from "@/components/contact/contact-info-card"
+
+function SmartBackButton() {
+  const router = useRouter()
+  const searchParams = useSearchParams()
+  
+  const handleBack = () => {
+    // 尝试从URL参数获取来源页面
+    const from = searchParams.get('from')
+    if (from) {
+      router.push(from)
+    } else {
+      // 如果没有来源参数，使用browser的history.back()
+      if (typeof window !== 'undefined' && window.history.length > 1) {
+        router.back()
+      } else {
+        // 如果没有历史记录，默认返回首页
+        router.push('/')
+      }
+    }
+  }
+
+  return (
+    <button
+      onClick={handleBack}
+      className="inline-flex items-center text-slate-600 dark:text-white/70 hover:text-slate-900 dark:hover:text-white transition-colors"
+    >
+      <ArrowLeft className="mr-2 h-4 w-4" />
+      {common.backToHome}
+    </button>
+  )
+}
 
 function ElegantShape({
   className,
@@ -40,7 +73,7 @@ function ElegantShape({
       transition={{
         duration: 2.4,
         delay,
-        ease: [0.23, 0.86, 0.39, 0.96],
+        ease: "easeOut" as const,
         opacity: { duration: 1.2 },
       }}
       className={cn("absolute", className)}
@@ -89,7 +122,7 @@ export default function ContactPage() {
       transition: {
         duration: 0.8,
         delay: 0.1 * i,
-        ease: [0.25, 0.4, 0.25, 1],
+        ease: "easeOut" as const,
       },
     }),
   }
@@ -121,13 +154,17 @@ export default function ContactPage() {
 
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="mb-8">
-            <Link
-              href="/"
-              className="inline-flex items-center text-slate-600 dark:text-white/70 hover:text-slate-900 dark:hover:text-white transition-colors"
-            >
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              {common.backToHome}
-            </Link>
+            <Suspense fallback={
+              <Link
+                href="/"
+                className="inline-flex items-center text-slate-600 dark:text-white/70 hover:text-slate-900 dark:hover:text-white transition-colors"
+              >
+                <ArrowLeft className="mr-2 h-4 w-4" />
+                {common.backToHome}
+              </Link>
+            }>
+              <SmartBackButton />
+            </Suspense>
           </div>
 
           <motion.h1

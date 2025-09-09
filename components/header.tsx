@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
-import { Menu, X } from "lucide-react"
+import { Menu, X, ChevronDown } from "lucide-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { ThemeSwitcher } from "./theme-switcher"
@@ -15,8 +15,35 @@ import { GradientHoverButton } from "@/components/ui/gradient-hover-button"
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [dropdownOpen, setDropdownOpen] = useState(false)
+  const [dropdownTimeout, setDropdownTimeout] = useState<NodeJS.Timeout | null>(null)
   const pathname = usePathname()
   const [activeSection, setActiveSection] = useState("home") // 默认设置为home
+
+  // 处理下拉菜单的hover逻辑
+  const handleDropdownEnter = () => {
+    if (dropdownTimeout) {
+      clearTimeout(dropdownTimeout)
+      setDropdownTimeout(null)
+    }
+    setDropdownOpen(true)
+  }
+
+  const handleDropdownLeave = () => {
+    const timeout = setTimeout(() => {
+      setDropdownOpen(false)
+    }, 150) // 150ms延时
+    setDropdownTimeout(timeout)
+  }
+
+  // 清理timeout
+  useEffect(() => {
+    return () => {
+      if (dropdownTimeout) {
+        clearTimeout(dropdownTimeout)
+      }
+    }
+  }, [dropdownTimeout])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -107,21 +134,62 @@ export default function Header() {
             className="hidden md:flex items-center space-x-6"
           >
             {navigation.menuItems.map((item, index) => (
-              <Link
-                key={index}
-                href={item.href}
-                className={cn(
-                  "transition-colors duration-200 text-slate-600 dark:text-white/70 hover:text-letoOrange dark:hover:text-letoTurquoise",
-                  isActive(item.href) && "text-letoOrange dark:text-letoTurquoise font-medium",
+              <div key={index} className="relative">
+                {item.subItems ? (
+                  // 有子菜单的项目
+                  <div
+                    className="relative"
+                    onMouseEnter={handleDropdownEnter}
+                    onMouseLeave={handleDropdownLeave}
+                  >
+                    <button
+                      className={cn(
+                        "flex items-center gap-1 transition-colors duration-200 text-slate-600 dark:text-white/70 hover:text-letoOrange dark:hover:text-letoTurquoise",
+                        (pathname.startsWith("/solutions")) && "text-letoOrange dark:text-letoTurquoise font-medium",
+                      )}
+                    >
+                      {item.name}
+                      <ChevronDown className="h-4 w-4" />
+                    </button>
+                    
+                    {/* 下拉菜单 */}
+                    {dropdownOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        className="absolute top-full left-0 mt-2 w-48 bg-white dark:bg-[#030314] rounded-lg shadow-lg border border-gray-200 dark:border-white/10 py-2 z-50"
+                      >
+                        {item.subItems.map((subItem, subIndex) => (
+                          <Link
+                            key={subIndex}
+                            href={subItem.href}
+                            className="block px-4 py-2 text-slate-600 dark:text-white/70 hover:text-letoOrange dark:hover:text-letoTurquoise hover:bg-gray-50 dark:hover:bg-white/5 transition-colors duration-200"
+                          >
+                            {subItem.name}
+                          </Link>
+                        ))}
+                      </motion.div>
+                    )}
+                  </div>
+                ) : (
+                  // 普通菜单项
+                  <Link
+                    href={item.href}
+                    className={cn(
+                      "transition-colors duration-200 text-slate-600 dark:text-white/70 hover:text-letoOrange dark:hover:text-letoTurquoise",
+                      isActive(item.href) && "text-letoOrange dark:text-letoTurquoise font-medium",
+                    )}
+                  >
+                    {item.name}
+                  </Link>
                 )}
-              >
-                {item.name}
-              </Link>
+              </div>
             ))}
 
             <ThemeSwitcher />
 
-            <GradientHoverButton href="/contact">{common.cta.experience}</GradientHoverButton>
+            <GradientHoverButton href="/#contact">{common.cta.experience}</GradientHoverButton>
           </motion.nav>
 
           {/* Mobile Menu Button */}
@@ -151,19 +219,42 @@ export default function Header() {
           <div className="container mx-auto px-4 py-4">
             <div className="flex flex-col space-y-4">
               {navigation.menuItems.map((item, index) => (
-                <Link
-                  key={index}
-                  href={item.href}
-                  className={cn(
-                    "py-2 transition-colors duration-200 text-slate-600 dark:text-white/70 hover:text-letoOrange dark:hover:text-letoTurquoise",
-                    isActive(item.href) && "text-letoOrange dark:text-letoTurquoise font-medium",
+                <div key={index}>
+                  {item.subItems ? (
+                    // 有子菜单的项目
+                    <div>
+                      <div className="py-2 text-slate-600 dark:text-white/70 font-medium">
+                        {item.name}
+                      </div>
+                      <div className="pl-4 space-y-2">
+                        {item.subItems.map((subItem, subIndex) => (
+                          <Link
+                            key={subIndex}
+                            href={subItem.href}
+                            className="block py-2 text-slate-500 dark:text-white/50 hover:text-letoOrange dark:hover:text-letoTurquoise transition-colors duration-200"
+                            onClick={() => setMobileMenuOpen(false)}
+                          >
+                            {subItem.name}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  ) : (
+                    // 普通菜单项
+                    <Link
+                      href={item.href}
+                      className={cn(
+                        "py-2 transition-colors duration-200 text-slate-600 dark:text-white/70 hover:text-letoOrange dark:hover:text-letoTurquoise",
+                        isActive(item.href) && "text-letoOrange dark:text-letoTurquoise font-medium",
+                      )}
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {item.name}
+                    </Link>
                   )}
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {item.name}
-                </Link>
+                </div>
               ))}
-              <GradientHoverButton href="/contact" fullWidth>
+              <GradientHoverButton href="/#contact" fullWidth>
                 {common.cta.experience}
               </GradientHoverButton>
             </div>

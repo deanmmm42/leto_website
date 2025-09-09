@@ -70,15 +70,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-200 dark:border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-slate-600 dark:text-white/60 mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} <LetoBrandText />. 保留所有权利。
-            <a
-              href="https://beian.miit.gov.cn/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-slate-900 dark:hover:text-white transition-colors"
-            >
-              蜀ICP备2024078614号
-            </a>
+            {footer.legal.copyright}
           </p>
           <div className="flex space-x-6">
             {footer.legal.links.map((link, index) => (

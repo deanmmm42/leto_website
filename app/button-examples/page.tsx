@@ -45,8 +45,8 @@ export default function ButtonExamplesPage() {
         <section>
           <h2 className="text-2xl font-semibold mb-6">链接按钮</h2>
           <div className="flex flex-wrap gap-4 items-center">
-            <GradientHoverButton href="/explore">探索页面</GradientHoverButton>
-            <GradientHoverButton href="/learn-more" variant="outline">
+            <GradientHoverButton href="/contact">联系我们</GradientHoverButton>
+            <GradientHoverButton href="/solutions/ecommerce" variant="outline">
               了解更多
             </GradientHoverButton>
           </div>
