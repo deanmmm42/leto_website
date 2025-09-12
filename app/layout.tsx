@@ -8,7 +8,7 @@ import GoogleAnalytics from "@/components/GoogleAnalytics"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "LetoAi - AI已来，未来已来",
+  title: "LetoAi - AI已来，未来已来！",
   description: "LetoAi 将前沿人工智能技术与教育深度融合，为学生和教育工作者创造个性化、高效的学习体验。",
     generator: 'v0.app'
 }
