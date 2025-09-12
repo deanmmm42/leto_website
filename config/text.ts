@@ -18,14 +18,14 @@ export const navigation = {
     { name: "首页", href: "/" },
     { 
       name: "解决方案", 
-      href: "/solutions/ecommerce",
+      href: "/solutions",
       subItems: [
         { name: "AI营销", href: "/solutions/ecommerce" },
         { name: "AI教育", href: "/solutions/education" },
         { name: "AI工具", href: "/solutions/global-tools" },
       ]
     },
-    { name: "联系", href: "/#contact" },
+    { name: "联系我们", href: "/#contact" },
   ],
 }
 
@@ -74,7 +74,7 @@ export const solutions = {
     },
     {
       title: "AI工具",
-      description: "专业AI技术打造创新海外工具产品",
+      description: "专业AI技术打造创新海外工具产品，为全球用户服务",
       href: "/solutions/global-tools", 
       buttonText: "了解更多"
     },
@@ -183,8 +183,8 @@ export const footer = {
     title: "快速链接",
     links: [
       { name: "首页", href: "/" },
-      { name: "解决方案", href: "/solutions/ecommerce" },
-      { name: "联系", href: "/#contact" },
+      { name: "解决方案", href: "/solutions" },
+      { name: "联系我们", href: "/#contact" },
     ],
   },
   solutions: {
@@ -198,19 +198,19 @@ export const footer = {
   resources: {
     title: "资源",
     links: [
-      { name: "博客", href: "/#contact" },
-      { name: "案例研究", href: "/#contact" },
-      { name: "白皮书", href: "/#contact" },
-      { name: "帮助中心", href: "/#contact" },
-      { name: "隐私政策", href: "/#contact" },
+      { name: "博客", href: "/blog" },
+      { name: "案例研究", href: "/case-studies" },
+      { name: "白皮书", href: "/whitepapers" },
+      { name: "帮助中心", href: "/help" },
+      { name: "隐私政策", href: "/privacy-policy" },
     ],
   },
   legal: {
     copyright: "© 2025 LetoAI. 保留所有权利. | 蜀ICP备2022030426号",
     links: [
-      { name: "隐私政策", href: "/#" },
-      { name: "服务条款", href: "/#" },
-      { name: "Cookie 政策", href: "/#" },
+      { name: "隐私政策", href: "/privacy-policy" },
+      { name: "服务条款", href: "/privacy-policy" },
+      { name: "Cookie 政策", href: "/privacy-policy#cookies-policy" },
     ],
   },
 }

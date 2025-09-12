@@ -142,7 +142,8 @@ export default function Header() {
                     onMouseEnter={handleDropdownEnter}
                     onMouseLeave={handleDropdownLeave}
                   >
-                    <button
+                    <Link
+                      href={item.href}
                       className={cn(
                         "flex items-center gap-1 transition-colors duration-200 text-slate-600 dark:text-white/70 hover:text-letoOrange dark:hover:text-letoTurquoise",
                         (pathname.startsWith("/solutions")) && "text-letoOrange dark:text-letoTurquoise font-medium",
@@ -150,7 +151,7 @@ export default function Header() {
                     >
                       {item.name}
                       <ChevronDown className="h-4 w-4" />
-                    </button>
+                    </Link>
                     
                     {/* 下拉菜单 */}
                     {dropdownOpen && (
@@ -223,9 +224,16 @@ export default function Header() {
                   {item.subItems ? (
                     // 有子菜单的项目
                     <div>
-                      <div className="py-2 text-slate-600 dark:text-white/70 font-medium">
+                      <Link
+                        href={item.href}
+                        className={cn(
+                          "py-2 text-slate-600 dark:text-white/70 font-medium hover:text-letoOrange dark:hover:text-letoTurquoise transition-colors duration-200",
+                          (pathname.startsWith("/solutions")) && "text-letoOrange dark:text-letoTurquoise"
+                        )}
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
                         {item.name}
-                      </div>
+                      </Link>
                       <div className="pl-4 space-y-2">
                         {item.subItems.map((subItem, subIndex) => (
                           <Link

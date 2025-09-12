@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Smartphone, Shield, Zap, Globe, Users, Lightbulb, CheckCircle, Star, TrendingUp } from "lucide-react"
+import { Smartphone, Shield, Zap, Globe, Users, Lightbulb, CheckCircle, Star, TrendingUp, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import Header from "@/components/header"
@@ -655,9 +655,14 @@ export default function GlobalToolsPage() {
               viewport={{ once: true }}
               className="flex justify-center"
             >
-              <GradientHoverButton href="/contact?from=/solutions/global-tools" size="lg" className="shadow-2xl shadow-green-500/30">
-                立即咨询
-              </GradientHoverButton>
+              <Button
+                asChild
+                className="leto-gradient-bg hover:opacity-90 text-white px-8 py-6 text-lg shadow-2xl shadow-green-500/30"
+              >
+                <Link href="/contact?from=/solutions/global-tools" className="flex items-center justify-center">
+                  立即咨询 <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
             </motion.div>
           </div>
         </div>

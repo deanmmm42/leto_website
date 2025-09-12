@@ -255,9 +255,14 @@ export default function EducationPage() {
               animate="visible"
               className="flex flex-col sm:flex-row gap-6 justify-center items-center"
             >
-              <GradientHoverButton href="/contact?from=/solutions/education" size="lg" className="shadow-lg shadow-blue-500/25">
-                立即咨询
-              </GradientHoverButton>
+              <Button
+                asChild
+                className="leto-gradient-bg hover:opacity-90 text-white px-8 py-6 text-lg shadow-lg shadow-blue-500/25"
+              >
+                <Link href="/contact?from=/solutions/education" className="flex items-center justify-center">
+                  立即咨询 <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
               <Link href="#cases" className="inline-flex items-center gap-2 px-6 py-3 bg-white/80 dark:bg-white/10 backdrop-blur-sm border border-white/30 rounded-lg text-slate-700 dark:text-white font-medium hover:bg-white dark:hover:bg-white/20 hover:shadow-lg hover:gap-3 transition-all duration-300 group">
                 <Star className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
                 查看成功案例
@@ -696,9 +701,14 @@ export default function EducationPage() {
               viewport={{ once: true }}
               className="flex justify-center"
             >
-              <GradientHoverButton href="/contact?from=/solutions/education" size="lg" className="shadow-2xl shadow-blue-500/30">
-                立即咨询
-              </GradientHoverButton>
+              <Button
+                asChild
+                className="leto-gradient-bg hover:opacity-90 text-white px-8 py-6 text-lg shadow-2xl shadow-blue-500/30"
+              >
+                <Link href="/contact?from=/solutions/education" className="flex items-center justify-center">
+                  立即咨询 <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
             </motion.div>
           </div>
         </div>

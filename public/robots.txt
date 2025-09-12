@@ -1,0 +1,26 @@
+# LetoAI Website - Robots.txt
+# https://www.letoai.tech/robots.txt
+
+User-agent: *
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+
+# Allow important directories
+Allow: /images/
+Allow: /blog/
+Allow: /solutions/
+Allow: /case-studies/
+Allow: /whitepapers/
+Allow: /help/
+Allow: /privacy-policy/
+
+# Sitemap location
+Sitemap: https://www.letoai.tech/sitemap.xml
+
+# Crawl delay (optional, can help manage server load)
+Crawl-delay: 1

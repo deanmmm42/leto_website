@@ -523,7 +523,7 @@ export default function EcommercePage() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="text-4xl md:text-6xl font-bold mb-12 leading-tight text-slate-900 dark:text-slate-900"
+              className="text-4xl md:text-6xl font-bold mb-12 leading-tight text-slate-900 dark:text-white"
             >
               准备开启您的数字化转型之旅？
             </motion.h2>
@@ -536,9 +536,14 @@ export default function EcommercePage() {
               viewport={{ once: true }}
               className="flex justify-center"
             >
-              <GradientHoverButton href="/contact?from=/solutions/ecommerce" size="lg" className="shadow-2xl shadow-letoOrange/30">
-                立即咨询
-              </GradientHoverButton>
+              <Button
+                asChild
+                className="leto-gradient-bg hover:opacity-90 text-white px-8 py-6 text-lg shadow-2xl shadow-letoOrange/30"
+              >
+                <Link href="/contact?from=/solutions/ecommerce" className="flex items-center justify-center">
+                  立即咨询 <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
             </motion.div>
           </div>
         </div>
