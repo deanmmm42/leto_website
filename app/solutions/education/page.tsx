@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowRight, BookOpen, Users, TrendingUp, BarChart3, Shield, Brain } from "lucide-react"
+import { ArrowRight, BookOpen, Users, TrendingUp, BarChart3, Shield, Brain, Star, CheckCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import Header from "@/components/header"
@@ -173,34 +173,79 @@ export default function EducationPage() {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/[0.03] via-transparent to-indigo-500/[0.03]" />
+      <section className="relative pt-32 pb-32 overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-500/[0.08] via-transparent to-indigo-500/[0.08]" />
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-indigo-500/5 rounded-full blur-3xl" />
+        </div>
         
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <motion.h1
+            <motion.div
               custom={0}
               variants={fadeInVariants}
               initial="hidden"
               animate="visible"
-              className="text-4xl md:text-6xl font-bold mb-6"
+              className="text-center mb-8"
             >
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-indigo-500">
-                赋能智慧教育
-              </span>
-              <br />
-              重塑未来学习生态
-            </motion.h1>
+              <div className="inline-flex items-center gap-2 bg-white/80 dark:bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-blue-500/20 mb-6">
+                <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" />
+                <span className="text-sm font-medium text-blue-500">教育行业AI解决方案</span>
+              </div>
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500">
+                  AI赋能智慧教育
+                </span>
+                <br />
+                <span className="text-slate-900 dark:text-white">让每个学生都能</span>
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500">精准成长</span>
+              </h1>
+            </motion.div>
             
             <motion.div
               custom={1}
               variants={fadeInVariants}
               initial="hidden"
               animate="visible"
+              className="max-w-4xl mx-auto"
             >
-              <DescriptionText size="large" className="text-xl mb-8 max-w-3xl mx-auto">
-                我们提供两大核心系统——综合素养评价系统与个性化辅导系统，为教育的数据化、个性化转型提供强大引擎。
+              <DescriptionText size="large" className="text-xl md:text-2xl mb-12 leading-relaxed text-slate-700 dark:text-white/80">
+                基于AI大模型技术，为教育机构提供综合素养评价与个性化教学双引擎系统
               </DescriptionText>
+              
+              {/* Key Benefits */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <div className="flex items-center gap-3 bg-white/60 dark:bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-white/20">
+                  <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-lg flex items-center justify-center">
+                    <TrendingUp className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <div className="font-semibold text-slate-900 dark:text-white">300%+</div>
+                    <div className="text-sm text-slate-600 dark:text-white/60">评价效率提升</div>
+                  </div>
+                </div>
+                
+                <div className="flex items-center gap-3 bg-white/60 dark:bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-white/20">
+                  <div className="w-10 h-10 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg flex items-center justify-center">
+                    <Users className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <div className="font-semibold text-slate-900 dark:text-white">50%+</div>
+                    <div className="text-sm text-slate-600 dark:text-white/60">学习效果提升</div>
+                  </div>
+                </div>
+                
+                <div className="flex items-center gap-3 bg-white/60 dark:bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-white/20">
+                  <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                    <Shield className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <div className="font-semibold text-slate-900 dark:text-white">98%+</div>
+                    <div className="text-sm text-slate-600 dark:text-white/60">用户满意度</div>
+                  </div>
+                </div>
+              </div>
             </motion.div>
 
             <motion.div
@@ -208,49 +253,72 @@ export default function EducationPage() {
               variants={fadeInVariants}
               initial="hidden"
               animate="visible"
-              className="flex flex-col sm:flex-row gap-4 justify-center"
+              className="flex flex-col sm:flex-row gap-6 justify-center items-center"
             >
-              <GradientHoverButton href="/contact?from=/solutions/education" size="lg">
-                免费试用
+              <GradientHoverButton href="/contact?from=/solutions/education" size="lg" className="shadow-lg shadow-blue-500/25">
+                立即咨询
               </GradientHoverButton>
-              <Button variant="outline" size="lg" asChild>
-                <Link href="#cases">
-                  查看案例 <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
+              <Link href="#cases" className="inline-flex items-center gap-2 px-6 py-3 bg-white/80 dark:bg-white/10 backdrop-blur-sm border border-white/30 rounded-lg text-slate-700 dark:text-white font-medium hover:bg-white dark:hover:bg-white/20 hover:shadow-lg hover:gap-3 transition-all duration-300 group">
+                <Star className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
+                查看成功案例
+              </Link>
             </motion.div>
           </div>
         </div>
       </section>
 
       {/* Challenges Section */}
-      <section className="py-20 bg-gray-50 dark:bg-[#020210]">
+      <section className="py-32 bg-white/50 dark:bg-[#020210]/80 backdrop-blur-sm">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-4xl mx-auto">
-            <motion.h2
-              custom={0}
-              variants={fadeInVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              className="text-3xl md:text-4xl font-bold text-center mb-12"
-            >
-              教育领域的双重挑战
-            </motion.h2>
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <motion.div
+                custom={0}
+                variants={fadeInVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="inline-flex items-center gap-2 bg-red-50 dark:bg-red-900/20 px-4 py-2 rounded-full border border-red-200 dark:border-red-800 mb-6"
+              >
+                <TrendingUp className="w-4 h-4 text-red-500" />
+                <span className="text-sm font-medium text-red-600 dark:text-red-400">教育行业痛点</span>
+              </motion.div>
+              <motion.h2
+                custom={1}
+                variants={fadeInVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="text-3xl md:text-5xl font-bold mb-6"
+              >
+                <span className="text-slate-900 dark:text-white">教育管理面临的</span>
+                <br />
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-orange-500">核心挑战</span>
+              </motion.h2>
+            </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {challenges.map((challenge, index) => (
                 <motion.div
                   key={index}
-                  custom={index + 1}
+                  custom={index + 2}
                   variants={fadeInVariants}
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
-                  className="bg-white dark:bg-white/[0.03] p-8 rounded-xl border border-gray-200 dark:border-white/10"
+                  className="relative group"
                 >
-                  <h3 className="text-xl font-semibold mb-4 text-blue-600 dark:text-blue-400">{challenge.title}</h3>
-                  <p className="text-slate-600 dark:text-white/60">{challenge.description}</p>
+                  <div className="bg-white dark:bg-white/[0.05] p-8 rounded-2xl border border-gray-200 dark:border-white/10 shadow-lg hover:shadow-xl transition-all duration-300 group-hover:border-red-200 dark:group-hover:border-red-800/50">
+                    <div className="flex items-start gap-4">
+                      <div className="w-12 h-12 bg-gradient-to-r from-red-500 to-orange-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <span className="text-white font-bold text-lg">{String(index + 1).padStart(2, '0')}</span>
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-semibold mb-3 text-slate-900 dark:text-white">{challenge.title}</h3>
+                        <p className="text-slate-600 dark:text-white/60 leading-relaxed">{challenge.description}</p>
+                      </div>
+                    </div>
+                  </div>
                 </motion.div>
               ))}
             </div>
@@ -259,7 +327,7 @@ export default function EducationPage() {
       </section>
 
       {/* Core Products Section */}
-      <section className="py-20">
+      <section className="py-20 bg-gray-50 dark:bg-[#020210]">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
             <motion.h2
@@ -282,25 +350,121 @@ export default function EducationPage() {
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
-                  className="bg-white dark:bg-white/[0.03] p-8 rounded-2xl border border-gray-200 dark:border-white/10"
+                  className={index === 0 ? 
+                    `flex flex-col lg:flex-row items-center gap-12` : 
+                    `flex flex-col gap-8`
+                  }
                 >
-                  <div className="text-center mb-8">
-                    <h3 className="text-2xl font-bold mb-2">{product.title}</h3>
-                    <p className="text-lg text-blue-600 dark:text-blue-400 font-medium mb-4">"{product.slogan}"</p>
-                    <p className="text-slate-600 dark:text-white/60 max-w-4xl mx-auto">{product.problem}</p>
-                  </div>
-                  
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    {product.features.map((feature, featureIndex) => (
-                      <div key={featureIndex} className="text-center">
-                        <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-lg flex items-center justify-center text-white mb-4 mx-auto">
-                          {feature.icon}
+                  {index === 0 ? (
+                    <>
+                      {/* 综合素养评价系统 - 保持原有左右布局 */}
+                      <div className="w-full lg:w-2/3">
+                        <div className="bg-gradient-to-br from-white to-gray-50/30 dark:from-white/[0.05] dark:to-white/[0.02] p-10 rounded-3xl border border-gray-200/50 dark:border-white/10 h-full shadow-xl">
+                          <div className="mb-6">
+                            <div className="inline-flex items-center gap-2 bg-blue-500/10 dark:bg-blue-500/20 px-3 py-1 rounded-full mb-4">
+                              <div className="w-2 h-2 bg-blue-500 rounded-full" />
+                              <span className="text-sm font-medium text-blue-500">核心产品</span>
+                            </div>
+                            <h3 className="text-2xl md:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500">
+                              {product.title}
+                            </h3>
+                          </div>
+                          
+                          <div className="space-y-6">
+                            <p className="text-xl text-slate-700 dark:text-white/80 leading-relaxed font-medium">"{product.slogan}"</p>
+                            <p className="text-lg text-slate-600 dark:text-white/60 leading-relaxed">{product.problem}</p>
+                            
+                            <div className="grid grid-cols-1 gap-4 mt-8">
+                              {product.features.map((feature, advIndex) => (
+                                <div key={advIndex} className="flex items-start gap-4 p-5 bg-gradient-to-r from-gray-50 to-white dark:from-white/[0.03] dark:to-white/[0.01] rounded-xl border border-gray-100 dark:border-white/5 hover:shadow-md transition-all duration-300">
+                                  <div className="w-6 h-6 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <CheckCircle className="w-3 h-3 text-white" />
+                                  </div>
+                                  <div className="flex-1">
+                                    <h4 className="font-semibold mb-2 text-slate-900 dark:text-white">{feature.title}</h4>
+                                    <p className="text-base text-slate-600 dark:text-white/60 leading-relaxed">{feature.description}</p>
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
                         </div>
-                        <h4 className="font-semibold mb-2">{feature.title}</h4>
-                        <p className="text-sm text-slate-600 dark:text-white/60">{feature.description}</p>
                       </div>
-                    ))}
-                  </div>
+
+                      <div className="w-full lg:w-1/3">
+                        <div className="relative">
+                          <div className="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-blue-900/20 dark:via-indigo-900/20 dark:to-purple-900/20 p-8 rounded-3xl border border-blue-200/50 dark:border-blue-800/30 shadow-2xl hover:shadow-3xl transition-all duration-500 overflow-hidden">
+                            {/* 装饰性背景元素 */}
+                            <div className="absolute -top-10 -right-10 w-32 h-32 bg-gradient-to-br from-blue-400/20 to-indigo-400/20 rounded-full blur-xl" />
+                            <div className="absolute -bottom-10 -left-10 w-24 h-24 bg-gradient-to-br from-purple-400/20 to-pink-400/20 rounded-full blur-xl" />
+                            
+                            <div className="relative z-10">
+                              <img
+                                src="/comprehensive-assessment-new.jpg"
+                                alt={product.title}
+                                className="w-full h-auto rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-500"
+                              />
+                            </div>
+                          </div>
+                          
+                          {/* 特色标签 */}
+                          <div className="absolute -top-3 left-6 bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+                            🔥 热门产品
+                          </div>
+                        </div>
+                      </div>
+                    </>
+                  ) : (
+                    <>
+                      {/* 智能题库系统 - 新的上下布局，图片优先展示 */}
+                      <div className="w-full">
+                        <div className="text-center mb-8">
+                          <div className="inline-flex items-center gap-2 bg-blue-500/10 dark:bg-blue-500/20 px-4 py-2 rounded-full mb-6">
+                            <div className="w-2 h-2 bg-blue-500 rounded-full" />
+                            <span className="text-sm font-medium text-blue-500">核心产品</span>
+                          </div>
+                          <h3 className="text-3xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500">
+                            {product.title}
+                          </h3>
+                          <p className="text-xl text-slate-700 dark:text-white/80 leading-relaxed font-medium max-w-3xl mx-auto">"{product.slogan}"</p>
+                        </div>
+                      </div>
+                      
+                      {/* 大图片展示区域 */}
+                      <div className="w-full">
+                        <div className="bg-white dark:bg-slate-900/50 p-4 rounded-3xl border border-gray-200 dark:border-slate-700 shadow-2xl hover:shadow-3xl transition-all duration-500">
+                          <img
+                            src="/smart-question-bank-simple.svg"
+                            alt={product.title}
+                            className="w-full h-auto rounded-2xl"
+                          />
+                        </div>
+                      </div>
+
+                      {/* 产品描述和特点 - 放在图片下方 */}
+                      <div className="w-full">
+                        <div className="bg-gradient-to-br from-white to-gray-50/30 dark:from-white/[0.05] dark:to-white/[0.02] p-10 rounded-3xl border border-gray-200/50 dark:border-white/10 shadow-xl">
+                          <div className="space-y-8">
+                            <p className="text-lg text-slate-600 dark:text-white/60 leading-relaxed text-center max-w-4xl mx-auto">{product.problem}</p>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                              {product.features.map((feature, advIndex) => (
+                                <div key={advIndex} className="flex items-start gap-4 p-6 bg-gradient-to-r from-gray-50 to-white dark:from-white/[0.03] dark:to-white/[0.01] rounded-xl border border-gray-100 dark:border-white/5 hover:shadow-md transition-all duration-300">
+                                  <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <CheckCircle className="w-4 h-4 text-white" />
+                                  </div>
+                                  <div className="flex-1">
+                                    <h4 className="font-semibold mb-2 text-slate-900 dark:text-white text-lg">{feature.title}</h4>
+                                    <p className="text-base text-slate-600 dark:text-white/60 leading-relaxed">{feature.description}</p>
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </>
+                  )}
                 </motion.div>
               ))}
             </div>
@@ -309,54 +473,85 @@ export default function EducationPage() {
       </section>
 
       {/* User Values Section */}
-      <section className="py-20 bg-gray-50 dark:bg-[#020210]">
+      <section className="py-32 bg-gradient-to-br from-green-50/50 via-white to-emerald-50/30 dark:from-green-900/10 dark:via-[#030314] dark:to-emerald-900/10">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
-            <motion.h2
-              custom={0}
-              variants={fadeInVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              className="text-3xl md:text-4xl font-bold text-center mb-12"
-            >
-              用户价值
-            </motion.h2>
+            <div className="text-center mb-16">
+              <motion.div
+                custom={0}
+                variants={fadeInVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="inline-flex items-center gap-2 bg-green-50 dark:bg-green-900/20 px-4 py-2 rounded-full border border-green-200 dark:border-green-800 mb-6"
+              >
+                <TrendingUp className="w-4 h-4 text-green-500" />
+                <span className="text-sm font-medium text-green-600 dark:text-green-400">用户价值</span>
+              </motion.div>
+              <motion.h2
+                custom={1}
+                variants={fadeInVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="text-3xl md:text-5xl font-bold mb-6"
+              >
+                <span className="text-slate-900 dark:text-white">为教育创造的</span>
+                <br />
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-emerald-500">核心价值</span>
+              </motion.h2>
+            </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               {userValues.map((value, index) => (
                 <motion.div
                   key={index}
-                  custom={index + 1}
+                  custom={index + 2}
                   variants={fadeInVariants}
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
-                  className="bg-white dark:bg-white/[0.03] p-6 rounded-xl border border-gray-200 dark:border-white/10"
+                  className="group"
                 >
-                  <h3 className="text-xl font-semibold mb-3">{value.title}</h3>
-                  <p className="text-slate-600 dark:text-white/60 mb-4">{value.description}</p>
-                  <div className="p-3 bg-blue-50 dark:bg-blue-500/10 rounded-lg">
-                    <p className="text-sm text-blue-600 dark:text-blue-400 font-medium">{value.benefit}</p>
+                  <div className="bg-white/80 dark:bg-white/[0.05] backdrop-blur-lg p-10 rounded-3xl border border-white/30 dark:border-white/10 shadow-xl hover:shadow-2xl transition-all duration-500 group-hover:border-green-200 dark:group-hover:border-green-800/50 hover:-translate-y-2">
+                    <div className="flex items-start gap-6">
+                      <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-3xl flex items-center justify-center flex-shrink-0 shadow-xl group-hover:scale-110 transition-transform duration-300">
+                        <span className="text-white font-bold text-xl">{String(index + 1).padStart(2, '0')}</span>
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors">{value.title}</h3>
+                        <p className="text-lg text-slate-600 dark:text-white/70 mb-6 leading-relaxed">{value.description}</p>
+                        <div className="p-6 bg-gradient-to-br from-green-50 to-emerald-50/50 dark:from-green-900/10 dark:to-emerald-900/5 rounded-2xl border border-green-100 dark:border-green-800/30">
+                          <div className="flex items-center gap-2 mb-3">
+                            <TrendingUp className="w-5 h-5 text-green-500" />
+                            <h4 className="text-lg font-bold text-slate-900 dark:text-white">核心效益</h4>
+                          </div>
+                          <p className="text-base text-green-600 dark:text-green-400 font-semibold leading-relaxed">{value.benefit}</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </motion.div>
               ))}
             </div>
             
             <motion.div
-              custom={5}
+              custom={6}
               variants={fadeInVariants}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="mt-12 bg-white dark:bg-white/[0.03] p-6 rounded-xl border border-gray-200 dark:border-white/10"
+              className="mt-16 bg-gradient-to-br from-white/80 to-green-50/30 dark:from-white/[0.05] dark:to-green-900/5 backdrop-blur-lg p-12 rounded-3xl border border-white/30 dark:border-white/10 shadow-xl"
             >
-              <h3 className="text-xl font-semibold mb-4 text-center">用户维度价值</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <h3 className="text-2xl font-bold text-center mb-10 text-slate-900 dark:text-white">多维度价值体现</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {userDimensions.map((dimension, index) => (
-                  <div key={index} className="text-center">
-                    <h4 className="font-medium text-blue-600 dark:text-blue-400 mb-2">{dimension.role}</h4>
-                    <p className="text-sm text-slate-600 dark:text-white/60">{dimension.benefit}</p>
+                  <div key={index} className="text-center group">
+                    <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-green-400 to-emerald-400 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <Users className="w-8 h-8 text-white" />
+                    </div>
+                    <h4 className="font-bold text-lg text-green-600 dark:text-green-400 mb-3">{dimension.role}</h4>
+                    <p className="text-slate-600 dark:text-white/60 leading-relaxed">{dimension.benefit}</p>
                   </div>
                 ))}
               </div>
@@ -390,24 +585,45 @@ export default function EducationPage() {
                   whileInView="visible"
                   viewport={{ once: true }}
                 >
-                  <Card className="h-full">
-                    <CardHeader>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="px-2 py-1 bg-blue-500/10 text-blue-500 text-xs rounded-full">
+                  <Card className="h-full bg-white/60 dark:bg-white/[0.05] backdrop-blur-sm border-white/20 dark:border-white/10 shadow-2xl hover:shadow-3xl transition-all duration-500">
+                    <CardHeader className="pb-6">
+                      <div className="flex items-center gap-3 mb-4">
+                        <span className="px-4 py-2 bg-gradient-to-r from-green-500 to-emerald-500 text-white text-sm font-bold rounded-full shadow-lg">
                           {caseItem.tag}
                         </span>
+                        <div className="flex items-center gap-1">
+                          {[...Array(5)].map((_, i) => (
+                            <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
+                          ))}
+                        </div>
                       </div>
-                      <CardTitle className="text-xl">{caseItem.title}</CardTitle>
-                      <CardDescription>{caseItem.subtitle}</CardDescription>
+                      <CardTitle className="text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-500 via-emerald-500 to-teal-500 mb-2">
+                        {caseItem.title}
+                      </CardTitle>
+                      <CardDescription className="text-xl text-slate-600 dark:text-white/70 font-medium">
+                        {caseItem.subtitle}
+                      </CardDescription>
                     </CardHeader>
-                    <CardContent className="space-y-4">
-                      <p className="text-slate-600 dark:text-white/60">{caseItem.description}</p>
-                      <div className="grid grid-cols-2 gap-3">
-                        {caseItem.metrics.map((metric, metricIndex) => (
-                          <div key={metricIndex} className="text-sm">
-                            <span className="text-slate-500 dark:text-white/50">• {metric}</span>
-                          </div>
-                        ))}
+                    <CardContent className="space-y-8">
+                      <p className="text-lg text-slate-700 dark:text-white/80 leading-relaxed font-medium">
+                        {caseItem.description}
+                      </p>
+                      
+                      <div className="bg-gradient-to-br from-green-50 to-emerald-50/50 dark:from-green-900/10 dark:to-emerald-900/5 p-8 rounded-2xl border border-green-100 dark:border-green-800/30">
+                        <div className="flex items-center gap-2 mb-6">
+                          <TrendingUp className="w-5 h-5 text-green-500" />
+                          <h4 className="text-xl font-bold text-slate-900 dark:text-white">核心成果</h4>
+                        </div>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                          {caseItem.metrics.map((metric, metricIndex) => (
+                            <div key={metricIndex} className="flex items-center gap-4 p-4 bg-white dark:bg-white/[0.05] rounded-xl border border-green-100 dark:border-green-800/20 hover:shadow-md transition-all duration-300">
+                              <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                <CheckCircle className="w-4 h-4 text-white" />
+                              </div>
+                              <span className="text-base font-semibold text-slate-700 dark:text-white/90">{metric}</span>
+                            </div>
+                          ))}
+                        </div>
                       </div>
                     </CardContent>
                   </Card>
@@ -454,16 +670,20 @@ export default function EducationPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-4xl mx-auto text-center">
+      <section className="py-32 bg-gradient-to-br from-blue-50/50 via-white to-indigo-50/30 dark:from-blue-900/10 dark:via-[#030314] dark:to-indigo-900/10 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl" />
+        </div>
+        <div className="container mx-auto px-4 md:px-6 relative z-10">
+          <div className="max-w-5xl mx-auto text-center">
             <motion.h2
               custom={0}
               variants={fadeInVariants}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="text-3xl md:text-4xl font-bold mb-8"
+              className="text-4xl md:text-6xl font-bold mb-12 leading-tight"
             >
               准备革新您的教育管理方式？
             </motion.h2>
@@ -474,8 +694,9 @@ export default function EducationPage() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
+              className="flex justify-center"
             >
-              <GradientHoverButton href="/contact?from=/solutions/education" size="lg">
+              <GradientHoverButton href="/contact?from=/solutions/education" size="lg" className="shadow-2xl shadow-blue-500/30">
                 立即咨询
               </GradientHoverButton>
             </motion.div>

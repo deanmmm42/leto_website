@@ -35,8 +35,10 @@ export default function ServicesSection() {
   ]
 
   return (
-    <section id="services" className="relative py-20 md:py-32 bg-gray-50 dark:bg-[#020210]">
-      <div className="absolute inset-0 bg-gradient-to-tr from-letoWarmStart/[0.02] via-transparent to-letoCoolEnd/[0.02]" />
+    <section id="services" className="relative py-20 md:py-32 bg-gradient-to-br from-purple-50/50 via-white to-blue-50/30 dark:bg-gradient-to-br dark:from-[#020210] dark:via-[#030318] dark:to-[#041028]">
+      <div className="absolute inset-0 bg-gradient-to-tr from-letoWarmStart/[0.08] via-transparent to-letoCoolEnd/[0.08]" />
+      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-3xl mx-auto text-center mb-16">
@@ -73,19 +75,19 @@ export default function ServicesSection() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="bg-white dark:bg-white/[0.03] backdrop-blur-sm border border-gray-100 dark:border-white/10 rounded-xl p-8 hover:shadow-lg dark:hover:bg-white/[0.05] transition-all duration-300 text-center group"
+              className="bg-white/70 dark:bg-white/[0.05] backdrop-blur-lg border border-white/30 dark:border-white/10 rounded-3xl p-10 hover:shadow-2xl hover:shadow-purple-500/10 dark:hover:bg-white/[0.08] transition-all duration-500 text-center group hover:-translate-y-3 hover:scale-105"
             >
               <div
                 className={cn(
-                  "inline-flex items-center justify-center p-4 rounded-2xl mb-6 mx-auto",
-                  "bg-gradient-to-r text-white group-hover:scale-110 transition-transform duration-300",
+                  "inline-flex items-center justify-center p-6 rounded-3xl mb-8 mx-auto shadow-xl",
+                  "bg-gradient-to-r text-white group-hover:scale-125 group-hover:rotate-6 transition-transform duration-500",
                   gradients[index],
                 )}
               >
                 {achievementIcons[index]}
               </div>
               
-              <div className="text-3xl md:text-4xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-700 dark:from-white dark:to-white/80">
+              <div className="text-4xl md:text-5xl font-extrabold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-600 dark:from-white dark:to-white/80 group-hover:scale-110 transition-transform duration-300">
                 {item.number}
               </div>
               

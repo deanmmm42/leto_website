@@ -1,0 +1,138 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F75C03;stop-opacity:0.05"/>
+      <stop offset="100%" style="stop-color:#00BBF9;stop-opacity:0.05"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.95"/>
+      <stop offset="100%" style="stop-color:#f8f9fa;stop-opacity:0.95"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F75C03"/>
+      <stop offset="100%" style="stop-color:#FFB100"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00BBF9"/>
+      <stop offset="100%" style="stop-color:#8E8EFF"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg)"/>
+  
+  <!-- Header -->
+  <rect x="40" y="40" width="720" height="80" rx="12" fill="url(#cardGrad)" filter="url(#shadow)"/>
+  <rect x="60" y="60" width="120" height="40" rx="20" fill="url(#orangeGrad)"/>
+  <text x="120" y="82" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-weight="bold" font-size="14">营销中心</text>
+  
+  <!-- Search Bar -->
+  <rect x="200" y="65" width="300" height="30" rx="15" fill="#f1f3f4" stroke="#e0e0e0"/>
+  <text x="215" y="82" fill="#666" font-family="Arial, sans-serif" font-size="12">搜索权益产品...</text>
+  <circle cx="475" cy="80" r="8" fill="url(#blueGrad)"/>
+  <path d="M470 75 L475 80 L480 75" stroke="white" stroke-width="2" fill="none"/>
+  
+  <!-- Notification -->
+  <circle cx="680" cy="80" r="15" fill="#ff4444"/>
+  <text x="680" y="85" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">3</text>
+  
+  <!-- Main Dashboard -->
+  <rect x="40" y="140" width="720" height="420" rx="12" fill="url(#cardGrad)" filter="url(#shadow)"/>
+  
+  <!-- Left Sidebar -->
+  <rect x="60" y="160" width="180" height="380" rx="8" fill="#f8f9fa" stroke="#e5e7eb"/>
+  
+  <!-- Menu Items -->
+  <rect x="70" y="170" width="160" height="35" rx="6" fill="url(#orangeGrad)"/>
+  <text x="80" y="190" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">数字权益营销</text>
+  
+  <rect x="70" y="215" width="160" height="35" rx="6" fill="transparent"/>
+  <text x="80" y="235" fill="#666" font-family="Arial, sans-serif" font-size="12">用户画像分析</text>
+  
+  <rect x="70" y="260" width="160" height="35" rx="6" fill="transparent"/>
+  <text x="80" y="280" fill="#666" font-family="Arial, sans-serif" font-size="12">营销策略优化</text>
+  
+  <rect x="70" y="305" width="160" height="35" rx="6" fill="transparent"/>
+  <text x="80" y="325" fill="#666" font-family="Arial, sans-serif" font-size="12">效果数据统计</text>
+  
+  <!-- Main Content Area -->
+  <rect x="260" y="160" width="480" height="380" rx="8" fill="white"/>
+  
+  <!-- Product Cards Grid -->
+  <text x="280" y="185" fill="#333" font-family="Arial, sans-serif" font-size="16" font-weight="bold">热门权益产品</text>
+  
+  <!-- Product Card 1 - 话费充值 -->
+  <rect x="280" y="200" width="140" height="120" rx="8" fill="url(#cardGrad)" stroke="#e5e7eb"/>
+  <rect x="290" y="210" width="40" height="30" rx="4" fill="url(#orangeGrad)"/>
+  <text x="310" y="227" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">话费</text>
+  <text x="295" y="255" fill="#333" font-family="Arial, sans-serif" font-size="12" font-weight="bold">话费充值</text>
+  <text x="295" y="270" fill="#666" font-family="Arial, sans-serif" font-size="10">5-500元面额</text>
+  <text x="295" y="285" fill="#666" font-family="Arial, sans-serif" font-size="10">转化率 85%</text>
+  <rect x="295" y="295" width="60" height="20" rx="10" fill="url(#blueGrad)"/>
+  <text x="325" y="307" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="9">立即配置</text>
+  
+  <!-- Product Card 2 - 油卡充值 -->
+  <rect x="440" y="200" width="140" height="120" rx="8" fill="url(#cardGrad)" stroke="#e5e7eb"/>
+  <rect x="450" y="210" width="40" height="30" rx="4" fill="url(#blueGrad)"/>
+  <text x="470" y="227" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">油卡</text>
+  <text x="455" y="255" fill="#333" font-family="Arial, sans-serif" font-size="12" font-weight="bold">油卡充值</text>
+  <text x="455" y="270" fill="#666" font-family="Arial, sans-serif" font-size="10">50-1000元面额</text>
+  <text x="455" y="285" fill="#666" font-family="Arial, sans-serif" font-size="10">转化率 72%</text>
+  <rect x="455" y="295" width="60" height="20" rx="10" fill="url(#orangeGrad)"/>
+  <text x="485" y="307" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="9">立即配置</text>
+  
+  <!-- Product Card 3 - 会员卡 -->
+  <rect x="600" y="200" width="140" height="120" rx="8" fill="url(#cardGrad)" stroke="#e5e7eb"/>
+  <rect x="610" y="210" width="40" height="30" rx="4" fill="#F15BB5"/>
+  <text x="630" y="227" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">VIP</text>
+  <text x="615" y="255" fill="#333" font-family="Arial, sans-serif" font-size="12" font-weight="bold">会员权益</text>
+  <text x="615" y="270" fill="#666" font-family="Arial, sans-serif" font-size="10">视频/外卖会员</text>
+  <text x="615" y="285" fill="#666" font-family="Arial, sans-serif" font-size="10">转化率 91%</text>
+  <rect x="615" y="295" width="60" height="20" rx="10" fill="url(#blueGrad)"/>
+  <text x="645" y="307" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="9">立即配置</text>
+  
+  <!-- Statistics Dashboard -->
+  <text x="280" y="355" fill="#333" font-family="Arial, sans-serif" font-size="16" font-weight="bold">营销数据概览</text>
+  
+  <!-- Stats Cards -->
+  <rect x="280" y="370" width="110" height="60" rx="6" fill="url(#orangeGrad)"/>
+  <text x="335" y="388" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">日活用户</text>
+  <text x="335" y="405" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="bold">5000万+</text>
+  
+  <rect x="405" y="370" width="110" height="60" rx="6" fill="url(#blueGrad)"/>
+  <text x="460" y="388" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">转化率</text>
+  <text x="460" y="405" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="bold">85.2%</text>
+  
+  <rect x="530" y="370" width="110" height="60" rx="6" fill="#10B981"/>
+  <text x="585" y="388" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">营销ROI</text>
+  <text x="585" y="405" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="bold">300%+</text>
+  
+  <rect x="655" y="370" width="85" height="60" rx="6" fill="#8B5CF6"/>
+  <text x="697" y="388" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">订单量</text>
+  <text x="697" y="405" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">1.2M</text>
+  
+  <!-- Chart Visualization -->
+  <rect x="280" y="450" width="460" height="80" rx="6" fill="#f8f9fa" stroke="#e5e7eb"/>
+  <text x="285" y="465" fill="#666" font-family="Arial, sans-serif" font-size="10">营销效果趋势图</text>
+  
+  <!-- Simple Line Chart -->
+  <polyline points="290,510 320,495 350,480 380,470 410,465 440,460 470,455 500,450 530,445 560,440 590,435 620,430 650,425 680,420 710,415" 
+            stroke="url(#orangeGrad)" stroke-width="3" fill="none"/>
+  
+  <!-- Chart Points -->
+  <circle cx="320" cy="495" r="3" fill="url(#orangeGrad)"/>
+  <circle cx="410" cy="465" r="3" fill="url(#orangeGrad)"/>
+  <circle cx="500" cy="450" r="3" fill="url(#orangeGrad)"/>
+  <circle cx="590" cy="435" r="3" fill="url(#orangeGrad)"/>
+  <circle cx="680" cy="420" r="3" fill="url(#orangeGrad)"/>
+  
+  <!-- Chart Labels -->
+  <text x="320" y="525" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="8">周一</text>
+  <text x="410" y="525" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="8">周三</text>
+  <text x="500" y="525" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="8">周五</text>
+  <text x="590" y="525" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="8">周日</text>
+  <text x="680" y="525" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="8">今日</text>
+</svg>

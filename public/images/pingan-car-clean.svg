@@ -1,0 +1,85 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#f8fafc"/>
+  
+  <!-- Main Card -->
+  <rect x="100" y="100" width="600" height="400" rx="20" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- Header -->
+  <rect x="120" y="120" width="120" height="30" rx="15" fill="#10b981"/>
+  <text x="180" y="138" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">权益服务</text>
+  
+  <!-- Stars -->
+  <g transform="translate(260, 125)">
+    <polygon points="10,1 4,19 18,7 2,7 16,19" fill="#fbbf24"/>
+    <polygon points="30,1 24,19 38,7 22,7 36,19" fill="#fbbf24"/>
+    <polygon points="50,1 44,19 58,7 42,7 56,19" fill="#fbbf24"/>
+    <polygon points="70,1 64,19 78,7 62,7 76,19" fill="#fbbf24"/>
+    <polygon points="90,1 84,19 98,7 82,7 96,19" fill="#fbbf24"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="120" y="190" fill="#10b981" font-family="Arial, sans-serif" font-size="36" font-weight="bold">平安好车主</text>
+  <text x="120" y="220" fill="#64748b" font-family="Arial, sans-serif" font-size="16">车主权益服务平台</text>
+  
+  <!-- Description -->
+  <text x="120" y="260" fill="#374151" font-family="Arial, sans-serif" font-size="14">为大型保险集团打造专业车主权益服务平台，提供代驾、保</text>
+  <text x="120" y="280" fill="#374151" font-family="Arial, sans-serif" font-size="14">养、洗车、道路救援等全方位车主专享服务体系</text>
+  
+  <!-- Metrics Section -->
+  <rect x="120" y="320" width="560" height="120" rx="12" fill="#f0fdf4"/>
+  
+  <!-- Metrics Header -->
+  <g transform="translate(140, 340)">
+    <path d="M2 7L8 2L14 7" stroke="#10b981" stroke-width="2" fill="none"/>
+    <text x="20" y="8" fill="#10b981" font-family="Arial, sans-serif" font-size="16" font-weight="bold">核心成果</text>
+  </g>
+  
+  <!-- Metric Items -->
+  <g transform="translate(140, 370)">
+    <!-- Item 1 -->
+    <circle cx="12" cy="12" r="8" fill="#10b981"/>
+    <path d="M8 12L11 15L16 9" stroke="white" stroke-width="2" fill="none"/>
+    <text x="30" y="12" fill="#374151" font-family="Arial, sans-serif" font-size="14" font-weight="bold">服务覆盖：全国</text>
+    <text x="30" y="28" fill="#374151" font-family="Arial, sans-serif" font-size="14" font-weight="bold">300+城市</text>
+    
+    <!-- Item 2 -->
+    <circle cx="212" cy="12" r="8" fill="#10b981"/>
+    <path d="M208 12L211 15L216 9" stroke="white" stroke-width="2" fill="none"/>
+    <text x="230" y="12" fill="#374151" font-family="Arial, sans-serif" font-size="14" font-weight="bold">权益种类：8大类</text>
+    <text x="230" y="28" fill="#374151" font-family="Arial, sans-serif" font-size="14" font-weight="bold">200+项生活消费</text>
+    <text x="230" y="44" fill="#374151" font-family="Arial, sans-serif" font-size="14" font-weight="bold">权益</text>
+  </g>
+  
+  <g transform="translate(140, 420)">
+    <!-- Item 3 -->
+    <circle cx="12" cy="12" r="8" fill="#10b981"/>
+    <path d="M8 12L11 15L16 9" stroke="white" stroke-width="2" fill="none"/>
+    <text x="30" y="12" fill="#374151" font-family="Arial, sans-serif" font-size="14" font-weight="bold">用户满意度：</text>
+    <text x="30" y="28" fill="#374151" font-family="Arial, sans-serif" font-size="14" font-weight="bold">98%+</text>
+    
+    <!-- Item 4 -->
+    <circle cx="212" cy="12" r="8" fill="#10b981"/>
+    <path d="M208 12L211 15L216 9" stroke="white" stroke-width="2" fill="none"/>
+    <text x="230" y="12" fill="#374151" font-family="Arial, sans-serif" font-size="14" font-weight="bold">续保转化率：显著</text>
+    <text x="230" y="28" fill="#374151" font-family="Arial, sans-serif" font-size="14" font-weight="bold">改善</text>
+  </g>
+  
+  <!-- Phone Mock -->
+  <rect x="520" y="160" width="140" height="240" rx="20" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <rect x="530" y="180" width="120" height="200" rx="10" fill="white"/>
+  <rect x="535" y="185" width="110" height="30" rx="5" fill="#0066cc"/>
+  <text x="590" y="203" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">平安好车主</text>
+  
+  <!-- Service Icons in Phone -->
+  <rect x="545" y="225" width="20" height="20" rx="4" fill="#fbbf24"/>
+  <text x="555" y="237" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">代</text>
+  
+  <rect x="575" y="225" width="20" height="20" rx="4" fill="#10b981"/>
+  <text x="585" y="237" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">养</text>
+  
+  <rect x="605" y="225" width="20" height="20" rx="4" fill="#3b82f6"/>
+  <text x="615" y="237" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">洗</text>
+  
+  <rect x="545" y="255" width="20" height="20" rx="4" fill="#ef4444"/>
+  <text x="555" y="267" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">救</text>
+</svg>

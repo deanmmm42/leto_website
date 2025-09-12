@@ -1,0 +1,253 @@
+<svg viewBox="0 0 2400 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 渐变定义 -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8fafc;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fafafa;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="step1Gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="step2Gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="step3Gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6d28d9;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 阴影滤镜 -->
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#00000010"/>
+    </filter>
+    
+    <!-- 箭头标记 -->
+    <marker id="arrowBlue" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#3b82f6"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#10b981"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="2400" height="1000" fill="url(#bgGradient)"/>
+  
+  <!-- 三个核心步骤 -->
+  <g id="workflow" transform="translate(100, 100)">
+    
+    <!-- 步骤1：数据采集录入 -->
+    <g id="step1">
+      <rect x="0" y="0" width="600" height="800" rx="30" fill="url(#cardBg)" filter="url(#cardShadow)" stroke="#e2e8f0" stroke-width="2"/>
+      
+      <!-- 步骤编号和标题 -->
+      <circle cx="70" cy="70" r="35" fill="url(#step1Gradient)"/>
+      <text x="70" y="80" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="28" font-weight="bold">1</text>
+      <text x="130" y="80" fill="#1e293b" font-family="PingFang SC, sans-serif" font-size="32" font-weight="bold">数据采集录入</text>
+      
+      <!-- 扫描设备插图 -->
+      <g transform="translate(100, 150)">
+        <rect x="0" y="0" width="400" height="250" rx="20" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+        <rect x="20" y="20" width="360" height="210" rx="15" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+        
+        <!-- 文档堆叠效果 -->
+        <rect x="50" y="40" width="120" height="160" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1" transform="rotate(-8 110 120)"/>
+        <rect x="60" y="45" width="120" height="160" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1" transform="rotate(-3 120 125)"/>
+        <rect x="70" y="50" width="120" height="160" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1"/>
+        
+        <!-- 扫描仪设备 -->
+        <rect x="250" y="100" width="120" height="60" rx="12" fill="#374151"/>
+        <rect x="265" y="115" width="90" height="8" rx="4" fill="#6b7280"/>
+        <rect x="265" y="130" width="90" height="15" rx="3" fill="#9ca3af"/>
+        <text x="310" y="142" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">SCANNER</text>
+      </g>
+      
+      <!-- 多源数据采集能力 */}
+      <rect x="50" y="450" width="500" height="300" rx="20" fill="#eff6ff" stroke="#bfdbfe" stroke-width="2"/>
+      <text x="80" y="490" fill="#1e40af" font-family="PingFang SC, sans-serif" font-size="24" font-weight="bold">多源数据采集能力</text>
+      
+      <g transform="translate(80, 520)">
+        <circle cx="10" cy="10" r="6" fill="#3b82f6"/>
+        <text x="30" y="16" fill="#1e293b" font-family="PingFang SC, sans-serif" font-size="18">纸质试卷扫描识别，OCR准确率99%+</text>
+        
+        <circle cx="10" cy="45" r="6" fill="#3b82f6"/>
+        <text x="30" y="51" fill="#1e293b" font-family="PingFang SC, sans-serif" font-size="18">在线答题数据实时收集</text>
+        
+        <circle cx="10" cy="80" r="6" fill="#3b82f6"/>
+        <text x="30" y="86" fill="#1e293b" font-family="PingFang SC, sans-serif" font-size="18">学习行为轨迹全程追踪</text>
+        
+        <circle cx="10" cy="115" r="6" fill="#3b82f6"/>
+        <text x="30" y="121" fill="#1e293b" font-family="PingFang SC, sans-serif" font-size="18">多平台数据统一汇聚</text>
+        
+        <circle cx="10" cy="150" r="6" fill="#3b82f6"/>
+        <text x="30" y="156" fill="#1e293b" font-family="PingFang SC, sans-serif" font-size="18">智能标签自动化标注</text>
+      </g>
+      
+      <!-- 箭头指向下一步 -->
+      <path d="M 620 400 Q 680 400 720 400" stroke="url(#step1Gradient)" stroke-width="6" fill="none" marker-end="url(#arrowBlue)"/>
+    </g>
+    
+    <!-- 步骤2：AI智能分析 -->
+    <g id="step2" transform="translate(800, 0)">
+      <rect x="0" y="0" width="600" height="800" rx="30" fill="url(#cardBg)" filter="url(#cardShadow)" stroke="#e2e8f0" stroke-width="2"/>
+      
+      <!-- 步骤编号和标题 -->
+      <circle cx="70" cy="70" r="35" fill="url(#step2Gradient)"/>
+      <text x="70" y="80" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="28" font-weight="bold">2</text>
+      <text x="130" y="80" fill="#1e293b" font-family="PingFang SC, sans-serif" font-size="32" font-weight="bold">AI智能分析</text>
+      
+      <!-- 中央AI引擎 -->
+      <g transform="translate(300, 250)">
+        <circle cx="0" cy="0" r="100" fill="url(#step2Gradient)"/>
+        <text x="0" y="-15" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="40">🧠</text>
+        <text x="0" y="10" text-anchor="middle" fill="white" font-family="PingFang SC, sans-serif" font-size="20" font-weight="bold">AI引擎</text>
+        <text x="0" y="35" text-anchor="middle" fill="white" font-family="PingFang SC, sans-serif" font-size="16">深度学习算法</text>
+      </g>
+      
+      <!-- 知识图谱构建 -->
+      <g transform="translate(120, 400)">
+        <text x="180" y="0" text-anchor="middle" fill="#047857" font-family="PingFang SC, sans-serif" font-size="22" font-weight="bold">知识图谱构建</text>
+        
+        <!-- 知识节点网络 -->
+        <g transform="translate(0, 30)">
+          <!-- 中心节点 -->
+          <circle cx="180" cy="60" r="22" fill="#10b981"/>
+          <text x="180" y="67" text-anchor="middle" fill="white" font-family="PingFang SC, sans-serif" font-size="13" font-weight="bold">函数</text>
+          
+          <!-- 周围节点 -->
+          <circle cx="110" cy="30" r="18" fill="#34d399"/>
+          <text x="110" y="36" text-anchor="middle" fill="white" font-family="PingFang SC, sans-serif" font-size="11">代数</text>
+          
+          <circle cx="250" cy="30" r="18" fill="#34d399"/>
+          <text x="250" y="36" text-anchor="middle" fill="white" font-family="PingFang SC, sans-serif" font-size="11">几何</text>
+          
+          <circle cx="110" cy="110" r="16" fill="#6ee7b7"/>
+          <text x="110" y="116" text-anchor="middle" fill="white" font-family="PingFang SC, sans-serif" font-size="10">方程</text>
+          
+          <circle cx="250" cy="110" r="16" fill="#6ee7b7"/>
+          <text x="250" y="116" text-anchor="middle" fill="white" font-family="PingFang SC, sans-serif" font-size="10">图形</text>
+          
+          <circle cx="180" cy="130" r="14" fill="#a7f3d0"/>
+          <text x="180" y="135" text-anchor="middle" fill="white" font-family="PingFang SC, sans-serif" font-size="9">概率</text>
+          
+          <!-- 连接线 -->
+          <path d="M 128 35 Q 152 42 162 55" stroke="#10b981" stroke-width="2" fill="none"/>
+          <path d="M 232 35 Q 208 42 198 55" stroke="#10b981" stroke-width="2" fill="none"/>
+          <path d="M 126 105 Q 152 95 162 75" stroke="#10b981" stroke-width="2" fill="none"/>
+          <path d="M 234 105 Q 208 95 198 75" stroke="#10b981" stroke-width="2" fill="none"/>
+          <path d="M 180 116 Q 180 95 180 82" stroke="#10b981" stroke-width="2" fill="none"/>
+        </g>
+      </g>
+      
+      <!-- 智能诊断结果 -->
+      <rect x="50" y="620" width="500" height="130" rx="20" fill="#dcfdf4" stroke="#6ee7b7" stroke-width="2"/>
+      <text x="80" y="655" fill="#047857" font-family="PingFang SC, sans-serif" font-size="20" font-weight="bold">🎯 智能诊断结果</text>
+      <text x="80" y="685" fill="#059669" font-family="PingFang SC, sans-serif" font-size="18">二次函数掌握度仅45%，需重点突破</text>
+      <text x="80" y="715" fill="#047857" font-family="PingFang SC, sans-serif" font-size="16">已生成8套针对性练习，预计学习时长25分钟</text>
+      
+      <!-- 箭头指向下一步 -->
+      <path d="M 620 400 Q 680 400 720 400" stroke="url(#step2Gradient)" stroke-width="6" fill="none" marker-end="url(#arrowGreen)"/>
+    </g>
+    
+    <!-- 步骤3：个性化推荐 -->
+    <g id="step3" transform="translate(1600, 0)">
+      <rect x="0" y="0" width="600" height="800" rx="30" fill="url(#cardBg)" filter="url(#cardShadow)" stroke="#e2e8f0" stroke-width="2"/>
+      
+      <!-- 步骤编号和标题 -->
+      <circle cx="70" cy="70" r="35" fill="url(#step3Gradient)"/>
+      <text x="70" y="80" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="28" font-weight="bold">3</text>
+      <text x="130" y="80" fill="#1e293b" font-family="PingFang SC, sans-serif" font-size="32" font-weight="bold">个性化推荐</text>
+      
+      <!-- 双手机界面展示 -->
+      <g transform="translate(120, 150)">
+        <!-- 左侧手机：专项练习 -->
+        <g>
+          <rect x="0" y="0" width="160" height="300" rx="25" fill="#1f2937"/>
+          <rect x="8" y="8" width="144" height="284" rx="20" fill="white"/>
+          
+          <!-- 顶部标题栏 -->
+          <rect x="18" y="18" width="124" height="35" fill="url(#step3Gradient)"/>
+          <text x="80" y="39" text-anchor="middle" fill="white" font-family="PingFang SC, sans-serif" font-size="14" font-weight="bold">专项练习</text>
+          
+          <!-- 练习内容 -->
+          <rect x="23" y="65" width="114" height="95" fill="#faf5ff" stroke="#d8b4fe" stroke-width="1" rx="10"/>
+          <text x="28" y="85" fill="#7c3aed" font-family="PingFang SC, sans-serif" font-size="11" font-weight="bold">二次函数专项突破</text>
+          <text x="28" y="105" fill="#6b7280" font-family="PingFang SC, sans-serif" font-size="9">难度: ⭐⭐⭐</text>
+          <text x="28" y="120" fill="#6b7280" font-family="PingFang SC, sans-serif" font-size="9">预计: 12分钟</text>
+          <text x="28" y="135" fill="#8b5cf6" font-family="PingFang SC, sans-serif" font-size="9" font-weight="bold">匹配度: 96%</text>
+          <text x="28" y="150" fill="#059669" font-family="PingFang SC, sans-serif" font-size="9" font-weight="bold">智能推荐 ✓</text>
+          
+          <!-- 进度条 -->
+          <rect x="23" y="175" width="114" height="70" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1" rx="10"/>
+          <text x="28" y="195" fill="#059669" font-family="PingFang SC, sans-serif" font-size="11" font-weight="bold">学习进度</text>
+          <rect x="28" y="205" width="80" height="6" fill="#e5e7eb" rx="3"/>
+          <rect x="28" y="205" width="56" height="6" fill="#22c55e" rx="3"/>
+          <text x="115" y="212" fill="#22c55e" font-family="PingFang SC, sans-serif" font-size="9" font-weight="bold">70%</text>
+          <text x="28" y="230" fill="#374151" font-family="PingFang SC, sans-serif" font-size="9">还需3道题即可突破</text>
+        </g>
+        
+        <!-- 右侧手机：错题分析 -->
+        <g transform="translate(200, 0)">
+          <rect x="0" y="0" width="160" height="300" rx="25" fill="#1f2937"/>
+          <rect x="8" y="8" width="144" height="284" rx="20" fill="white"/>
+          
+          <!-- 顶部标题栏 -->
+          <rect x="18" y="18" width="124" height="35" fill="#10b981"/>
+          <text x="80" y="39" text-anchor="middle" fill="white" font-family="PingFang SC, sans-serif" font-size="14" font-weight="bold">错题巩固</text>
+          
+          <!-- 错因分析 -->
+          <rect x="23" y="65" width="114" height="130" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1" rx="10"/>
+          <text x="28" y="85" fill="#166534" font-family="PingFang SC, sans-serif" font-size="11" font-weight="bold">🔍 错因分析</text>
+          <text x="28" y="105" fill="#374151" font-family="PingFang SC, sans-serif" font-size="9">概念理解: 偏差 ❌</text>
+          <text x="28" y="120" fill="#374151" font-family="PingFang SC, sans-serif" font-size="9">计算能力: 良好 ✓</text>
+          <text x="28" y="135" fill="#374151" font-family="PingFang SC, sans-serif" font-size="9">解题思路: 待提升 ⚠️</text>
+          <text x="28" y="155" fill="#059669" font-family="PingFang SC, sans-serif" font-size="10" font-weight="bold">推荐策略:</text>
+          <text x="28" y="170" fill="#374151" font-family="PingFang SC, sans-serif" font-size="9">先理解概念再练习</text>
+          <text x="28" y="185" fill="#374151" font-family="PingFang SC, sans-serif" font-size="9">循序渐进提升能力</text>
+          
+          <!-- 学习统计 -->
+          <rect x="23" y="205" width="114" height="60" fill="#fefce8" stroke="#fde047" stroke-width="1" rx="10"/>
+          <text x="28" y="225" fill="#ca8a04" font-family="PingFang SC, sans-serif" font-size="11" font-weight="bold">今日收获 📈</text>
+          <text x="28" y="245" fill="#374151" font-family="PingFang SC, sans-serif" font-size="9">完成18题，正确率88% ↗</text>
+          <text x="28" y="260" fill="#374151" font-family="PingFang SC, sans-serif" font-size="9">掌握新知识点2个</text>
+        </g>
+      </g>
+      
+      <!-- 智能化个性学习特色 -->
+      <rect x="50" y="500" width="500" height="250" rx="20" fill="#faf5ff" stroke="#d8b4fe" stroke-width="2"/>
+      <text x="80" y="535" fill="#7c3aed" font-family="PingFang SC, sans-serif" font-size="22" font-weight="bold">🎯 智能化个性学习特色</text>
+      
+      <g transform="translate(80, 555)">
+        <circle cx="10" cy="10" r="6" fill="#8b5cf6"/>
+        <text x="30" y="16" fill="#374151" font-family="PingFang SC, sans-serif" font-size="16">动态难度调节，确保学习在最近发展区</text>
+        
+        <circle cx="10" cy="40" r="6" fill="#8b5cf6"/>
+        <text x="30" y="46" fill="#374151" font-family="PingFang SC, sans-serif" font-size="16">多维度标签匹配，精准定位知识薄弱环节</text>
+        
+        <circle cx="10" cy="70" r="6" fill="#8b5cf6"/>
+        <text x="30" y="76" fill="#374151" font-family="PingFang SC, sans-serif" font-size="16">学习路径智能规划，循序渐进提升能力</text>
+        
+        <circle cx="10" cy="100" r="6" fill="#8b5cf6"/>
+        <text x="30" y="106" fill="#374151" font-family="PingFang SC, sans-serif" font-size="16">实时反馈调整策略，让每道题都有学习价值</text>
+        
+        <circle cx="10" cy="130" r="6" fill="#8b5cf6"/>
+        <text x="30" y="136" fill="#374151" font-family="PingFang SC, sans-serif" font-size="16">错题变式自动生成，举一反三巩固提升</text>
+        
+        <circle cx="10" cy="160" r="6" fill="#8b5cf6"/>
+        <text x="30" y="166" fill="#374151" font-family="PingFang SC, sans-serif" font-size="16">学习成果可视化，激发学习兴趣和动力</text>
+      </g>
+    </g>
+    
+  </g>
+  
+</svg>

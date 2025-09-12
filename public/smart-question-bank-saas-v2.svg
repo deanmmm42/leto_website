@@ -1,0 +1,177 @@
+<svg viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="1400" height="900" fill="#f8fafc"/>
+  
+  <!-- Left Side - Scanning Process -->
+  <g id="scanning-process" transform="translate(50, 100)">
+    <!-- Scanner/Papers -->
+    <rect x="0" y="0" width="200" height="150" rx="8" fill="#e5e7eb"/>
+    <rect x="20" y="20" width="160" height="110" rx="4" fill="white" stroke="#d1d5db"/>
+    
+    <!-- Scattered Papers -->
+    <rect x="10" y="10" width="120" height="80" rx="4" fill="white" stroke="#d1d5db" transform="rotate(-15)"/>
+    <rect x="50" y="30" width="120" height="80" rx="4" fill="white" stroke="#d1d5db" transform="rotate(5)"/>
+    <rect x="30" y="50" width="120" height="80" rx="4" fill="white" stroke="#d1d5db"/>
+    
+    <!-- Scanner Device -->
+    <rect x="0" y="170" width="200" height="80" rx="8" fill="#374151"/>
+    <rect x="10" y="180" width="180" height="15" rx="4" fill="#4b5563"/>
+    <rect x="20" y="210" width="160" height="25" rx="4" fill="#6b7280"/>
+    <text x="100" y="227" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12">EPSON</text>
+    
+    <!-- Arrow -->
+    <path d="M 220 150 Q 280 150 330 200" stroke="#3b82f6" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6"/>
+      </marker>
+    </defs>
+    
+    <text x="150" y="280" fill="#3b82f6" font-family="PingFang SC, sans-serif" font-size="14" font-weight="bold">线下数据 - 扫描录入</text>
+  </g>
+  
+  <!-- Center - Multiple Devices -->
+  <g id="devices-section" transform="translate(350, 50)">
+    <!-- iPad Left -->
+    <rect x="0" y="50" width="180" height="240" rx="20" fill="#1a1a1a"/>
+    <rect x="8" y="58" width="164" height="224" rx="16" fill="#f8fafc"/>
+    
+    <!-- iPad Screen Content -->
+    <rect x="15" y="65" width="150" height="30" fill="#3b82f6"/>
+    <text x="90" y="83" text-anchor="middle" fill="white" font-family="PingFang SC, sans-serif" font-size="12" font-weight="bold">智学AI · Unit1学生情况分析</text>
+    
+    <!-- Question Interface -->
+    <rect x="20" y="105" width="140" height="80" fill="white" stroke="#e5e7eb" rx="8"/>
+    <text x="30" y="125" fill="#1f2937" font-family="PingFang SC, sans-serif" font-size="11">1. 小明有15个苹果，吃掉了8个，还剩多少个？</text>
+    <circle cx="35" cy="145" r="8" fill="#ef4444"/>
+    <text x="31" y="149" fill="white" font-family="Arial, sans-serif" font-size="8">A</text>
+    <text x="50" y="149" fill="#1f2937" font-family="PingFang SC, sans-serif" font-size="9">7个</text>
+    
+    <circle cx="35" cy="165" r="8" fill="#22c55e"/>
+    <text x="32" y="169" fill="white" font-family="Arial, sans-serif" font-size="8">B</text>
+    <text x="50" y="169" fill="#1f2937" font-family="PingFang SC, sans-serif" font-size="9">23个</text>
+    
+    <!-- Progress Indicators -->
+    <rect x="20" y="200" width="140" height="60" fill="#f0f9ff" stroke="#0ea5e9" rx="8"/>
+    <text x="30" y="220" fill="#0369a1" font-family="PingFang SC, sans-serif" font-size="10" font-weight="bold">学习进度分析</text>
+    <text x="30" y="235" fill="#0369a1" font-family="PingFang SC, sans-serif" font-size="8">加法运算: 85% ✓</text>
+    <text x="30" y="248" fill="#0369a1" font-family="PingFang SC, sans-serif" font-size="8">减法运算: 45% ✗</text>
+    
+    <text x="90" y="315" text-anchor="middle" fill="#3b82f6" font-family="PingFang SC, sans-serif" font-size="12" font-weight="bold">iPad学生端 · 即时反馈、启发式学习</text>
+    
+    <!-- Central Tablet -->
+    <rect x="220" y="0" width="220" height="300" rx="25" fill="#1a1a1a"/>
+    <rect x="230" y="10" width="200" height="280" rx="20" fill="#f8fafc"/>
+    
+    <!-- Central Screen Header -->
+    <rect x="235" y="15" width="190" height="40" fill="#3b82f6"/>
+    <text x="330" y="30" text-anchor="middle" fill="white" font-family="PingFang SC, sans-serif" font-size="12" font-weight="bold">智学AI · Unit1学生情况分析</text>
+    <text x="330" y="45" text-anchor="middle" fill="white" font-family="PingFang SC, sans-serif" font-size="10">AI智能分析</text>
+    
+    <!-- Data Visualization -->
+    <rect x="245" y="65" width="170" height="100" fill="white" stroke="#e5e7eb" rx="8"/>
+    
+    <!-- Chart Lines -->
+    <path d="M 255 140 L 275 120 L 295 125 L 315 110 L 335 105 L 355 115 L 375 100 L 395 95" 
+          stroke="#3b82f6" stroke-width="3" fill="none"/>
+    <circle cx="275" cy="120" r="4" fill="#3b82f6"/>
+    <circle cx="315" cy="110" r="4" fill="#3b82f6"/>
+    <circle cx="355" cy="115" r="4" fill="#3b82f6"/>
+    <circle cx="395" cy="95" r="4" fill="#3b82f6"/>
+    
+    <text x="330" y="85" text-anchor="middle" fill="#1f2937" font-family="PingFang SC, sans-serif" font-size="10" font-weight="bold">学习能力分析</text>
+    <text x="255" y="155" fill="#6b7280" font-family="PingFang SC, sans-serif" font-size="8">知识掌握度趋势</text>
+    
+    <!-- Student Analysis -->
+    <rect x="245" y="175" width="170" height="100" fill="#fef3c7" stroke="#f59e0b" rx="8"/>
+    <text x="255" y="195" fill="#92400e" font-family="PingFang SC, sans-serif" font-size="11" font-weight="bold">🎯 能力短板追踪：概念理解/解题技巧/知识点薄弱分析</text>
+    
+    <!-- Analysis Details -->
+    <rect x="255" y="205" width="150" height="25" fill="white" rx="4"/>
+    <circle cx="268" cy="217" r="6" fill="#ef4444"/>
+    <text x="280" y="221" fill="#1f2937" font-family="PingFang SC, sans-serif" font-size="9">减法运算薄弱，需重点练习</text>
+    
+    <rect x="255" y="235" width="150" height="25" fill="white" rx="4"/>
+    <circle cx="268" cy="247" r="6" fill="#22c55e"/>
+    <text x="280" y="251" fill="#1f2937" font-family="PingFang SC, sans-serif" font-size="9">加法掌握良好，可进阶学习</text>
+    
+    <text x="330" y="320" text-anchor="middle" fill="#3b82f6" font-family="PingFang SC, sans-serif" font-size="12" font-weight="bold">深度学情分析 + 个性化组卷</text>
+    
+    <!-- Right iPad -->
+    <rect x="480" y="50" width="180" height="240" rx="20" fill="#1a1a1a"/>
+    <rect x="488" y="58" width="164" height="224" rx="16" fill="#f8fafc"/>
+    
+    <!-- Right Screen Content -->
+    <rect x="495" y="65" width="150" height="30" fill="#22c55e"/>
+    <text x="570" y="83" text-anchor="middle" fill="white" font-family="PingFang SC, sans-serif" font-size="12" font-weight="bold">个性化巩固练习</text>
+    
+    <!-- Personalized Questions -->
+    <rect x="500" y="105" width="140" height="100" fill="#f0fdf4" stroke="#22c55e" rx="8"/>
+    <text x="510" y="125" fill="#15803d" font-family="PingFang SC, sans-serif" font-size="10" font-weight="bold">🎯 AI推荐练习题</text>
+    <text x="510" y="140" fill="#1f2937" font-family="PingFang SC, sans-serif" font-size="9">针对减法薄弱点设计</text>
+    
+    <text x="510" y="160" fill="#1f2937" font-family="PingFang SC, sans-serif" font-size="9">18 - 9 = ?</text>
+    <text x="510" y="175" fill="#1f2937" font-family="PingFang SC, sans-serif" font-size="9">25 - 7 = ?</text>
+    <text x="510" y="190" fill="#6b7280" font-family="PingFang SC, sans-serif" font-size="8">难度：⭐⭐ 预计3分钟</text>
+    
+    <!-- Download/Return Data -->
+    <rect x="500" y="215" width="140" height="40" fill="#ddd6fe" stroke="#8b5cf6" rx="8"/>
+    <circle cx="520" cy="235" r="8" fill="#8b5cf6"/>
+    <text x="535" y="230" fill="#6b21a8" font-family="PingFang SC, sans-serif" font-size="9">回收数据</text>
+    <text x="535" y="242" fill="#6b21a8" font-family="PingFang SC, sans-serif" font-size="9">下发数据</text>
+    
+    <text x="570" y="315" text-anchor="middle" fill="#3b82f6" font-family="PingFang SC, sans-serif" font-size="12" font-weight="bold">个性化巩固练习 · 智能化启发式学习</text>
+  </g>
+  
+  <!-- Arrows Between Devices -->
+  <g id="arrows">
+    <!-- Left to Center -->
+    <path d="M 530 200 Q 580 200 620 200" stroke="#8b5cf6" stroke-width="3" fill="none" marker-end="url(#arrowhead2)"/>
+    <defs>
+      <marker id="arrowhead2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#8b5cf6"/>
+      </marker>
+    </defs>
+    
+    <!-- Center to Right -->
+    <path d="M 790 200 Q 840 200 880 200" stroke="#f59e0b" stroke-width="3" fill="none" marker-end="url(#arrowhead3)"/>
+    <defs>
+      <marker id="arrowhead3" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#f59e0b"/>
+      </marker>
+    </defs>
+  </g>
+  
+  <!-- Bottom Title -->
+  <text x="700" y="450" text-anchor="middle" fill="#1f2937" font-family="PingFang SC, sans-serif" font-size="24" font-weight="bold">智能题库 + 个性化教辅系统</text>
+  <text x="700" y="480" text-anchor="middle" fill="#6b7280" font-family="PingFang SC, sans-serif" font-size="16">线下数据录入 → 智能分析 → 个性化推荐 → 精准提升</text>
+  
+  <!-- Stats at Bottom -->
+  <g id="stats" transform="translate(400, 520)">
+    <rect x="0" y="0" width="600" height="80" fill="#f9fafb" stroke="#e5e7eb" rx="12"/>
+    
+    <g transform="translate(50, 40)">
+      <circle cx="0" cy="0" r="20" fill="#3b82f6"/>
+      <text x="0" y="5" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">25</text>
+      <text x="0" y="-35" text-anchor="middle" fill="#6b7280" font-family="PingFang SC, sans-serif" font-size="10">今日完成题目</text>
+    </g>
+    
+    <g transform="translate(200, 40)">
+      <circle cx="0" cy="0" r="20" fill="#22c55e"/>
+      <text x="0" y="5" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">92</text>
+      <text x="0" y="-35" text-anchor="middle" fill="#6b7280" font-family="PingFang SC, sans-serif" font-size="10">正确率%</text>
+    </g>
+    
+    <g transform="translate(350, 40)">
+      <circle cx="0" cy="0" r="20" fill="#f59e0b"/>
+      <text x="0" y="5" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">45</text>
+      <text x="0" y="-35" text-anchor="middle" fill="#6b7280" font-family="PingFang SC, sans-serif" font-size="10">学习时长(分)</text>
+    </g>
+    
+    <g transform="translate(500, 40)">
+      <circle cx="0" cy="0" r="20" fill="#8b5cf6"/>
+      <text x="0" y="5" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">8</text>
+      <text x="0" y="-35" text-anchor="middle" fill="#6b7280" font-family="PingFang SC, sans-serif" font-size="10">知识点掌握</text>
+    </g>
+  </g>
+</svg>

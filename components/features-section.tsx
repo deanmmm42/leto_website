@@ -19,35 +19,23 @@ export default function FeaturesSection() {
     }),
   }
 
-  const missionPoints = [
-    {
-      icon: <Target className="h-6 w-6" />,
-      title: "AI技术重塑",
-      description: "运用前沿AI技术，深度变革传统行业运作模式"
-    },
-    {
-      icon: <Globe className="h-6 w-6" />,
-      title: "多领域覆盖",
-      description: "电商营销、教育评估、海外工具三大核心应用领域"
-    },
-    {
-      icon: <Zap className="h-6 w-6" />,
-      title: "智能化方案",
-      description: "为各行各业提供定制化的AI智能解决方案"
-    },
-    {
-      icon: <Users className="h-6 w-6" />,
-      title: "价值创造",
-      description: "助力客户实现商业价值最大化，推动行业发展"
-    }
-  ]
+  const missionPoints = mission.points.map((point, index) => ({
+    icon: [
+      <Target className="h-6 w-6" key="target" />,
+      <Globe className="h-6 w-6" key="globe" />,
+      <Zap className="h-6 w-6" key="zap" />,
+      <Users className="h-6 w-6" key="users" />
+    ][index],
+    ...point
+  }))
 
   return (
-    <section id="features" className="relative py-20 md:py-32 bg-gradient-to-br from-slate-50 to-white dark:from-[#020210] dark:to-[#030314] overflow-hidden">
+    <section id="features" className="relative py-20 md:py-32 bg-gradient-to-br from-orange-50/40 via-white to-yellow-50/30 dark:from-[#020210] dark:to-[#030314] overflow-hidden">
       {/* 背景装饰 */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-br from-letoOrange/10 to-letoWarmStart/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-letoCoolEnd/10 to-letoTurquoise/10 rounded-full blur-3xl" />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-br from-letoOrange/15 to-letoWarmStart/15 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-letoCoolEnd/15 to-letoTurquoise/15 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-gradient-to-br from-purple-400/10 to-pink-400/10 rounded-full blur-2xl animate-bounce" />
       </div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
@@ -103,10 +91,10 @@ export default function FeaturesSection() {
                 viewport={{ once: true }}
                 className="group"
               >
-                <div className="bg-white dark:bg-white/[0.03] backdrop-blur-sm border border-gray-200 dark:border-white/10 rounded-2xl p-8 h-full hover:shadow-xl dark:hover:bg-white/[0.05] transition-all duration-500 hover:-translate-y-2">
+                <div className="bg-white/80 dark:bg-white/[0.05] backdrop-blur-lg border border-white/30 dark:border-white/10 rounded-3xl p-10 h-full hover:shadow-2xl hover:shadow-letoOrange/15 dark:hover:bg-white/[0.08] transition-all duration-700 hover:-translate-y-4 hover:scale-105">
                   <div className="flex items-start gap-6">
                     <div className="flex-shrink-0">
-                      <div className="w-14 h-14 bg-gradient-to-r from-letoOrange to-letoWarmStart rounded-2xl flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
+                      <div className="w-16 h-16 bg-gradient-to-r from-letoOrange to-letoWarmStart rounded-3xl flex items-center justify-center text-white shadow-xl group-hover:scale-125 group-hover:rotate-12 transition-transform duration-500">
                         {point.icon}
                       </div>
                     </div>
@@ -134,7 +122,7 @@ export default function FeaturesSection() {
             className="text-center mt-16"
           >
             <div className="inline-flex items-center gap-2 text-letoOrange dark:text-letoTurquoise font-medium hover:gap-4 transition-all duration-300 cursor-pointer group">
-              <span>携手共创AI未来</span>
+              <span>{mission.cta}</span>
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
             </div>
           </motion.div>
