@@ -20,9 +20,9 @@ export const navigation = {
       name: "解决方案", 
       href: "/solutions/ecommerce",
       subItems: [
-        { name: "电商行业", href: "/solutions/ecommerce" },
-        { name: "教育行业", href: "/solutions/education" },
-        { name: "海外工具", href: "/solutions/global-tools" },
+        { name: "AI营销", href: "/solutions/ecommerce" },
+        { name: "AI教育", href: "/solutions/education" },
+        { name: "AI工具", href: "/solutions/global-tools" },
       ]
     },
     { name: "联系", href: "/#contact" },
@@ -61,19 +61,19 @@ export const solutions = {
   description: "我们为不同行业提供专业的AI技术解决方案",
   cards: [
     {
-      title: "电商行业",
+      title: "AI营销",
       description: "AI大模型赋能，为互联网平台提供智能营销解决方案",
       href: "/solutions/ecommerce",
       buttonText: "了解更多"
     },
     {
-      title: "教育行业", 
+      title: "AI教育", 
       description: "AI驱动的学生综合素养评价与个性化辅导解决方案",
       href: "/solutions/education",
       buttonText: "了解更多"
     },
     {
-      title: "海外工具",
+      title: "AI工具",
       description: "专业AI技术打造创新海外工具产品",
       href: "/solutions/global-tools", 
       buttonText: "了解更多"
@@ -87,17 +87,17 @@ export const achievements = {
   description: "基于真实业务数据的行业领先表现",
   data: [
     {
-      number: "50+",
+      number: "30+",
       title: "头部企业",
-      description: "抖音、平安、美团"
+      description: "平安、太平洋、人保"
     },
     {
-      number: "2亿+",
+      number: "1亿+",
       title: "年GMV", 
       description: "销售总额"
     },
     {
-      number: "35项",
+      number: "25项",
       title: "专利软著",
       description: "知识产权"
     },
@@ -190,9 +190,9 @@ export const footer = {
   solutions: {
     title: "解决方案",
     links: [
-      { name: "电商行业", href: "/solutions/ecommerce" },
-      { name: "教育行业", href: "/solutions/education" },
-      { name: "海外工具", href: "/solutions/global-tools" },
+      { name: "AI营销", href: "/solutions/ecommerce" },
+      { name: "AI教育", href: "/solutions/education" },
+      { name: "AI工具", href: "/solutions/global-tools" },
     ],
   },
   resources: {
@@ -277,7 +277,7 @@ export const ecommerce = {
     items: [
       {
         title: "数字权益营销平台",
-        description: "整合全品类虚拟商品（话费、油卡、会员卡等），打造一站式权益中心。",
+        description: "整合全品类虚拟商品，打造一站式权益中心。",
         target: "为互联网平台提供拉新促活工具，为金融保险企业提供客户增值服务。",
         advantages: [
           "AI智能营销：基于LLM大模型的智能营销策略生成，精准匹配用户需求，提升营销转化效果",
@@ -302,18 +302,7 @@ export const ecommerce = {
   cases: {
     title: "成功案例",
     items: [
-      {
-        title: "抖音极速版",
-        subtitle: "金币补贴拉新促活解决方案",
-        tag: "头部案例",
-        description: "为互联网头部平台提供完整的用户激励体系解决方案，通过智能化金币补贴机制实现精准用户拉新和深度促活，有效提升平台用户规模和活跃度表现",
-        metrics: [
-          "日活跃用户：5000万+",
-          "用户增长：显著提升",
-          "留存优化：长期活跃", 
-          "营销ROI：300%+"
-        ]
-      },
+      
       {
         title: "平安好车主",
         subtitle: "车主权益服务平台",
