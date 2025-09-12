@@ -331,10 +331,6 @@ export const ecommerce = {
       {
         title: "5大AI应用",
         description: "AI欺诈检测、AI智能客服、AI运营策略、AI业务报告、AI数据保护等五大成熟AI核心应用产品。"
-      },
-      {
-        title: "行业领先地位",
-        description: "成功服务抖音、平安、美团等50+知名头部客户，在数字权益智能营销领域确立行业领导者地位。"
       }
     ]
   },

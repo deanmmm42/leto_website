@@ -39,24 +39,6 @@ export default function EcommercePage() {
 
 
 
-  const techAdvantages = [
-    {
-      title: "10亿级私有数据",
-      description: "基于多年大客户服务经验积累，沉淀超大规模行业数据资源，为客户提供深度定制化的算法模型和数据分析支持。"
-    },
-    {
-      title: "开源LLM模型", 
-      description: "采用业界领先的开源LLM大语言模型，结合深度学习算法持续优化，实现行业特定场景的快速商业化落地应用。"
-    },
-    {
-      title: "5大AI应用",
-      description: "AI欺诈检测、AI智能客服、AI运营策略、AI业务报告、AI数据保护等五大成熟AI核心应用产品。"
-    },
-    {
-      title: "行业领先地位",
-      description: "成功服务抖音、平安、美团等50+知名头部客户，在数字权益智能营销领域确立行业领导者地位。"
-    }
-  ]
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50/30 dark:from-[#030314] dark:via-[#040419] dark:to-[#050520]">
@@ -473,13 +455,12 @@ export default function EcommercePage() {
                 viewport={{ once: true }}
                 className="text-3xl md:text-5xl font-bold mb-6"
               >
-                <span className="text-slate-900 dark:text-white">领先的</span>
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-blue-500 to-indigo-500">技术优势</span>
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-blue-500 to-indigo-500">{ecommerce.techAdvantages.title}</span>
               </motion.h2>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-              {techAdvantages.map((advantage, index) => (
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              {ecommerce.techAdvantages.items.map((advantage, index) => (
                 <motion.div
                   key={index}
                   custom={index + 2}
@@ -489,17 +470,15 @@ export default function EcommercePage() {
                   viewport={{ once: true }}
                   className="group"
                 >
-                  <div className="bg-white/60 dark:bg-white/[0.05] backdrop-blur-sm p-8 rounded-3xl border border-white/20 dark:border-white/10 shadow-xl hover:shadow-2xl transition-all duration-500 group-hover:border-purple-200 dark:group-hover:border-purple-800/50">
-                    <div className="flex items-start gap-4">
-                      <div className="w-14 h-14 bg-gradient-to-r from-purple-500 via-blue-500 to-indigo-500 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                  <div className="bg-white/60 dark:bg-white/[0.05] backdrop-blur-sm p-8 rounded-3xl border border-white/20 dark:border-white/10 shadow-xl hover:shadow-2xl transition-all duration-500 group-hover:border-purple-200 dark:group-hover:border-purple-800/50 h-full">
+                    <div className="text-center">
+                      <div className="w-16 h-16 bg-gradient-to-r from-purple-500 via-blue-500 to-indigo-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                         <span className="text-white font-bold text-xl">{String(index + 1).padStart(2, '0')}</span>
                       </div>
-                      <div className="flex-1">
-                        <h3 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
-                          {advantage.title}
-                        </h3>
-                        <p className="text-lg text-slate-600 dark:text-white/70 leading-relaxed">{advantage.description}</p>
-                      </div>
+                      <h3 className="text-xl font-bold mb-4 text-slate-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
+                        {advantage.title}
+                      </h3>
+                      <p className="text-base text-slate-600 dark:text-white/70 leading-relaxed">{advantage.description}</p>
                     </div>
                   </div>
                 </motion.div>
