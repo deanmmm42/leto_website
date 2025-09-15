@@ -64,7 +64,30 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - 组件按功能模块组织，UI基础组件放在`/components/ui`
 - 路径别名：`@/*` 指向项目根目录
 
+## 内容管理架构
+- **文案集中管理**：`config/text.ts`是网站内容的单一数据源，包含所有页面文案、导航菜单、业务描述等
+- **模块化组织**：每个业务领域(ecommerce、education、global-tools)都有独立的内容配置
+- **多语言准备**：文案结构设计支持国际化扩展
+
+## SEO与AI优化配置
+- **结构化数据**：`app/layout.tsx`包含完整的Organization Schema配置
+- **动态SEO**：每个页面都有独立的metadata配置，支持社交媒体分享
+- **AI访问规范**：`public/llms.txt`和`public/ai.txt`定义AI系统访问权限和训练政策
+- **关键词策略**：覆盖AI营销、AI教育、海外AI工具三大业务领域
+
+## 页面架构模式
+- **内容分离设计**：每个页面分为`page.tsx`(元数据+结构化数据)和`*-content.tsx`(具体内容)
+- **API路由**：`app/api/contact/route.ts`处理联系表单提交
+- **静态生成**：`app/sitemap.ts`自动生成网站地图
+
+## 业务领域结构
+项目围绕LetoAI三大核心业务构建：
+1. **电商营销**：数字权益营销平台、AI风控系统
+2. **教育评估**：综合素养评价、个性化教辅系统
+3. **海外工具**：移动AI应用、智能相册清理、健康监测
+
 ## 部署配置
 - 图片优化已禁用 (`unoptimized: true`)
 - ESLint和TypeScript构建检查已禁用
 - 支持暗色主题，使用class策略切换主题
+- Vercel Analytics集成用于网站数据分析

@@ -59,6 +59,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
 
+    // 联系页面 - 高优先级
+    {
+      url: `${baseUrl}/contact`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+
     // 资源页面 - 中等优先级
     {
       url: `${baseUrl}/whitepapers`,
@@ -71,6 +79,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: currentDate,
       changeFrequency: 'monthly' as const,
       priority: 0.6,
+    },
+
+    // AI访问规范文件 - 中等优先级
+    {
+      url: `${baseUrl}/ai.txt`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly' as const,
+      priority: 0.5,
+    },
+    {
+      url: `${baseUrl}/llms.txt`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly' as const,
+      priority: 0.5,
     },
 
     // 法律页面 - 低优先级

@@ -7,10 +7,12 @@ Allow: /
 # Disallow admin and private areas
 Disallow: /admin/
 Disallow: /api/
-Disallow: /_next/
-Disallow: /static/
 
-# Allow important directories
+# Allow Next.js static assets that are needed for page functionality
+Allow: /_next/static/
+Disallow: /_next/
+
+# Allow important directories and resources
 Allow: /images/
 Allow: /blog/
 Allow: /solutions/
@@ -18,6 +20,10 @@ Allow: /case-studies/
 Allow: /whitepapers/
 Allow: /help/
 Allow: /privacy-policy/
+Allow: /favicon.ico
+Allow: /manifest.json
+Allow: /ai.txt
+Allow: /llms.txt
 
 # Sitemap location
 Sitemap: https://www.letoai.tech/sitemap.xml
