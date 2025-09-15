@@ -8,8 +8,9 @@ import GoogleAnalytics from "@/components/GoogleAnalytics"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "LetoAi - AI已来，未来已来！",
-  description: "LetoAi 将前沿人工智能技术与教育深度融合，为学生和教育工作者创造个性化、高效的学习体验。",
+  title: "LetoAI - AI营销｜AI教育｜海外AI工具 | 智慧重塑商业未来",
+  description: "LetoAI专注AI技术商业化应用，提供电商营销、教育评估、海外工具三大领域专业AI解决方案。拥有10亿级私有数据、25项专利软著，助力企业数字化转型。",
+  keywords: "AI营销,AI教育,人工智能解决方案,电商AI,智能教育,海外AI工具,数字化转型,LetoAI,AI公司,成都AI,智能风控,数字权益营销",
     generator: 'v0.app',
     robots: {
       index: true,
@@ -20,9 +21,9 @@ export const metadata: Metadata = {
     },
     openGraph: {
       type: 'website',
-      siteName: 'LetoAi',
-      title: "LetoAi - AI已来，未来已来！",
-      description: "LetoAi 将前沿人工智能技术与教育深度融合，为学生和教育工作者创造个性化、高效的学习体验。",
+      siteName: 'LetoAI',
+      title: "LetoAI - AI营销｜AI教育｜海外AI工具 | 智慧重塑商业未来",
+      description: "LetoAI专注AI技术商业化应用，提供电商营销、教育评估、海外工具三大领域专业AI解决方案。拥有10亿级私有数据、25项专利软著，助力企业数字化转型。",
       url: "https://www.letoai.tech/",
       images: [
         {
@@ -37,8 +38,8 @@ export const metadata: Metadata = {
     twitter: {
       card: 'summary_large_image',
       site: '@hey_letoai',
-      title: "LetoAi - AI已来，未来已来！",
-      description: "LetoAi 将前沿人工智能技术与教育深度融合，为学生和教育工作者创造个性化、高效的学习体验。",
+      title: "LetoAI - AI营销｜AI教育｜海外AI工具 | 智慧重塑商业未来",
+      description: "LetoAI专注AI技术商业化应用，提供电商营销、教育评估、海外工具三大领域专业AI解决方案。拥有10亿级私有数据、25项专利软著，助力企业数字化转型。",
       images: ['/ai-educational-content.png'],
     },
 }
@@ -59,10 +60,76 @@ export default function RootLayout({
 
         {/* 微信分享优化标签 */}
         <meta name="wxcard" content="summary_large_image" />
-        <meta property="wxcard:title" content="LetoAi - AI已来，未来已来！" />
-        <meta property="wxcard:description" content="LetoAi 将前沿人工智能技术与教育深度融合，为学生和教育工作者创造个性化、高效的学习体验。" />
+        <meta property="wxcard:title" content="LetoAI - AI营销｜AI教育｜海外AI工具 | 智慧重塑商业未来" />
+        <meta property="wxcard:description" content="LetoAI专注AI技术商业化应用，提供电商营销、教育评估、海外工具三大领域专业AI解决方案。拥有10亿级私有数据、25项专利软著，助力企业数字化转型。" />
         <meta property="wxcard:image" content="https://www.letoai.tech/ai-educational-content.png" />
         <meta property="wxcard:url" content="https://www.letoai.tech/" />
+
+        {/* 结构化数据 */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "LetoAI",
+              "alternateName": "四川省乐途智行科技有限公司",
+              "description": "专注AI技术商业化应用，提供电商营销、教育评估、海外工具三大领域专业AI解决方案",
+              "url": "https://www.letoai.tech",
+              "logo": "https://www.letoai.tech/images/logo.png",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "天府二街领地环球金融中心A808",
+                "addressLocality": "成都",
+                "addressRegion": "四川省",
+                "postalCode": "610000",
+                "addressCountry": "CN"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "customer service",
+                "email": "contact@letoai.tech"
+              },
+              "foundingDate": "2022",
+              "numberOfEmployees": "50-100",
+              "knowsAbout": ["人工智能", "AI营销", "AI教育", "海外AI工具", "数字化转型", "智能风控"],
+              "serviceArea": {
+                "@type": "Country",
+                "name": "中国"
+              },
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "AI解决方案",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "AI营销解决方案",
+                      "description": "数字权益智能营销，AI风控系统"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "AI教育解决方案",
+                      "description": "综合素养评价系统，智能题库与个性化辅导"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "海外AI工具解决方案",
+                      "description": "移动端AI应用开发，智能相册清理，健康监测工具"
+                    }
+                  }
+                ]
+              }
+            })
+          }}
+        />
 
         {/* 添加初始主题检测脚本，在页面加载前执行 */}
         <Script

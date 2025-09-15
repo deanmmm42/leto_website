@@ -2,9 +2,9 @@ import { Metadata } from "next"
 import CaseStudiesContent from "./case-studies-content"
 
 export const metadata: Metadata = {
-  title: "成功案例研究 | LetoAI - 抖音、平安、美团等头部企业AI解决方案案例",
-  description: "LetoAI成功为抖音极速版、平安好车主、美团等头部企业提供AI营销、风控、教育解决方案，实现营销ROI提升300%+，用户增长5000万+。",
-  keywords: "AI成功案例, 抖音AI营销, 平安AI风控, 美团AI解决方案, 教育AI应用案例, 企业AI转型案例",
+  title: "成功案例研究 | LetoAI - 电商营销、教育评估、海外工具AI解决方案案例",
+  description: "LetoAI为电商营销、教育评估、海外工具三大领域提供专业AI解决方案，包括平安好车主权益服务平台、教育机构综合素养评价系统等成功案例，实现营销ROI提升300%+，评价效率提升300%+。",
+  keywords: "AI成功案例, 电商营销AI, 教育评估AI, 海外工具AI, 权益营销AI, 综合素养评价, 企业AI转型案例",
 }
 
 export default function CaseStudiesPage() {
@@ -12,7 +12,7 @@ export default function CaseStudiesPage() {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "LetoAI成功案例",
-    "description": "LetoAI为头部企业提供AI解决方案的成功案例集合，展示在电商营销、教育评估、海外工具等领域的应用成果",
+    "description": "LetoAI为客户提供AI解决方案的成功案例集合，展示在电商营销、教育评估、海外工具等领域的应用成果",
     "url": "https://www.letoai.tech/case-studies",
     "mainEntity": {
       "@type": "ItemList",
@@ -20,29 +20,29 @@ export default function CaseStudiesPage() {
       "itemListElement": [
         {
           "@type": "CaseStudy",
-          "name": "抖音极速版AI营销优化案例",
-          "description": "通过AI技术优化用户推荐算法，实现营销ROI提升300%以上",
+          "name": "平安好车主权益服务平台案例",
+          "description": "为车主权益服务平台打造数字权益管理系统，覆盖全国300+城市，8大类200+项权益",
           "about": {
             "@type": "Service",
-            "name": "电商AI营销解决方案"
-          }
-        },
-        {
-          "@type": "CaseStudy", 
-          "name": "平安好车主AI风控系统案例",
-          "description": "基于AI技术构建智能风控系统，显著提升风险识别准确率",
-          "about": {
-            "@type": "Service",
-            "name": "AI风控解决方案"
+            "name": "电商营销AI解决方案"
           }
         },
         {
           "@type": "CaseStudy",
-          "name": "美团AI智能推荐系统案例", 
-          "description": "通过AI算法优化推荐系统，提升用户体验和转化率",
+          "name": "综合素养评价系统应用案例",
+          "description": "为教育机构部署AI综合素养评价系统，评价效率提升300%+，教师满意度95%+",
           "about": {
             "@type": "Service",
-            "name": "AI推荐系统"
+            "name": "教育评估AI解决方案"
+          }
+        },
+        {
+          "@type": "CaseStudy",
+          "name": "个性化教辅系统应用案例",
+          "description": "通过AI智能题库与个性化辅导系统，学习效果平均提升50%+",
+          "about": {
+            "@type": "Service",
+            "name": "教育评估AI解决方案"
           }
         }
       ]

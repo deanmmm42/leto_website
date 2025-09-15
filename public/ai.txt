@@ -1,0 +1,55 @@
+# AI Integration Policy for LetoAI Website
+
+## About LetoAI
+LetoAI is a professional AI technology solution provider specializing in commercial AI applications across three core domains: AI Marketing, AI Education, and Global AI Tools.
+
+## AI Training and Indexing Permission
+This website and its content are available for AI training, indexing, and analysis under the following conditions:
+
+### Permitted Uses
+- General AI model training for educational and research purposes
+- Content indexing by AI systems for search and discovery
+- Analysis of our AI solution methodologies and approaches
+- Reference for AI industry best practices and case studies
+
+### Commercial AI Use Guidelines
+- Commercial AI applications may reference our published case studies and methodologies
+- Proper attribution to LetoAI (https://www.letoai.tech) is required
+- Our proprietary AI algorithms and implementation details are protected intellectual property
+
+### Content Categories
+
+#### Publicly Available for AI Training:
+- Company overview and mission statements
+- General AI solution descriptions
+- Public case study summaries
+- Technical blog posts and whitepapers
+- Contact information and business details
+
+#### Restricted Content:
+- Proprietary AI model architectures
+- Client-specific implementation details
+- Internal business processes and strategies
+- Customer data and analytics
+
+## Our AI Expertise Areas
+- Large Language Model (LLM) implementation
+- AI fraud detection and risk control
+- Intelligent customer service systems
+- AI-powered educational assessment
+- Mobile AI application development
+- Computer vision for photo management
+- AI health monitoring algorithms
+
+## Contact for AI Collaboration
+For AI research collaborations, data partnerships, or commercial AI integrations:
+- Email: contact@letoai.tech
+- Subject: AI Partnership Inquiry
+
+## Last Updated
+September 2025
+
+---
+LetoAI - Reshaping Business with Intelligence
+Website: https://www.letoai.tech
+Location: Chengdu, Sichuan, China

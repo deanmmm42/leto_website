@@ -17,10 +17,10 @@ const caseStudies = [
     title: "平安好车主",
     subtitle: "车主权益服务平台",
     category: "电商营销",
-    client: "中国平安保险",
+    client: "平安好车主平台",
     tag: "权益服务",
-    description: "为大型保险集团打造专业车主权益服务平台，提供代驾、保养、洗车、道路救援等全方位车主专享服务体系",
-    challenge: "大型保险集团需要为车主用户提供增值服务，提升用户粘性和续保率，同时需要高效的权益管理和风控系统。",
+    description: "为车主权益服务平台打造专业的数字权益管理系统，提供代驾、保养、洗车、道路救援等全方位车主专享服务体系",
+    challenge: "车主服务平台需要为用户提供多样化的增值服务，提升用户粘性和服务体验，同时需要高效的权益管理和风控系统。",
     solution: "部署LetoAI数字权益营销平台，构建全国性车主服务网络，实现智能风控和精准服务推荐。",
     metrics: [
       { label: "服务覆盖", value: "全国300+城市", icon: "map" },
@@ -162,7 +162,7 @@ export default function CaseStudiesContent() {
                 size="medium"
                 className="text-lg text-slate-600 dark:text-white/60 text-center max-w-2xl mx-auto mb-8"
               >
-                深入了解LetoAI如何为头部企业提供专业AI解决方案，实现业务增长和数字化转型
+                深入了解LetoAI如何为车主服务平台、教育机构等客户提供专业AI解决方案，助力实现业务增长和数字化转型
               </DescriptionText>
             </motion.div>
 
