@@ -5,6 +5,45 @@ export const metadata: Metadata = {
   title: "AI解决方案 | LetoAI - 电商营销、教育评估、海外工具专业AI技术",
   description: "LetoAI为不同行业提供专业的AI技术解决方案，涵盖电商行业智能营销、教育行业综合素养评价、海外工具产品开发三大核心领域，助力企业数字化转型。",
   keywords: "AI解决方案, 电商AI营销, AI教育评估, 海外AI工具, 人工智能技术, 数字化转型",
+  authors: [{ name: "LetoAI" }],
+  creator: "LetoAI",
+  publisher: "LetoAI",
+  alternates: {
+    canonical: "https://www.letoai.tech/solutions",
+  },
+  openGraph: {
+    title: "AI解决方案 | LetoAI - 电商营销、教育评估、海外工具专业AI技术",
+    description: "LetoAI为不同行业提供专业的AI技术解决方案，涵盖电商行业智能营销、教育行业综合素养评价、海外工具产品开发三大核心领域，助力企业数字化转型。",
+    url: "https://www.letoai.tech/solutions",
+    siteName: "LetoAI",
+    locale: "zh_CN",
+    type: "website",
+    images: [
+      {
+        url: "https://www.letoai.tech/images/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "LetoAI AI解决方案",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AI解决方案 | LetoAI - 电商营销、教育评估、海外工具专业AI技术",
+    description: "LetoAI为不同行业提供专业的AI技术解决方案，涵盖电商行业智能营销、教育行业综合素养评价、海外工具产品开发三大核心领域，助力企业数字化转型。",
+    images: ["https://www.letoai.tech/images/logo.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 }
 
 export default function SolutionsPage() {
