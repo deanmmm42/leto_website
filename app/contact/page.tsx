@@ -1,211 +1,107 @@
-"use client"
+import { Metadata } from "next"
+import ContactContent from "./contact-content"
 
-import { motion } from "framer-motion"
-import { ArrowLeft } from "lucide-react"
-import Link from "next/link"
-import { useRouter, useSearchParams } from "next/navigation"
-import { Suspense } from "react"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
-import { cn } from "@/lib/utils"
-import { contact, common } from "@/config/text"
-import { LetoBrandText } from "@/components/leto-brand-text"
-import { DescriptionText } from "@/components/description-text"
-import { ContactFormCard } from "@/components/contact/contact-form-card"
-import { ContactInfoCard } from "@/components/contact/contact-info-card"
-
-function SmartBackButton() {
-  const router = useRouter()
-  const searchParams = useSearchParams()
-  
-  const handleBack = () => {
-    // 尝试从URL参数获取来源页面
-    const from = searchParams.get('from')
-    if (from) {
-      router.push(from)
-    } else {
-      // 如果没有来源参数，使用browser的history.back()
-      if (typeof window !== 'undefined' && window.history.length > 1) {
-        router.back()
-      } else {
-        // 如果没有历史记录，默认返回首页
-        router.push('/')
-      }
-    }
-  }
-
-  return (
-    <button
-      onClick={handleBack}
-      className="inline-flex items-center text-slate-600 dark:text-white/70 hover:text-slate-900 dark:hover:text-white transition-colors"
-    >
-      <ArrowLeft className="mr-2 h-4 w-4" />
-      {common.backToHome}
-    </button>
-  )
+export const metadata: Metadata = {
+  title: "联系我们 | LetoAI - AI营销、AI教育、海外工具专业咨询",
+  description: "联系LetoAI获得专业AI解决方案咨询服务，涵盖电商营销、教育评估、海外工具三大领域。我们期待与您合作，共创AI智能化未来。联系电话、邮箱及详细地址信息。",
+  keywords: "联系LetoAI,AI咨询服务,专业咨询,电商营销咨询,教育AI咨询,海外工具咨询,成都AI公司,LetoAI联系方式",
+  authors: [{ name: "LetoAI" }],
+  creator: "LetoAI",
+  publisher: "LetoAI",
+  alternates: {
+    canonical: "https://www.letoai.tech/contact",
+  },
+  openGraph: {
+    title: "联系我们 | LetoAI - AI营销、AI教育、海外工具专业咨询",
+    description: "联系LetoAI获得专业AI解决方案咨询服务，涵盖电商营销、教育评估、海外工具三大领域。我们期待与您合作，共创AI智能化未来。",
+    url: "https://www.letoai.tech/contact",
+    siteName: "LetoAI",
+    locale: "zh_CN",
+    type: "website",
+    images: [
+      {
+        url: "https://www.letoai.tech/images/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "联系LetoAI - 专业AI解决方案咨询",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "联系我们 | LetoAI - AI营销、AI教育、海外工具专业咨询",
+    description: "联系LetoAI获得专业AI解决方案咨询服务，涵盖电商营销、教育评估、海外工具三大领域。我们期待与您合作，共创AI智能化未来。",
+    images: ["https://www.letoai.tech/images/logo.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 }
 
-function ElegantShape({
-  className,
-  delay = 0,
-  width = 400,
-  height = 100,
-  rotate = 0,
-}: {
-  className?: string
-  delay?: number
-  width?: number
-  height?: number
-  rotate?: number
-}) {
-  return (
-    <motion.div
-      initial={{
-        opacity: 0,
-        y: -150,
-        rotate: rotate - 15,
-      }}
-      animate={{
-        opacity: 1,
-        y: 0,
-        rotate: rotate,
-      }}
-      transition={{
-        duration: 2.4,
-        delay,
-        ease: "easeOut" as const,
-        opacity: { duration: 1.2 },
-      }}
-      className={cn("absolute", className)}
-    >
-      <motion.div
-        animate={{
-          y: [0, 15, 0],
-        }}
-        transition={{
-          duration: 12,
-          repeat: Number.POSITIVE_INFINITY,
-          ease: "easeInOut",
-        }}
-        style={{
-          width,
-          height,
-        }}
-        className="relative"
-      >
-        <div
-          className={cn(
-            "absolute inset-0 rounded-full",
-            "bg-gradient-to-r to-transparent",
-            "dark:from-white/[0.12] from-white/[0.15]", // 调整暗色主题透明度
-            "backdrop-blur-[1px]",
-            // 亮色主题保留边框，暗色主题去掉边框
-            "dark:border-0 border border-white/[0.3]",
-            // 调整阴影效果
-            "dark:shadow-[0_2px_12px_0_rgba(255,255,255,0.08)] shadow-[0_4px_16px_0_rgba(255,255,255,0.15)]",
-            "after:absolute after:inset-0 after:rounded-full",
-            // 调整高光效果，使暗色主题下看起来像粉笔效果
-            "dark:after:bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.12),transparent_85%)] after:bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.2),transparent_75%)]",
-          )}
-        />
-      </motion.div>
-    </motion.div>
-  )
+const contactPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "联系我们",
+  "description": "联系LetoAI获得专业AI解决方案咨询服务，涵盖电商营销、教育评估、海外工具三大领域。",
+  "url": "https://www.letoai.tech/contact",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "LetoAI",
+    "legalName": "四川省乐途智行科技有限公司",
+    "url": "https://www.letoai.tech",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+86-028-12345678",
+      "contactType": "customer service",
+      "areaServed": "CN",
+      "availableLanguage": "Chinese"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "天府二街领地环球金融中心A808",
+      "addressLocality": "成都市",
+      "addressRegion": "四川省",
+      "addressCountry": "CN"
+    },
+    "email": "contact@letoai.tech"
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "首页",
+        "item": "https://www.letoai.tech"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "联系我们",
+        "item": "https://www.letoai.tech/contact"
+      }
+    ]
+  }
 }
 
 export default function ContactPage() {
-  const fadeInUpVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: (i: number) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.8,
-        delay: 0.1 * i,
-        ease: "easeOut" as const,
-      },
-    }),
-  }
-
   return (
-    <main className="min-h-screen bg-white dark:bg-[#030314]">
-      <Header />
-
-      <section className="relative pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-letoWarmStart/[0.03] via-transparent to-letoCoolEnd/[0.03] blur-3xl" />
-
-        <div className="absolute inset-0 overflow-hidden">
-          <ElegantShape
-            delay={0.3}
-            width={600}
-            height={140}
-            rotate={12}
-            className="left-[-10%] md:left-[-5%] top-[15%] md:top-[20%]"
-          />
-
-          <ElegantShape
-            delay={0.5}
-            width={500}
-            height={120}
-            rotate={-15}
-            className="right-[-5%] md:right-[0%] top-[70%] md:top-[75%]"
-          />
-        </div>
-
-        <div className="container mx-auto px-4 md:px-6 relative z-10">
-          <div className="mb-8">
-            <Suspense fallback={
-              <Link
-                href="/"
-                className="inline-flex items-center text-slate-600 dark:text-white/70 hover:text-slate-900 dark:hover:text-white transition-colors"
-              >
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                {common.backToHome}
-              </Link>
-            }>
-              <SmartBackButton />
-            </Suspense>
-          </div>
-
-          <motion.h1
-            custom={0}
-            variants={fadeInUpVariants}
-            initial="hidden"
-            animate="visible"
-            viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-bold mb-6 text-center"
-          >
-            <span className="bg-clip-text text-transparent bg-gradient-to-b from-slate-900 to-slate-700 dark:from-white dark:to-white/80">
-              {contact.title}
-            </span>
-          </motion.h1>
-
-          <motion.div
-            custom={1}
-            variants={fadeInUpVariants}
-            initial="hidden"
-            animate="visible"
-            viewport={{ once: true }}
-          >
-            <DescriptionText
-              size="medium"
-              className="text-lg text-slate-600 dark:text-white/60 text-center max-w-3xl mx-auto mb-16"
-            >
-              {contact.description.replace(/Leto AI/g, () => "")}
-              <LetoBrandText />
-              {contact.description.split("Leto AI")[1] || ""}
-            </DescriptionText>
-          </motion.div>
-
-          {/* 使用可复用的卡片组件 */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <ContactFormCard customIndex={2} />
-            <ContactInfoCard customIndex={3} showSunday={false} />
-          </div>
-        </div>
-      </section>
-
-      <Footer />
-    </main>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(contactPageSchema)
+        }}
+      />
+      <ContactContent />
+    </>
   )
 }

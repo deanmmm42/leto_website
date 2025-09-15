@@ -5,6 +5,45 @@ export const metadata: Metadata = {
   title: "成功案例研究 | LetoAI - 电商营销、教育评估、海外工具AI解决方案案例",
   description: "LetoAI为电商营销、教育评估、海外工具三大领域提供专业AI解决方案，包括平安好车主权益服务平台、教育机构综合素养评价系统等成功案例，实现营销ROI提升300%+，评价效率提升300%+。",
   keywords: "AI成功案例, 电商营销AI, 教育评估AI, 海外工具AI, 权益营销AI, 综合素养评价, 企业AI转型案例",
+  authors: [{ name: "LetoAI" }],
+  creator: "LetoAI",
+  publisher: "LetoAI",
+  alternates: {
+    canonical: "https://www.letoai.tech/case-studies",
+  },
+  openGraph: {
+    title: "成功案例研究 | LetoAI - 电商营销、教育评估、海外工具AI解决方案案例",
+    description: "LetoAI为电商营销、教育评估、海外工具三大领域提供专业AI解决方案，包括平安好车主权益服务平台、教育机构综合素养评价系统等成功案例，实现营销ROI提升300%+，评价效率提升300%+。",
+    url: "https://www.letoai.tech/case-studies",
+    siteName: "LetoAI",
+    locale: "zh_CN",
+    type: "website",
+    images: [
+      {
+        url: "https://www.letoai.tech/images/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "LetoAI AI成功案例研究",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "成功案例研究 | LetoAI - 电商营销、教育评估、海外工具AI解决方案案例",
+    description: "LetoAI为电商营销、教育评估、海外工具三大领域提供专业AI解决方案，包括平安好车主权益服务平台、教育机构综合素养评价系统等成功案例，实现营销ROI提升300%+，评价效率提升300%+。",
+    images: ["https://www.letoai.tech/images/logo.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 }
 
 export default function CaseStudiesPage() {
