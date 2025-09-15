@@ -181,32 +181,6 @@ const privacySections = [
     ]
   },
   {
-    id: "cookies-policy",
-    title: "6. Cookies政策",
-    icon: FileText,
-    content: [
-      {
-        subtitle: "Cookies使用",
-        description: "我们使用Cookies和类似技术来：",
-        items: [
-          "提供和改进网站功能",
-          "分析网站使用情况和性能",
-          "记住您的偏好设置",
-          "提供个性化体验"
-        ]
-      },
-      {
-        subtitle: "Cookies管理",
-        description: "您可以通过以下方式管理Cookies：",
-        items: [
-          "通过浏览器设置控制Cookies",
-          "选择接受或拒绝特定类型的Cookies",
-          "随时清除已存储的Cookies"
-        ]
-      }
-    ]
-  },
-  {
     id: "policy-updates",
     title: "7. 政策更新",
     icon: AlertCircle,

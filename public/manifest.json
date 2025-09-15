@@ -1,0 +1,24 @@
+{
+  "name": "LetoAi - AI已来，未来已来",
+  "short_name": "LetoAi",
+  "description": "LetoAi 将前沿人工智能技术与教育深度融合，为学生和教育工作者创造个性化、高效的学习体验。",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#F75C03",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ]
+}

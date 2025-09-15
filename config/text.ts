@@ -185,6 +185,7 @@ export const footer = {
       { name: "首页", href: "/" },
       { name: "解决方案", href: "/solutions" },
       { name: "联系我们", href: "/#contact" },
+      { name: "站点地图", href: "/sitemap.xml" },
     ],
   },
   solutions: {
