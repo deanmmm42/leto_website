@@ -329,7 +329,7 @@ export default function EducationContent() {
                   <div className="w-full lg:w-1/2">
                     <div className="bg-gradient-to-br from-white to-gray-50/50 dark:from-white/[0.05] dark:to-white/[0.02] p-8 rounded-3xl border border-gray-200/50 dark:border-white/10 shadow-2xl hover:shadow-3xl transition-all duration-500">
                       <img
-                        src={index === 0 ? "/images/education-evaluation-dashboard.svg" : "/images/personalized-learning-system.svg"}
+                        src={index === 0 ? "/comprehensive-assessment-new.jpg" : "/smart-question-bank-simple.svg"}
                         alt={product.title}
                         className="w-full h-auto rounded-2xl"
                       />
