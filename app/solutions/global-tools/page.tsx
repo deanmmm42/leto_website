@@ -2,7 +2,7 @@ import { Metadata } from "next"
 import GlobalToolsContent from "./global-tools-content"
 
 export const metadata: Metadata = {
-  title: "海外AI工具产品 | LetoAI - AI驱动的海外移动应用开发",
+  title: "全球AI工具开发 - LetoAI海外产品专家 | 移动AI应用",
   description: "LetoAI基于基础设施级AI技术，专业打造海外移动应用产品，累计下载量1000万+，为全球用户提供智能化工具体验，涵盖智能相册清理、健康监测等领域。",
   keywords: "海外AI工具,移动应用开发,AI工具产品,智能相册清理,健康监测,LetoAI,海外市场,全球应用,AI技术,工具应用",
   authors: [{ name: "LetoAI" }],
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     canonical: "https://www.letoai.tech/solutions/global-tools",
   },
   openGraph: {
-    title: "海外AI工具产品 | LetoAI - AI驱动的海外移动应用开发",
+    title: "全球AI工具开发 - LetoAI海外产品专家 | 移动AI应用",
     description: "LetoAI基于基础设施级AI技术，专业打造海外移动应用产品，累计下载量1000万+，为全球用户提供智能化工具体验，涵盖智能相册清理、健康监测等领域。",
     url: "https://www.letoai.tech/solutions/global-tools",
     siteName: "LetoAI",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "海外AI工具产品 | LetoAI - AI驱动的海外移动应用开发",
+    title: "全球AI工具开发 - LetoAI海外产品专家 | 移动AI应用",
     description: "LetoAI基于基础设施级AI技术，专业打造海外移动应用产品，累计下载量1000万+，为全球用户提供智能化工具体验，涵盖智能相册清理、健康监测等领域。",
     images: ["https://www.letoai.tech/images/logo.png"],
   },

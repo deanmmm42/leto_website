@@ -2,7 +2,7 @@ import { Metadata } from "next"
 import EcommerceContent from "./ecommerce-content"
 
 export const metadata: Metadata = {
-  title: "AI营销解决方案 | LetoAI - 数字权益智能营销驱动GMV百亿级增长",
+  title: "AI营销解决方案 - LetoAI专业电商AI服务 | 数字权益智能营销",
   description: "LetoAI基于私有化AI大模型，为电商企业提供安全高效的智能营销解决方案，实现营销ROI提升300%+，风控准确率99.7%，助力企业数字化转型。",
   keywords: "AI营销,数字营销,电商AI,智能营销,风控系统,用户增长,LetoAI,数字权益营销,拉新促活,用户留存,私有化AI大模型",
   authors: [{ name: "LetoAI" }],
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     canonical: "https://www.letoai.tech/solutions/ecommerce",
   },
   openGraph: {
-    title: "AI营销解决方案 | LetoAI - 数字权益智能营销驱动GMV百亿级增长",
+    title: "AI营销解决方案 - LetoAI专业电商AI服务 | 数字权益智能营销",
     description: "LetoAI基于私有化AI大模型，为电商企业提供安全高效的智能营销解决方案，实现营销ROI提升300%+，风控准确率99.7%，助力企业数字化转型。",
     url: "https://www.letoai.tech/solutions/ecommerce",
     siteName: "LetoAI",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI营销解决方案 | LetoAI - 数字权益智能营销驱动GMV百亿级增长",
+    title: "AI营销解决方案 - LetoAI专业电商AI服务 | 数字权益智能营销",
     description: "LetoAI基于私有化AI大模型，为电商企业提供安全高效的智能营销解决方案，实现营销ROI提升300%+，风控准确率99.7%，助力企业数字化转型。",
     images: ["https://www.letoai.tech/images/logo.png"],
   },

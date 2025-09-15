@@ -266,7 +266,7 @@ export default function HeroGeometric() {
               className="border-letoWarmStart/30 text-letoWarmStart hover:text-letoWarmStart hover:bg-letoWarmStart/10 dark:border-letoCoolEnd/30 dark:text-letoCoolEnd dark:hover:text-letoCoolEnd dark:hover:bg-letoCoolEnd/10 px-8 py-6 text-lg"
             >
               <Link href="/contact">
-                {common.cta.learnMore} <ArrowRight className="ml-2 h-4 w-4" />
+                免费咨询 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
           </motion.div>

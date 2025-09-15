@@ -2,7 +2,7 @@ import { Metadata } from "next"
 import ContactContent from "./contact-content"
 
 export const metadata: Metadata = {
-  title: "联系我们 | LetoAI - AI营销、AI教育、海外工具专业咨询",
+  title: "免费咨询 - LetoAI AI解决方案专家 | 联系我们",
   description: "联系LetoAI获得专业AI解决方案咨询服务，涵盖电商营销、教育评估、海外工具三大领域。我们期待与您合作，共创AI智能化未来。联系电话、邮箱及详细地址信息。",
   keywords: "联系LetoAI,AI咨询服务,专业咨询,电商营销咨询,教育AI咨询,海外工具咨询,成都AI公司,LetoAI联系方式",
   authors: [{ name: "LetoAI" }],
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     canonical: "https://www.letoai.tech/contact",
   },
   openGraph: {
-    title: "联系我们 | LetoAI - AI营销、AI教育、海外工具专业咨询",
+    title: "免费咨询 - LetoAI AI解决方案专家 | 联系我们",
     description: "联系LetoAI获得专业AI解决方案咨询服务，涵盖电商营销、教育评估、海外工具三大领域。我们期待与您合作，共创AI智能化未来。",
     url: "https://www.letoai.tech/contact",
     siteName: "LetoAI",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "联系我们 | LetoAI - AI营销、AI教育、海外工具专业咨询",
+    title: "免费咨询 - LetoAI AI解决方案专家 | 联系我们",
     description: "联系LetoAI获得专业AI解决方案咨询服务，涵盖电商营销、教育评估、海外工具三大领域。我们期待与您合作，共创AI智能化未来。",
     images: ["https://www.letoai.tech/images/logo.png"],
   },

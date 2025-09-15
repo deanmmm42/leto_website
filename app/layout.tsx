@@ -8,8 +8,8 @@ import GoogleAnalytics from "@/components/GoogleAnalytics"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "LetoAI - AI已来，未来已来！",
-  description: "LetoAI专注AI技术商业化应用，提供电商营销、教育评估、海外工具三大领域专业AI解决方案。拥有10亿级私有数据、25项专利软著，助力企业数字化转型。",
+  title: "LetoAI - 国内领先的AI技术解决方案提供商 | AI营销·AI教育·全球AI工具",
+  description: "LetoAI是国内领先的AI技术解决方案提供商，专注AI技术商业化应用。提供电商营销、教育评估、全球AI工具三大领域专业解决方案，拥有10亿级私有数据、25项专利软著，助力企业数字化转型。",
   keywords: "AI营销,AI教育,人工智能解决方案,电商AI,智能教育,海外AI工具,数字化转型,LetoAI,AI公司,成都AI,智能风控,数字权益营销",
     generator: 'v0.app',
     robots: {
@@ -22,8 +22,8 @@ export const metadata: Metadata = {
     openGraph: {
       type: 'website',
       siteName: 'LetoAI',
-      title: "LetoAI - AI营销｜AI教育｜海外AI工具 | 智慧重塑商业未来",
-      description: "LetoAI专注AI技术商业化应用，提供电商营销、教育评估、海外工具三大领域专业AI解决方案。拥有10亿级私有数据、25项专利软著，助力企业数字化转型。",
+      title: "LetoAI - 国内领先的AI技术解决方案提供商 | AI营销·AI教育·全球AI工具",
+      description: "LetoAI是国内领先的AI技术解决方案提供商，专注AI技术商业化应用。提供电商营销、教育评估、全球AI工具三大领域专业解决方案，拥有10亿级私有数据、25项专利软著，助力企业数字化转型。",
       url: "https://www.letoai.tech/",
       images: [
         {
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
     twitter: {
       card: 'summary_large_image',
       site: '@hey_letoai',
-      title: "LetoAI - AI营销｜AI教育｜海外AI工具 | 智慧重塑商业未来",
-      description: "LetoAI专注AI技术商业化应用，提供电商营销、教育评估、海外工具三大领域专业AI解决方案。拥有10亿级私有数据、25项专利软著，助力企业数字化转型。",
+      title: "LetoAI - 国内领先的AI技术解决方案提供商 | AI营销·AI教育·全球AI工具",
+      description: "LetoAI是国内领先的AI技术解决方案提供商，专注AI技术商业化应用。提供电商营销、教育评估、全球AI工具三大领域专业解决方案，拥有10亿级私有数据、25项专利软著，助力企业数字化转型。",
       images: ['/ai-educational-content.png'],
     },
 }
@@ -60,8 +60,8 @@ export default function RootLayout({
 
         {/* 微信分享优化标签 */}
         <meta name="wxcard" content="summary_large_image" />
-        <meta property="wxcard:title" content="LetoAI - AI营销｜AI教育｜海外AI工具 | 智慧重塑商业未来" />
-        <meta property="wxcard:description" content="LetoAI专注AI技术商业化应用，提供电商营销、教育评估、海外工具三大领域专业AI解决方案。拥有10亿级私有数据、25项专利软著，助力企业数字化转型。" />
+        <meta property="wxcard:title" content="LetoAI - 国内领先的AI技术解决方案提供商 | AI营销·AI教育·全球AI工具" />
+        <meta property="wxcard:description" content="LetoAI是国内领先的AI技术解决方案提供商，专注AI技术商业化应用。提供电商营销、教育评估、全球AI工具三大领域专业解决方案，拥有10亿级私有数据、25项专利软著，助力企业数字化转型。" />
         <meta property="wxcard:image" content="https://www.letoai.tech/ai-educational-content.png" />
         <meta property="wxcard:url" content="https://www.letoai.tech/" />
 
@@ -74,7 +74,7 @@ export default function RootLayout({
               "@type": "Organization",
               "name": "LetoAI",
               "alternateName": "四川省乐途智行科技有限公司",
-              "description": "专注AI技术商业化应用，提供电商营销、教育评估、海外工具三大领域专业AI解决方案",
+              "description": "国内领先的AI技术解决方案提供商，专注AI技术商业化应用，提供电商营销、教育评估、全球AI工具三大领域专业解决方案",
               "url": "https://www.letoai.tech",
               "logo": "https://www.letoai.tech/images/logo.png",
               "address": {
