@@ -282,8 +282,8 @@ export default function SolutionsContent() {
       {/* Solutions Overview */}
       <section id="solutions-overview" className="relative py-20 md:py-32 bg-gradient-to-br from-gray-50/50 via-white to-blue-50/30 dark:bg-gradient-to-br dark:from-[#030314] dark:via-[#040419] dark:to-[#050520] overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-letoWarmStart/[0.05] via-transparent to-letoCoolEnd/[0.05]" />
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-letoOrange/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-letoCoolEnd/5 rounded-full blur-3xl" />
+        <div className="absolute top-0 left-1/4 w-48 h-48 md:w-96 md:h-96 bg-letoOrange/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 w-48 h-48 md:w-96 md:h-96 bg-letoCoolEnd/5 rounded-full blur-3xl" />
 
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center mb-16">
@@ -340,8 +340,8 @@ export default function SolutionsContent() {
       {/* Technology Advantages */}
       <section className="relative py-20 md:py-32 bg-gradient-to-br from-purple-50/50 via-white to-blue-50/30 dark:bg-gradient-to-br dark:from-[#020210] dark:via-[#030318] dark:to-[#041028]">
         <div className="absolute inset-0 bg-gradient-to-tr from-letoWarmStart/[0.08] via-transparent to-letoCoolEnd/[0.08]" />
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl" />
+        <div className="absolute top-1/4 right-1/4 w-48 h-48 md:w-96 md:h-96 bg-purple-500/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 left-1/4 w-48 h-48 md:w-96 md:h-96 bg-blue-500/5 rounded-full blur-3xl" />
 
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center mb-16">
@@ -406,7 +406,7 @@ export default function SolutionsContent() {
       {/* CTA Section */}
       <section className="relative py-20 md:py-32 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 dark:from-[#030314] dark:to-[#020210] overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-letoOrange/10 via-transparent to-letoCoolEnd/10" />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-letoOrange/20 to-letoCoolEnd/20 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 md:w-96 md:h-96 bg-gradient-to-r from-letoOrange/20 to-letoCoolEnd/20 rounded-full blur-3xl" />
 
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
