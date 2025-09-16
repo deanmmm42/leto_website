@@ -36,8 +36,8 @@ export default function AboutSection() {
   return (
     <section id="about" className="relative py-20 md:py-32 bg-gradient-to-br from-gray-50/50 via-white to-blue-50/30 dark:bg-gradient-to-br dark:from-[#030314] dark:via-[#040419] dark:to-[#050520] overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-letoWarmStart/[0.05] via-transparent to-letoCoolEnd/[0.05]" />
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-letoOrange/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-letoCoolEnd/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 left-1/4 w-48 h-48 md:w-96 md:h-96 bg-letoOrange/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-1/4 w-48 h-48 md:w-96 md:h-96 bg-letoCoolEnd/5 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-3xl mx-auto text-center mb-16">

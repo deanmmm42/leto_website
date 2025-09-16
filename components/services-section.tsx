@@ -37,8 +37,8 @@ export default function ServicesSection() {
   return (
     <section id="services" className="relative py-20 md:py-32 bg-gradient-to-br from-purple-50/50 via-white to-blue-50/30 dark:bg-gradient-to-br dark:from-[#020210] dark:via-[#030318] dark:to-[#041028]">
       <div className="absolute inset-0 bg-gradient-to-tr from-letoWarmStart/[0.08] via-transparent to-letoCoolEnd/[0.08]" />
-      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl" />
+      <div className="absolute top-1/4 right-1/4 w-48 h-48 md:w-96 md:h-96 bg-purple-500/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/4 left-1/4 w-48 h-48 md:w-96 md:h-96 bg-blue-500/5 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-3xl mx-auto text-center mb-16">

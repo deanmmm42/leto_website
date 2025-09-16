@@ -151,22 +151,22 @@ export default function HeroGeometric() {
       <div className="absolute inset-0 z-10 overflow-hidden">
         <ElegantShape
           delay={0.3}
-          width={600}
+          width={300}
           height={140}
           rotate={12}
           lightGradient="from-letoWarmStart/[0.15]" // 增加透明度使颜色更纯净
           darkGradient="from-letoWarmStart/[0.12]"
-          className="left-[-10%] md:left-[-5%] top-[15%] md:top-[20%]"
+          className="left-0 md:left-[-5%] top-[15%] md:top-[20%]"
         />
 
         <ElegantShape
           delay={0.5}
-          width={500}
+          width={250}
           height={120}
           rotate={-15}
           lightGradient="from-letoPink/[0.15]" // 增加透明度使颜色更纯净
           darkGradient="from-letoPink/[0.12]"
-          className="right-[-5%] md:right-[0%] top-[70%] md:top-[75%]"
+          className="right-0 md:right-[0%] top-[70%] md:top-[75%]"
         />
 
         <ElegantShape
