@@ -207,7 +207,11 @@ export const footer = {
     ],
   },
   legal: {
-    copyright: "© 2025 LetoAI. 保留所有权利. | 蜀ICP备2022030426号",
+    copyright: "© 2025 LetoAI. 保留所有权利.",
+    icp: {
+      text: "蜀ICP备2024078614号-2",
+      url: "https://beian.miit.gov.cn/"
+    },
     links: [
       { name: "隐私政策", href: "/privacy-policy" },
       { name: "服务条款", href: "/privacy-policy" },

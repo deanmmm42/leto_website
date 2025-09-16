@@ -70,7 +70,14 @@ export default function Footer() {
 
         <div className="border-t border-gray-200 dark:border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-slate-600 dark:text-white/60 mb-4 md:mb-0">
-            {footer.legal.copyright}
+            {footer.legal.copyright} | <a
+              href={footer.legal.icp.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-slate-900 dark:hover:text-white transition-colors"
+            >
+              {footer.legal.icp.text}
+            </a>
           </p>
           <div className="flex space-x-6">
             {footer.legal.links.map((link, index) => (
