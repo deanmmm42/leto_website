@@ -293,7 +293,7 @@ export default function EcommerceContent() {
                     <div className="bg-gradient-to-br from-white to-gray-50/50 dark:from-white/[0.05] dark:to-white/[0.02] p-8 rounded-3xl border border-gray-200/50 dark:border-white/10 shadow-2xl hover:shadow-3xl transition-all duration-500">
                       <img
                         src={index === 0 ? "/images/digital-marketing-clean.svg" : "/images/ai-risk-control-clean.svg"}
-                        alt={product.title}
+                        alt={index === 0 ? "LetoAI数字权益营销平台界面展示 - 电商AI营销解决方案，包含营销自动化、用户画像分析和ROI优化功能" : "LetoAI智能风控系统界面 - 电商AI风险控制解决方案，实时监测交易风险和欺诈防护"}
                         className="w-full h-auto rounded-2xl"
                       />
                     </div>
@@ -369,7 +369,7 @@ export default function EcommerceContent() {
                     <div className="bg-gradient-to-br from-white to-gray-50/50 dark:from-white/[0.05] dark:to-white/[0.02] p-8 rounded-3xl border border-gray-200/50 dark:border-white/10 shadow-2xl hover:shadow-3xl transition-all duration-500">
                       <img
                         src="/images/pingan-car-service-dashboard.svg"
-                        alt={caseItem.title}
+                        alt="平安好车主数字权益营销案例展示 - LetoAI电商AI营销解决方案成功案例，展示用户增长和ROI提升效果"
                         className="w-full h-auto rounded-2xl"
                       />
                     </div>

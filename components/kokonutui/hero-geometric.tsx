@@ -279,14 +279,17 @@ export default function HeroGeometric() {
             animate="visible"
             className="flex justify-center gap-2 mt-8"
           >
-            {carousels.map((_, index) => (
+            {carousels.map((carousel, index) => (
               <button
                 key={index}
+                type="button"
                 onClick={() => setCurrentSlide(index)}
+                aria-label={`切换到第${index + 1}个轮播内容：${carousel.badge}`}
+                aria-current={currentSlide === index ? "true" : "false"}
                 className={cn(
                   "w-3 h-3 rounded-full transition-all duration-300",
-                  currentSlide === index 
-                    ? "bg-letoOrange dark:bg-letoTurquoise" 
+                  currentSlide === index
+                    ? "bg-letoOrange dark:bg-letoTurquoise"
                     : "bg-slate-300 dark:bg-white/30 hover:bg-slate-400 dark:hover:bg-white/50"
                 )}
               />

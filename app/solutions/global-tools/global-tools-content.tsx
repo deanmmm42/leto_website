@@ -248,7 +248,7 @@ export default function GlobalToolsContent() {
                     <div className="bg-gradient-to-br from-white to-gray-50/50 dark:from-white/[0.05] dark:to-white/[0.02] p-8 rounded-3xl border border-gray-200/50 dark:border-white/10 shadow-2xl hover:shadow-3xl transition-all duration-500">
                       <img
                         src={index === 0 ? "/images/smart-photo-cleaner.jpg" : "/images/blood-pressure-monitor.jpg"}
-                        alt={app.name}
+                        alt={index === 0 ? "LetoAI智能相册清理应用界面 - AI驱动的手机相册清理工具，包含相似照片识别、大视频查找和一键清理功能，海外用户千万下载" : "LetoAI血压心率监测应用界面 - AI健康检测工具，支持摄像头心率检测、血压计读数扫描和健康趋势追踪，Apple Health同步"}
                         className="w-full h-auto rounded-2xl"
                       />
                     </div>

@@ -330,7 +330,7 @@ export default function EducationContent() {
                     <div className="bg-gradient-to-br from-white to-gray-50/50 dark:from-white/[0.05] dark:to-white/[0.02] p-8 rounded-3xl border border-gray-200/50 dark:border-white/10 shadow-2xl hover:shadow-3xl transition-all duration-500">
                       <img
                         src={index === 0 ? "/comprehensive-assessment-new.jpg" : "/smart-question-bank-simple.svg"}
-                        alt={product.title}
+                        alt={index === 0 ? "LetoAI综合素养评价系统界面展示 - AI驱动的学生多维度评估工具，包含德智体美劳五育评价指标和数据可视化分析" : "LetoAI个性化教辅系统界面 - 智能题库推荐和学习轨迹追踪，实现因材施教的AI教育解决方案"}
                         className="w-full h-auto rounded-2xl"
                       />
                     </div>
