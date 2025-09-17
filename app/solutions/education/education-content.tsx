@@ -10,13 +10,9 @@ import Link from "next/link"
 import { DescriptionText } from "@/components/description-text"
 import { GradientHoverButton } from "@/components/ui/gradient-hover-button"
 import { useState } from "react"
-import Breadcrumb from "@/components/breadcrumb"
-import { getBreadcrumbItems } from "@/lib/breadcrumb-config"
-import { usePathname } from "next/navigation"
+import BreadcrumbLayout from "@/components/breadcrumb-layout"
 
 export default function EducationContent() {
-  const pathname = usePathname()
-  const breadcrumbItems = getBreadcrumbItems(pathname)
 
   const fadeInVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -212,11 +208,7 @@ export default function EducationContent() {
       <Header />
 
       {/* Breadcrumb */}
-      <div className="pt-20 pb-2">
-        <div className="container mx-auto px-4 md:px-6">
-          <Breadcrumb items={breadcrumbItems} />
-        </div>
-      </div>
+      <BreadcrumbLayout />
 
       {/* Hero Section */}
       <section className="relative pt-8 pb-32 overflow-hidden">

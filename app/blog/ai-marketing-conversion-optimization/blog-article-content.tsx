@@ -8,13 +8,9 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { DescriptionText } from "@/components/description-text"
 import { common } from "@/config/text"
-import Breadcrumb from "@/components/breadcrumb"
-import { getBreadcrumbItems } from "@/lib/breadcrumb-config"
-import { usePathname } from "next/navigation"
+import BreadcrumbLayout from "@/components/breadcrumb-layout"
 
 export default function BlogArticleContent() {
-  const pathname = usePathname()
-  const breadcrumbItems = getBreadcrumbItems(pathname)
 
   const fadeInUpVariants = {
     hidden: { opacity: 0, y: 30 },
@@ -34,11 +30,7 @@ export default function BlogArticleContent() {
       <Header />
 
       {/* Breadcrumb */}
-      <div className="pt-20 pb-2">
-        <div className="container mx-auto px-4 md:px-6">
-          <Breadcrumb items={breadcrumbItems} />
-        </div>
-      </div>
+      <BreadcrumbLayout />
 
       {/* Article Header */}
       <article className="relative pt-8 pb-20">
