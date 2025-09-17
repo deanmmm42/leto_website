@@ -7,14 +7,27 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { DescriptionText } from "@/components/description-text"
 import { common } from "@/config/text"
+import Breadcrumb from "@/components/breadcrumb"
+import { getBreadcrumbItems } from "@/lib/breadcrumb-config"
+import { usePathname } from "next/navigation"
 
 export default function BlogArticleContent() {
+  const pathname = usePathname()
+  const breadcrumbItems = getBreadcrumbItems(pathname)
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50/50 via-white to-blue-50/30 dark:bg-gradient-to-br dark:from-[#030314] dark:via-[#040419] dark:to-[#050520]">
       <Header />
 
+      {/* Breadcrumb */}
+      <div className="pt-20 pb-2">
+        <div className="container mx-auto px-4 md:px-6">
+          <Breadcrumb items={breadcrumbItems} />
+        </div>
+      </div>
+
       {/* Article Header */}
-      <section className="relative pt-32 pb-12 overflow-hidden">
+      <section className="relative pt-8 pb-12 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-letoWarmStart/[0.05] via-transparent to-letoCoolEnd/[0.05]" />
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-letoOrange/5 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-letoCoolEnd/5 rounded-full blur-3xl" />
