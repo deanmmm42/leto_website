@@ -10,7 +10,9 @@ Disallow: /api/
 
 # Allow Next.js static assets that are needed for page functionality
 Allow: /_next/static/
-Disallow: /_next/
+# Disallow other _next directories but allow static assets
+Disallow: /_next/server/
+Disallow: /_next/cache/
 
 # Allow important directories and resources
 Allow: /images/
