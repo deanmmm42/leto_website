@@ -16,8 +16,8 @@ export const common = {
 export const navigation = {
   menuItems: [
     { name: "首页", href: "/" },
-    { 
-      name: "解决方案", 
+    {
+      name: "解决方案",
       href: "/solutions",
       subItems: [
         { name: "AI营销", href: "/solutions/ecommerce" },
@@ -25,6 +25,7 @@ export const navigation = {
         { name: "AI工具", href: "/solutions/global-tools" },
       ]
     },
+    { name: "博客", href: "/blog" },
     { name: "联系我们", href: "/#contact" },
   ],
 }

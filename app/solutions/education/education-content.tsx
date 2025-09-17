@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowRight, BookOpen, Users, TrendingUp, BarChart3, Shield, Brain, Star, CheckCircle } from "lucide-react"
+import { ArrowRight, BookOpen, Users, TrendingUp, BarChart3, Shield, Brain, Star, CheckCircle, ChevronDown, HelpCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import Header from "@/components/header"
@@ -9,6 +9,7 @@ import Footer from "@/components/footer"
 import Link from "next/link"
 import { DescriptionText } from "@/components/description-text"
 import { GradientHoverButton } from "@/components/ui/gradient-hover-button"
+import { useState } from "react"
 
 export default function EducationContent() {
   const fadeInVariants = {
@@ -152,6 +153,51 @@ export default function EducationContent() {
       title: "实时动态调整",
       description: "学习路径实时优化调整",
       details: "系统能够实时监测学生学习状态，动态调整学习内容和难度，确保每个学生都能在最适合的节奏下学习。"
+    }
+  ]
+
+  const [openFAQ, setOpenFAQ] = useState<number | null>(null)
+
+  const toggleFAQ = (index: number) => {
+    setOpenFAQ(openFAQ === index ? null : index)
+  }
+
+  const faqData = [
+    {
+      question: "什么是AI综合素养评价系统？与传统评价有什么区别？",
+      answer: "AI综合素养评价系统是响应国家教育评价改革要求，告别\"唯分数论\"的综合评价工具。与传统单一分数评价不同，它支持德智体美劳五育并举的多维评价模型，构建学生360°成长画像，实现从\"育分\"到\"育人\"的转变。"
+    },
+    {
+      question: "如何保证学生数据的隐私安全？",
+      answer: "我们严格遵循《数据安全法》和《个人信息保护法》，采用数据脱敏、联邦学习等技术，确保学生隐私安全。所有数据处理均在安全可控的环境中进行，建立完善的数据治理体系。"
+    },
+    {
+      question: "系统的评价效果如何？",
+      answer: "根据实际部署数据显示：评价效率提升300%+，教师满意度95%+，家长认可度90%+，真正实现学生成长可视化。"
+    },
+    {
+      question: "\"五育并举\"具体是如何实现的？德智体美劳如何量化评价？",
+      answer: "通过AI算法分析学生在德育（品德修养）、智育（学科能力）、体育（身体素质）、美育（艺术素养）、劳育（实践能力）五个维度的表现数据，形成雷达图、成长曲线等可视化展现。",
+      link: {
+        text: "了解详细的五大核心维度解析",
+        url: "/blog/ai-comprehensive-assessment-dimensions"
+      }
+    },
+    {
+      question: "个性化教辅系统如何实现因材施教？",
+      answer: "基于AI智能题库、学习轨迹追踪、个性化推荐和学情报告四大功能，为每个学生制定个性化学习路径。系统能实时记录学习过程，分析知识点掌握情况，推荐最适合的学习内容。"
+    },
+    {
+      question: "系统有哪些核心技术优势？",
+      answer: "拥有基于大数据的AI算法、多维评价模型、数据可视化展现、智能分析等核心技术，能够挖掘学生潜力与发展方向，提供科学的教学指导。"
+    },
+    {
+      question: "系统部署对学校有什么要求？老师需要培训吗？",
+      answer: "系统操作简单，支持语音交互，老师使用手机就可以操作，大大简化操作难度。学习效果显示：作业时间减少30%，个性化学习提升50%+。"
+    },
+    {
+      question: "如何开始使用这套教育解决方案？",
+      answer: "我们提供完整的咨询服务，会根据学校的具体需求制定个性化部署方案。您可以联系我们进行详细了解和系统演示。"
     }
   ]
 
@@ -499,6 +545,88 @@ export default function EducationContent() {
                       <p className="text-sm text-slate-500 dark:text-white/60 leading-relaxed">{advantage.details}</p>
                     </div>
                   </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-32 bg-gradient-to-br from-slate-50/50 via-white to-gray-50/30 dark:from-[#030314] dark:via-[#040419] dark:to-[#050520]">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-20">
+              <motion.h2
+                custom={0}
+                variants={fadeInVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="text-3xl md:text-5xl font-bold mb-6"
+              >
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-500">常见问题</span>
+              </motion.h2>
+              <motion.div
+                custom={1}
+                variants={fadeInVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+              >
+                <DescriptionText size="large" className="text-slate-600 dark:text-white/70">
+                  解答您关心的教育AI解决方案相关问题
+                </DescriptionText>
+              </motion.div>
+            </div>
+
+            <div className="space-y-4">
+              {faqData.map((faq, index) => (
+                <motion.div
+                  key={index}
+                  custom={index + 2}
+                  variants={fadeInVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  className="bg-white/60 dark:bg-white/[0.05] backdrop-blur-sm border border-white/20 dark:border-white/10 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+                >
+                  <button
+                    onClick={() => toggleFAQ(index)}
+                    className="w-full p-6 text-left flex items-center justify-between hover:bg-blue-50/50 dark:hover:bg-white/[0.02] transition-colors"
+                  >
+                    <div className="flex items-center gap-4">
+                      <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <HelpCircle className="w-4 h-4 text-white" />
+                      </div>
+                      <h3 className="text-lg font-semibold text-slate-900 dark:text-white pr-4">
+                        {faq.question}
+                      </h3>
+                    </div>
+                    <ChevronDown
+                      className={`w-5 h-5 text-slate-500 dark:text-white/60 transition-transform duration-200 flex-shrink-0 ${
+                        openFAQ === index ? 'rotate-180' : ''
+                      }`}
+                    />
+                  </button>
+
+                  {openFAQ === index && (
+                    <div className="px-6 pb-6">
+                      <div className="ml-12 text-slate-700 dark:text-white/80 leading-relaxed">
+                        <p>{faq.answer}</p>
+                        {faq.link && (
+                          <p className="mt-4">
+                            <Link
+                              href={faq.link.url}
+                              className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 underline font-medium"
+                            >
+                              {faq.link.text} →
+                            </Link>
+                          </p>
+                        )}
+                      </div>
+                    </div>
+                  )}
                 </motion.div>
               ))}
             </div>
