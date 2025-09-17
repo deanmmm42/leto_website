@@ -74,7 +74,7 @@ export default function BlogPage() {
             "name": "LetoAI"
           },
           "publisher": {
-            "@type": "Organization", 
+            "@type": "Organization",
             "name": "LetoAI"
           },
           "datePublished": "2025-01-15",
@@ -84,12 +84,37 @@ export default function BlogPage() {
     }
   }
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "首页",
+        "item": "https://www.letoai.tech"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "博客",
+        "item": "https://www.letoai.tech/blog"
+      }
+    ]
+  }
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(blogSchema)
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema)
         }}
       />
       <BlogContent />

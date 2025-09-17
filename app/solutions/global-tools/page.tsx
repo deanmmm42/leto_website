@@ -90,7 +90,7 @@ const globalToolsPageSchema = {
       {
         "@type": "ListItem",
         "position": 3,
-        "name": "海外AI工具",
+        "name": "AI工具",
         "item": "https://www.letoai.tech/solutions/global-tools"
       }
     ]

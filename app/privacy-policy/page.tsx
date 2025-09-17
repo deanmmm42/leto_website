@@ -8,5 +8,34 @@ export const metadata: Metadata = {
 }
 
 export default function PrivacyPolicyPage() {
-  return <PrivacyPolicyContent />
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "首页",
+        "item": "https://www.letoai.tech"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "隐私政策",
+        "item": "https://www.letoai.tech/privacy-policy"
+      }
+    ]
+  }
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema)
+        }}
+      />
+      <PrivacyPolicyContent />
+    </>
+  )
 }

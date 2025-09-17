@@ -47,5 +47,34 @@ export const metadata: Metadata = {
 }
 
 export default function WhitepapersPage() {
-  return <WhitepapersContent />
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "首页",
+        "item": "https://www.letoai.tech"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "白皮书",
+        "item": "https://www.letoai.tech/whitepapers"
+      }
+    ]
+  }
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema)
+        }}
+      />
+      <WhitepapersContent />
+    </>
+  )
 }
