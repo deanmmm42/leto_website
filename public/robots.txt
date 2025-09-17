@@ -8,6 +8,9 @@ Allow: /
 Disallow: /admin/
 Disallow: /api/
 
+
+# Allow Next.js image optimization but disallow other API routes
+Allow: /_next/image
 # Allow Next.js static assets that are needed for page functionality
 Allow: /_next/static/
 # Disallow other _next directories but allow static assets
