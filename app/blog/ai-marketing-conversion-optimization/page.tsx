@@ -27,8 +27,8 @@ export const metadata: Metadata = {
       },
     ],
     article: {
-      publishedTime: "2025-01-15T09:00:00+08:00",
-      modifiedTime: "2025-01-15T09:00:00+08:00",
+      publishedTime: "2025-09-15T09:00:00+08:00",
+      modifiedTime: "2025-09-15T09:00:00+08:00",
       authors: ["LetoAI"],
       section: "AI营销",
       tags: ["AI营销", "电商转化率", "个性化推荐", "数据驱动营销", "智能风控"],
@@ -73,8 +73,8 @@ export default function BlogArticlePage() {
         "url": "https://www.letoai.tech/images/logo.png"
       }
     },
-    "datePublished": "2025-01-15T09:00:00+08:00",
-    "dateModified": "2025-01-15T09:00:00+08:00",
+    "datePublished": "2025-09-15T09:00:00+08:00",
+    "dateModified": "2025-09-15T09:00:00+08:00",
     "url": "https://www.letoai.tech/blog/ai-marketing-conversion-optimization",
     "mainEntityOfPage": {
       "@type": "WebPage",

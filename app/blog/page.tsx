@@ -66,6 +66,22 @@ export default function BlogPage() {
       "itemListElement": [
         {
           "@type": "BlogPosting",
+          "headline": "告别唯分数论：AI综合素养评价五大核心维度深度解析",
+          "description": "深入解析AI综合素养评价系统的德智体美劳五大核心维度，探讨智能语音交互技术如何构建学生360°成长画像，助力教育评价改革走向科学化、数字化。",
+          "url": "https://www.letoai.tech/blog/ai-comprehensive-assessment-dimensions",
+          "author": {
+            "@type": "Organization",
+            "name": "LetoAI"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "LetoAI"
+          },
+          "datePublished": "2025-09-17",
+          "dateModified": "2025-09-17"
+        },
+        {
+          "@type": "BlogPosting",
           "headline": "AI驱动的电商转化率优化：从数据洞察到实际行动",
           "description": "深入探讨如何运用AI技术提升电商转化率，基于真实项目经验分享实用策略。",
           "url": "https://www.letoai.tech/blog/ai-marketing-conversion-optimization",
@@ -77,8 +93,8 @@ export default function BlogPage() {
             "@type": "Organization",
             "name": "LetoAI"
           },
-          "datePublished": "2025-01-15",
-          "dateModified": "2025-01-15"
+          "datePublished": "2025-09-15",
+          "dateModified": "2025-09-15"
         }
       ]
     }

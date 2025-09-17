@@ -63,7 +63,7 @@ export default function BlogArticleContent() {
               </span>
               <span className="flex items-center gap-2 text-sm text-slate-600 dark:text-white/60">
                 <Calendar className="h-3 w-3" />
-                2025年1月15日
+                2025年9月15日
               </span>
               <span className="flex items-center gap-2 text-sm text-slate-600 dark:text-white/60">
                 <Clock className="h-3 w-3" />
