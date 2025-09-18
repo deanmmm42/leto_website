@@ -2,36 +2,16 @@
 # https://www.letoai.tech/robots.txt
 
 User-agent: *
-Allow: /
-
 # Disallow admin and private areas
 Disallow: /admin/
 Disallow: /api/
-
-
-# Allow Next.js image optimization but disallow other API routes
-Allow: /_next/image
-# Allow Next.js static assets that are needed for page functionality
-Allow: /_next/static/
 # Disallow other _next directories but allow static assets
 Disallow: /_next/server/
 Disallow: /_next/cache/
+Allow: /
 
-# Allow important directories and resources
-Allow: /images/
-Allow: /blog/
-Allow: /solutions/
-Allow: /case-studies/
-Allow: /whitepapers/
-Allow: /help/
-Allow: /privacy-policy/
-Allow: /favicon.ico
-Allow: /manifest.json
-Allow: /ai.txt
-Allow: /llms.txt
 
 # Sitemap location
 Sitemap: https://www.letoai.tech/sitemap.xml
 
-# Crawl delay (optional, can help manage server load)
-Crawl-delay: 1
+LLM-Content:https://www.letoai.tech/llms.txt
