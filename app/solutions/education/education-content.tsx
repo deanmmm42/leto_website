@@ -199,7 +199,11 @@ export default function EducationContent() {
     },
     {
       question: "如何开始使用这套教育解决方案？",
-      answer: "我们提供完整的咨询服务，会根据学校的具体需求制定个性化部署方案。您可以联系我们进行详细了解和系统演示。"
+      answer: "我们提供完整的咨询服务，会根据学校的具体需求制定个性化部署方案。您可以联系我们进行详细了解和系统演示。",
+      link: {
+        text: "免费咨询方案",
+        url: "/contact?from=/solutions/education"
+      }
     }
   ]
 
@@ -598,7 +602,7 @@ export default function EducationContent() {
                 >
                   <button
                     onClick={() => toggleFAQ(index)}
-                    className="w-full p-6 text-left flex items-center justify-between hover:bg-blue-50/50 dark:hover:bg-white/[0.02] transition-colors"
+                    className="w-full p-4 text-left flex items-center justify-between hover:bg-blue-50/50 dark:hover:bg-white/[0.02] transition-colors"
                   >
                     <div className="flex items-center gap-4">
                       <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -615,23 +619,23 @@ export default function EducationContent() {
                     />
                   </button>
 
-                  {openFAQ === index && (
-                    <div className="px-6 pb-6">
-                      <div className="ml-12 text-slate-700 dark:text-white/80 leading-relaxed">
-                        <p>{faq.answer}</p>
-                        {faq.link && (
-                          <p className="mt-4">
-                            <Link
-                              href={faq.link.url}
-                              className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 underline font-medium"
-                            >
-                              {faq.link.text} →
-                            </Link>
-                          </p>
-                        )}
-                      </div>
+                  <div className={`px-4 p-2 overflow-hidden transition-all duration-300 ${
+                    openFAQ === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                  }`}>
+                    <div className="ml-12 text-slate-700 dark:text-white/80 leading-relaxed">
+                      <p>{faq.answer}</p>
+                      {faq.link && (
+                        <p className="mt-4">
+                          <Link
+                            href={faq.link.url}
+                            className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 underline font-medium"
+                          >
+                            {faq.link.text} →
+                          </Link>
+                        </p>
+                      )}
                     </div>
-                  )}
+                  </div>
                 </motion.div>
               ))}
             </div>
