@@ -12,6 +12,28 @@ export const common = {
   backToHome: "返回",
 }
 
+// 404页面文案
+export const notFound = {
+  title: "页面未找到",
+  heading: "抱歉，页面不见了",
+  description: "您访问的页面可能已被移动、删除或输入了错误的网址。让我们帮您找到正确的方向。",
+  suggestions: {
+    title: "您可以尝试：",
+    items: [
+      "检查网址拼写是否正确",
+      "返回首页重新开始",
+      "浏览我们的解决方案",
+      "联系我们获取帮助"
+    ]
+  },
+  actions: {
+    backHome: "返回首页",
+    solutions: "浏览解决方案",
+    contact: "联系我们",
+    blog: "查看博客"
+  }
+}
+
 // 导航菜单
 export const navigation = {
   menuItems: [
