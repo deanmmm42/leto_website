@@ -11,43 +11,13 @@ import { common } from "@/config/text"
 // 白皮书数据
 const whitepapers = [
   {
-    id: "ai-marketing-2025",
-    title: "2025年AI营销技术发展白皮书",
-    description: "深入分析AI技术在电商营销领域的应用趋势，包括个性化推荐、智能定价、风控系统等核心技术的发展方向。",
-    category: "AI营销",
-    pages: "32页",
-    releaseDate: "2025年1月",
-    status: "规划中",
-    featured: true
-  },
-  {
     id: "education-ai-transformation",
     title: "教育行业数字化转型实践指南",
-    description: "全面解析AI技术如何重塑教育评价体系，提供从传统教育到智慧教育转型的完整实施路径。",
+    description: "基于四维一体转型框架，提供从战略规划到技术实施的完整路线图，涵盖成熟度评估、实施路径、案例分析。",
     category: "教育AI",
-    pages: "28页",
-    releaseDate: "2025年2月",
-    status: "规划中",
-    featured: false
-  },
-  {
-    id: "global-ai-tools-report",
-    title: "海外AI工具市场分析报告",
-    description: "研究全球AI工具生态发展现状，分析海外市场机遇与挑战，为企业出海提供策略参考。",
-    category: "海外工具",
-    pages: "45页",
-    releaseDate: "2025年3月",
-    status: "规划中",
-    featured: false
-  },
-  {
-    id: "enterprise-ai-risk-control",
-    title: "企业AI风控系统建设白皮书",
-    description: "基于LetoAI服务头部企业的丰富经验，提供AI风控系统从设计到实施的完整方法论。",
-    category: "技术实践",
-    pages: "36页",
-    releaseDate: "2025年4月",
-    status: "规划中",
+    pages: "30页",
+    releaseDate: "2025年9月",
+    status: "已发布",
     featured: true
   }
 ]
@@ -90,10 +60,10 @@ export default function WhitepapersContent() {
             {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl mx-auto">
               {[
-                { number: "4", label: "专业报告" },
-                { number: "50+", label: "服务案例" },
-                { number: "3", label: "核心领域" },
-                { number: "2025", label: "最新发布" }
+                { number: "1", label: "专业报告" },
+                { number: "2+", label: "合作机构" },
+                { number: "7000+", label: "学生受益" },
+                { number: "10亿+", label: "教育数据" }
               ].map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="text-2xl md:text-3xl font-bold text-letoOrange dark:text-letoTurquoise mb-1">
@@ -160,16 +130,27 @@ export default function WhitepapersContent() {
 
                   {/* Action */}
                   <div className="flex items-center gap-4">
-                    <Button variant="outline">
-                      <Clock className="h-4 w-4 mr-2" />
-                      {whitepaper.status}
-                    </Button>
-                    
-                    <Button asChild variant="ghost" className="text-letoOrange dark:text-letoTurquoise">
-                      <Link href="/#contact">
-                        了解更多 →
-                      </Link>
-                    </Button>
+                    {whitepaper.status === "已发布" ? (
+                      <>
+                        <Button asChild className="leto-gradient-bg hover:opacity-90 text-white">
+                          <Link href={whitepaper.id === "education-ai-transformation" ? "/whitepapers/education-digital-transformation-guide" : "/#contact"}>
+                            立即阅读
+                          </Link>
+                        </Button>
+                      </>
+                    ) : (
+                      <>
+                        <Button variant="outline">
+                          <Clock className="h-4 w-4 mr-2" />
+                          {whitepaper.status}
+                        </Button>
+                        <Button asChild variant="ghost" className="text-letoOrange dark:text-letoTurquoise">
+                          <Link href="/#contact">
+                            了解更多 →
+                          </Link>
+                        </Button>
+                      </>
+                    )}
                   </div>
                 </article>
               ))}

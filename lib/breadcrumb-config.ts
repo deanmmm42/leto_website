@@ -38,6 +38,11 @@ export const breadcrumbConfig: BreadcrumbConfig = {
     { name: '首页', href: '/' },
     { name: '白皮书', href: '/whitepapers', isCurrentPage: true }
   ],
+  '/whitepapers/education-digital-transformation-guide': [
+    { name: '首页', href: '/' },
+    { name: '白皮书', href: '/whitepapers' },
+    { name: '教育行业数字化转型实践指南', href: '/whitepapers/education-digital-transformation-guide', isCurrentPage: true }
+  ],
   '/help': [
     { name: '首页', href: '/' },
     { name: '帮助中心', href: '/help', isCurrentPage: true }

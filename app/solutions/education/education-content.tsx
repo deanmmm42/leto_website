@@ -668,7 +668,7 @@ export default function EducationContent() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="flex justify-center"
+              className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               <Button
                 asChild
@@ -676,6 +676,17 @@ export default function EducationContent() {
               >
                 <Link href="/contact?from=/solutions/education" className="flex items-center justify-center">
                   立即咨询 <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+
+              <Button
+                asChild
+                variant="outline"
+                className="border-blue-500/30 text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-950/30 px-8 py-6 text-lg"
+              >
+                <Link href="/whitepapers/education-digital-transformation-guide" className="flex items-center justify-center">
+                  <BookOpen className="mr-2 h-5 w-5" />
+                  数字化转型指南
                 </Link>
               </Button>
             </motion.div>
