@@ -81,6 +81,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.4,
     },
     {
+      url: `${baseUrl}/whitepapers/education-digital-transformation-guide`,
+      lastModified: new Date('2025-09-18'),
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    },
+    {
       url: `${baseUrl}/help`,
       lastModified: currentDate,
       changeFrequency: 'monthly' as const,
