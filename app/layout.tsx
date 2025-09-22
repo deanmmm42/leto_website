@@ -159,6 +159,21 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
+        <Script
+          id="baidu-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?328ba2b9c162a3e1e011494cc35f3c39";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+            `,
+          }}
+        />
         <GoogleAnalytics />
         {children}
       </body>
