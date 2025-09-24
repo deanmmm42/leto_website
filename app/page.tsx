@@ -13,7 +13,7 @@ export default function Home() {
     "name": "LetoAI",
     "url": "https://www.letoai.tech",
     "logo": "https://www.letoai.tech/images/logo.png",
-    "description": "LetoAI专注于AI技术解决方案，提供电商营销、教育评估和海外工具开发服务，为头部企业提供定制化AI解决方案。",
+    "description": "LetoAI专注于AI技术解决方案，提供电商营销、AI教育和全球工具开发服务，为头部企业提供定制化AI解决方案。",
     "foundingDate": "2020",
     "sameAs": [],
     "contactPoint": {

@@ -2,8 +2,8 @@ import { Metadata } from "next"
 import SolutionsContent from "./solutions-content"
 
 export const metadata: Metadata = {
-  title: "AI解决方案 | LetoAI - 电商营销、教育评估、海外工具专业AI技术",
-  description: "LetoAI为不同行业提供专业的AI技术解决方案，涵盖电商行业智能营销、教育行业综合素养评价、海外工具产品开发三大核心领域，助力企业数字化转型。",
+  title: "AI解决方案 | LetoAI - 电商营销、教育评估、全球工具专业AI技术",
+  description: "LetoAI为不同行业提供专业的AI技术解决方案，涵盖电商行业智能营销、教育行业综合素养评价、全球工具产品开发三大核心领域，助力企业数字化转型。",
   keywords: "AI解决方案, 电商AI营销, AI教育评估, 海外AI工具, 人工智能技术, 数字化转型",
   authors: [{ name: "LetoAI" }],
   creator: "LetoAI",
@@ -12,8 +12,8 @@ export const metadata: Metadata = {
     canonical: "https://www.letoai.tech/solutions",
   },
   openGraph: {
-    title: "AI解决方案 | LetoAI - 电商营销、教育评估、海外工具专业AI技术",
-    description: "LetoAI为不同行业提供专业的AI技术解决方案，涵盖电商行业智能营销、教育行业综合素养评价、海外工具产品开发三大核心领域，助力企业数字化转型。",
+    title: "AI解决方案 | LetoAI - 电商营销、教育评估、全球工具专业AI技术",
+    description: "LetoAI为不同行业提供专业的AI技术解决方案，涵盖电商行业智能营销、教育行业综合素养评价、全球工具产品开发三大核心领域，助力企业数字化转型。",
     url: "https://www.letoai.tech/solutions",
     siteName: "LetoAI",
     locale: "zh_CN",
@@ -29,8 +29,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI解决方案 | LetoAI - 电商营销、教育评估、海外工具专业AI技术",
-    description: "LetoAI为不同行业提供专业的AI技术解决方案，涵盖电商行业智能营销、教育行业综合素养评价、海外工具产品开发三大核心领域，助力企业数字化转型。",
+    title: "AI解决方案 | LetoAI - 电商营销、教育评估、全球工具专业AI技术",
+    description: "LetoAI为不同行业提供专业的AI技术解决方案，涵盖电商行业智能营销、教育行业综合素养评价、全球工具产品开发三大核心领域，助力企业数字化转型。",
     images: ["https://www.letoai.tech/images/logo.png"],
   },
   robots: {
@@ -51,7 +51,7 @@ export default function SolutionsPage() {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "LetoAI解决方案",
-    "description": "LetoAI为不同行业提供专业的AI技术解决方案，涵盖电商行业智能营销、教育行业综合素养评价、海外工具产品开发三大核心领域",
+    "description": "LetoAI为不同行业提供专业的AI技术解决方案，涵盖电商行业智能营销、教育行业综合素养评价、全球工具产品开发三大核心领域",
     "url": "https://www.letoai.tech/solutions",
     "provider": {
       "@type": "Organization",
@@ -85,7 +85,7 @@ export default function SolutionsPage() {
           "itemOffered": {
             "@type": "Service",
             "name": "海外AI工具开发",
-            "description": "全球化产品设计、本地化优化、市场分析等海外工具服务",
+            "description": "全球化产品设计、本地化优化、市场分析等全球工具服务",
             "url": "https://www.letoai.tech/solutions/global-tools"
           }
         }

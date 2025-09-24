@@ -39,7 +39,7 @@ const categories = [
   { name: "全部", value: "all", count: 2 },
   { name: "AI营销", value: "ai-marketing", count: 1 },
   { name: "AI教育", value: "ai-education", count: 1 },
-  { name: "海外工具", value: "global-tools", count: 0 },
+  { name: "全球工具", value: "global-tools", count: 0 },
   { name: "技术趋势", value: "tech-trends", count: 0 },
 ]
 

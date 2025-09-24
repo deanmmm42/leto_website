@@ -16,7 +16,7 @@
 - `footer` - 页脚内容
 - `ecommerce` - 电商解决方案页面
 - `education` - 教育解决方案页面
-- `globalTools` - 海外工具解决方案页面
+- `globalTools` - 全球工具解决方案页面
 
 ## 修改流程
 

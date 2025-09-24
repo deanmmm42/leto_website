@@ -66,11 +66,11 @@ export const home = {
         badge: "多元化解决方案矩阵",
         title1: "多元化解决",
         title2: "方案矩阵",
-        description: "深耕三大核心业务领域，为客户提供电商营销、教育评估、海外工具的专业化AI解决方案，满足不同行业的数字化需求",
+        description: "深耕三大核心业务领域，为客户提供电商营销、教育评估、全球工具的专业化AI解决方案，满足不同行业的数字化需求",
       },
       {
-        badge: "海外工具产品",
-        title1: "海外工具",
+        badge: "全球工具产品",
+        title1: "全球工具",
         title2: "产品",
         description: "基础设施级AI技术驱动，专业打造海外移动应用产品，为全球用户提供智能化工具体验",
       }
@@ -97,7 +97,7 @@ export const solutions = {
     },
     {
       title: "AI工具",
-      description: "专业AI技术打造创新海外工具产品，为全球用户服务",
+      description: "专业AI技术打造创新全球工具产品，为全球用户服务",
       href: "/solutions/global-tools", 
       buttonText: "了解更多"
     },
@@ -135,7 +135,7 @@ export const achievements = {
 // 我们的使命部分
 export const mission = {
   title: "我们的使命",
-  content: "以AI技术重塑传统行业，为电商营销、教育评估、海外工具三大领域提供智能化解决方案，让人工智能助力各行各业，为客户创造更多商业价值，让AI改变世界。",
+  content: "以AI技术重塑传统行业，为电商营销、教育评估、全球工具三大领域提供智能化解决方案，让人工智能助力各行各业，为客户创造更多商业价值，让AI改变世界。",
   points: [
     {
       title: "AI技术重塑",
@@ -143,7 +143,7 @@ export const mission = {
     },
     {
       title: "多领域覆盖",
-      description: "电商营销、教育评估、海外工具三大核心应用领域"
+      description: "电商营销、教育评估、全球工具三大核心应用领域"
     },
     {
       title: "智能化方案",
@@ -513,10 +513,10 @@ export const education = {
   }
 }
 
-// 海外工具解决方案页面
+// 全球工具解决方案页面
 export const globalTools = {
   hero: {
-    badge: "海外工具AI解决方案",
+    badge: "全球工具AI解决方案",
     title1: "全球AI工具生态",
     title2: "让AI触手可及",
     description: "构建世界一流AI工具矩阵，连接全球AI开发者和用户，让每个人都能享受AI技术带来的便利和创新体验",
@@ -531,7 +531,7 @@ export const globalTools = {
     }
   },
   challenges: {
-    title: "海外工具开发面临的核心挑战",
+    title: "全球工具开发面临的核心挑战",
     items: [
       "技术壁垒高：AI算法复杂难以移动端部署？",
       "用户体验差：全球化本地化适配困难？", 

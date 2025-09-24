@@ -3,7 +3,7 @@
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## 项目概述
-这是一个基于Next.js 15构建的LetoAI企业官网，使用React 19、TypeScript和Tailwind CSS。主要展示LetoAI公司的三大业务领域：电商行业AI解决方案、教育行业AI评估、海外工具产品开发。
+这是一个基于Next.js 15构建的LetoAI企业官网，使用React 19、TypeScript和Tailwind CSS。主要展示LetoAI公司的三大业务领域：电商行业AI解决方案、教育行业AI评估、全球工具产品开发。
 
 ## 开发命令
 - `npm run dev` - 启动开发服务器 (localhost:3000)
@@ -31,7 +31,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
   /solutions           # 解决方案页面组
     /ecommerce         # 电商解决方案
     /education         # 教育解决方案  
-    /global-tools      # 海外工具解决方案
+    /global-tools      # 全球工具解决方案
 /components            # React组件
   /ui                  # shadcn/ui基础组件
   /contact             # 联系表单相关组件
@@ -84,7 +84,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 项目围绕LetoAI三大核心业务构建：
 1. **电商营销**：数字权益营销平台、AI风控系统
 2. **教育评估**：综合素养评价、个性化教辅系统
-3. **海外工具**：移动AI应用、智能相册清理、健康监测
+3. **全球工具**：移动AI应用、智能相册清理、健康监测
 
 ## 部署配置
 - 图片优化已禁用 (`unoptimized: true`)

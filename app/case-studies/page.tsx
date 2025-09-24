@@ -2,9 +2,9 @@ import { Metadata } from "next"
 import CaseStudiesContent from "./case-studies-content"
 
 export const metadata: Metadata = {
-  title: "成功案例研究 | LetoAI - 电商营销、教育评估、海外工具AI解决方案案例",
-  description: "LetoAI为电商营销、教育评估、海外工具三大领域提供专业AI解决方案，包括平安好车主权益服务平台、教育机构综合素养评价系统等成功案例，实现营销ROI提升300%+，评价效率提升300%+。",
-  keywords: "AI成功案例, 电商营销AI, 教育评估AI, 海外工具AI, 权益营销AI, 综合素养评价, 企业AI转型案例",
+  title: "成功案例研究 | LetoAI - 电商营销、教育评估、全球工具AI解决方案案例",
+  description: "LetoAI为电商营销、教育评估、全球工具三大领域提供专业AI解决方案，包括平安好车主权益服务平台、教育机构综合素养评价系统等成功案例，实现营销ROI提升300%+，评价效率提升300%+。",
+  keywords: "AI成功案例, 电商营销AI, 教育评估AI, 全球工具AI, 权益营销AI, 综合素养评价, 企业AI转型案例",
   authors: [{ name: "LetoAI" }],
   creator: "LetoAI",
   publisher: "LetoAI",
@@ -12,8 +12,8 @@ export const metadata: Metadata = {
     canonical: "https://www.letoai.tech/case-studies",
   },
   openGraph: {
-    title: "成功案例研究 | LetoAI - 电商营销、教育评估、海外工具AI解决方案案例",
-    description: "LetoAI为电商营销、教育评估、海外工具三大领域提供专业AI解决方案，包括平安好车主权益服务平台、教育机构综合素养评价系统等成功案例，实现营销ROI提升300%+，评价效率提升300%+。",
+    title: "成功案例研究 | LetoAI - 电商营销、教育评估、全球工具AI解决方案案例",
+    description: "LetoAI为电商营销、教育评估、全球工具三大领域提供专业AI解决方案，包括平安好车主权益服务平台、教育机构综合素养评价系统等成功案例，实现营销ROI提升300%+，评价效率提升300%+。",
     url: "https://www.letoai.tech/case-studies",
     siteName: "LetoAI",
     locale: "zh_CN",
@@ -29,8 +29,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "成功案例研究 | LetoAI - 电商营销、教育评估、海外工具AI解决方案案例",
-    description: "LetoAI为电商营销、教育评估、海外工具三大领域提供专业AI解决方案，包括平安好车主权益服务平台、教育机构综合素养评价系统等成功案例，实现营销ROI提升300%+，评价效率提升300%+。",
+    title: "成功案例研究 | LetoAI - 电商营销、教育评估、全球工具AI解决方案案例",
+    description: "LetoAI为电商营销、教育评估、全球工具三大领域提供专业AI解决方案，包括平安好车主权益服务平台、教育机构综合素养评价系统等成功案例，实现营销ROI提升300%+，评价效率提升300%+。",
     images: ["https://www.letoai.tech/images/logo.png"],
   },
   robots: {
@@ -51,7 +51,7 @@ export default function CaseStudiesPage() {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "LetoAI成功案例",
-    "description": "LetoAI为客户提供AI解决方案的成功案例集合，展示在电商营销、教育评估、海外工具等领域的应用成果",
+    "description": "LetoAI为客户提供AI解决方案的成功案例集合，展示在电商营销、教育评估、全球工具等领域的应用成果",
     "url": "https://www.letoai.tech/case-studies",
     "mainEntity": {
       "@type": "ItemList",

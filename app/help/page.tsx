@@ -3,7 +3,7 @@ import HelpContent from "./help-content"
 
 export const metadata: Metadata = {
   title: "帮助中心 | LetoAI - AI解决方案使用指南与技术支持",
-  description: "LetoAI帮助中心为您提供AI营销、教育AI、海外工具开发等解决方案的使用指南、常见问题解答和技术支持服务。",
+  description: "LetoAI帮助中心为您提供AI营销、教育AI、全球工具开发等解决方案的使用指南、常见问题解答和技术支持服务。",
   keywords: "AI技术支持, LetoAI帮助中心, AI解决方案指南, 技术文档, 客户服务, AI工具使用教程",
   alternates: {
     canonical: "https://www.letoai.tech/help"

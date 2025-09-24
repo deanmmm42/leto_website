@@ -162,14 +162,14 @@ export default function GlobalToolsContent() {
             >
               <div className="inline-flex items-center gap-2 bg-white/80 dark:bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-green-500/20 mb-6">
                 <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-                <span className="text-sm font-medium text-green-600 dark:text-green-400">海外工具产品</span>
+                <span className="text-sm font-medium text-green-600 dark:text-green-400">全球工具产品</span>
               </div>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-600 via-teal-600 to-blue-600">
                   AI驱动
                 </span>
                 <br />
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-600 to-cyan-600">海外工具产品</span>
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-600 to-cyan-600">全球工具产品</span>
               </h1>
             </motion.div>
 
@@ -265,7 +265,7 @@ export default function GlobalToolsContent() {
                       <div className="mb-8">
                         <div className="inline-flex items-center gap-2 bg-green-500/10 dark:bg-green-500/20 px-3 py-1 rounded-full mb-4">
                           <div className="w-2 h-2 bg-green-500 rounded-full" />
-                          <span className="text-sm font-medium text-green-600 dark:text-green-400">海外工具产品</span>
+                          <span className="text-sm font-medium text-green-600 dark:text-green-400">全球工具产品</span>
                         </div>
                         <h3 className="text-2xl md:text-4xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-green-600 via-teal-600 to-blue-600">
                           {app.name}
@@ -400,7 +400,7 @@ export default function GlobalToolsContent() {
               viewport={{ once: true }}
               className="text-4xl md:text-6xl font-bold mb-12 leading-tight text-slate-900 dark:text-white"
             >
-              准备打造您的海外工具产品？
+              准备打造您的全球工具产品？
             </motion.h2>
 
             <motion.div

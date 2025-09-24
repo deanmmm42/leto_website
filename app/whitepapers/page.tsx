@@ -3,7 +3,7 @@ import WhitepapersContent from "./whitepapers-content"
 
 export const metadata: Metadata = {
   title: "AI技术白皮书 | LetoAI - 人工智能行业深度分析与技术指南",
-  description: "LetoAI发布的AI技术白皮书合集，涵盖AI营销、教育AI、海外工具开发等领域的深度技术分析和行业趋势报告。",
+  description: "LetoAI发布的AI技术白皮书合集，涵盖AI营销、教育AI、全球工具开发等领域的深度技术分析和行业趋势报告。",
   keywords: "AI白皮书, 人工智能技术报告, AI营销指南, 教育AI研究, 海外AI工具开发, 技术分析报告",
   authors: [{ name: "LetoAI" }],
   creator: "LetoAI",
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "AI技术白皮书 | LetoAI - 人工智能行业深度分析与技术指南",
-    description: "LetoAI发布的AI技术白皮书合集，涵盖AI营销、教育AI、海外工具开发等领域的深度技术分析和行业趋势报告。",
+    description: "LetoAI发布的AI技术白皮书合集，涵盖AI营销、教育AI、全球工具开发等领域的深度技术分析和行业趋势报告。",
     url: "https://www.letoai.tech/whitepapers",
     siteName: "LetoAI",
     locale: "zh_CN",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "AI技术白皮书 | LetoAI - 人工智能行业深度分析与技术指南",
-    description: "LetoAI发布的AI技术白皮书合集，涵盖AI营销、教育AI、海外工具开发等领域的深度技术分析和行业趋势报告。",
+    description: "LetoAI发布的AI技术白皮书合集，涵盖AI营销、教育AI、全球工具开发等领域的深度技术分析和行业趋势报告。",
     images: ["https://www.letoai.tech/images/logo.png"],
   },
   robots: {

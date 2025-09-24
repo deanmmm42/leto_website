@@ -299,7 +299,7 @@ export default function SolutionsContent() {
               viewport={{ once: true }}
             >
               <DescriptionText size="medium" className="text-lg text-slate-600 dark:text-white/60 leading-relaxed">
-                深耕电商营销、教育评估、海外工具三大领域，为不同行业提供专业化AI技术解决方案
+                深耕电商营销、教育评估、全球工具三大领域，为不同行业提供专业化AI技术解决方案
               </DescriptionText>
             </motion.div>
           </div>
