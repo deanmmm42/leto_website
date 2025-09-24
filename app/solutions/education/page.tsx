@@ -2,9 +2,9 @@ import { Metadata } from "next"
 import EducationContent from "./education-content"
 
 export const metadata: Metadata = {
-  title: "AI教育解决方案 - LetoAI智能评估系统 | 综合素养评价",
+  title: "AI教育解决方案 - LetoAI智能评估系统 | 综合素养评价·个性化辅导·智能题库",
   description: "LetoAI为教育机构提供AI驱动的学生综合素养评价与个性化辅导解决方案，评价效率提升300%+，教师满意度95%+，助力教育行业数字化转型。",
-  keywords: "AI教育,智慧教育,教育评估,综合素养评价,个性化辅导,学生评价系统,教育AI,LetoAI,因材施教,教育数字化",
+  keywords: "AI教育,智慧教育,教育评估,综合素养评价,个性化辅导,学生评价系统,教育AI,LetoAI,因材施教,教育数字化,AI教学工具,教学实用AI,精准辅导,个性化教育,高效备课,AI+教育,智能批改卷子",
   authors: [{ name: "LetoAI" }],
   creator: "LetoAI",
   publisher: "LetoAI",
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     canonical: "https://www.letoai.tech/solutions/education",
   },
   openGraph: {
-    title: "AI教育解决方案 - LetoAI智能评估系统 | 综合素养评价",
+    title: "AI教育解决方案 - LetoAI智能评估系统 | 综合素养评价·个性化辅导·智能题库",
     description: "LetoAI为教育机构提供AI驱动的学生综合素养评价与个性化辅导解决方案，评价效率提升300%+，教师满意度95%+，助力教育行业数字化转型。",
     url: "https://www.letoai.tech/solutions/education",
     siteName: "LetoAI",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI教育解决方案 - LetoAI智能评估系统 | 综合素养评价",
+    title: "AI教育解决方案 - LetoAI智能评估系统 | 综合素养评价·个性化辅导·智能题库",
     description: "LetoAI为教育机构提供AI驱动的学生综合素养评价与个性化辅导解决方案，评价效率提升300%+，教师满意度95%+，助力教育行业数字化转型。",
     images: ["https://www.letoai.tech/images/logo.png"],
   },
@@ -52,6 +52,7 @@ const educationPageSchema = {
   "name": "AI教育评估解决方案",
   "description": "LetoAI为教育机构提供AI驱动的学生综合素养评价与个性化辅导解决方案，评价效率提升300%+，教师满意度95%+，助力教育行业数字化转型。",
   "url": "https://www.letoai.tech/solutions/education",
+  "keywords": "AI教育,智慧教育,教育评估,综合素养评价,个性化辅导,学生评价系统,教育AI,LetoAI,因材施教,教育数字化,AI教学工具,教学实用AI,精准辅导,个性化教育,高效备课,AI+教育,智能批改卷子",
   "mainEntity": {
     "@type": "Service",
     "name": "AI教育评估解决方案",
