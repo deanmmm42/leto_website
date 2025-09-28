@@ -158,7 +158,7 @@ export default function EducationContent() {
     }
   ]
 
-  const [openFAQ, setOpenFAQ] = useState<number | null>(null)
+  const [openFAQ, setOpenFAQ] = useState<number | null>(0)
 
   const toggleFAQ = (index: number) => {
     setOpenFAQ(openFAQ === index ? null : index)
@@ -608,7 +608,7 @@ export default function EducationContent() {
                       <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center flex-shrink-0">
                         <HelpCircle className="w-4 h-4 text-white" />
                       </div>
-                      <h3 className="text-lg font-semibold text-slate-900 dark:text-white pr-4">
+                      <h3 className="text-lg font-semibold text-slate-900 dark:text-white pr-4 select-text">
                         {faq.question}
                       </h3>
                     </div>

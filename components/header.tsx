@@ -148,7 +148,7 @@ export default function Header() {
                       rel="noopener noreferrer"
                       className={cn(
                         "flex items-center gap-1 transition-colors duration-200 text-slate-600 dark:text-white/70 hover:text-letoOrange dark:hover:text-letoTurquoise",
-                        (pathname.startsWith("/solutions")) && "text-letoOrange dark:text-letoTurquoise font-medium",
+                        isActive(item.href) && "text-letoOrange dark:text-letoTurquoise font-medium",
                       )}
                     >
                       {item.name}
@@ -236,7 +236,7 @@ export default function Header() {
                         rel="noopener noreferrer"
                         className={cn(
                           "py-2 text-slate-600 dark:text-white/70 font-medium hover:text-letoOrange dark:hover:text-letoTurquoise transition-colors duration-200",
-                          (pathname.startsWith("/solutions")) && "text-letoOrange dark:text-letoTurquoise"
+                          isActive(item.href) && "text-letoOrange dark:text-letoTurquoise"
                         )}
                         onClick={() => setMobileMenuOpen(false)}
                       >
