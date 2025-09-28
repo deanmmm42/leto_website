@@ -46,7 +46,7 @@ export default function WhitepapersContent() {
 
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               <span className="bg-clip-text text-transparent bg-gradient-to-b from-slate-900 to-slate-700 dark:from-white dark:to-white/80">
-                AI技术白皮书
+                行业白皮书
               </span>
             </h1>
 
@@ -133,7 +133,7 @@ export default function WhitepapersContent() {
                     {whitepaper.status === "已发布" ? (
                       <>
                         <Button asChild className="leto-gradient-bg hover:opacity-90 text-white">
-                          <Link href={whitepaper.id === "education-ai-transformation" ? "/whitepapers/education-digital-transformation-guide" : "/#contact"}>
+                          <Link href={whitepaper.id === "education-ai-transformation" ? "/whitepapers/education-digital-transformation-guide" : "/#contact"} target="_blank" rel="noopener noreferrer">
                             立即阅读
                           </Link>
                         </Button>

@@ -169,7 +169,7 @@ export default function BlogContent() {
                       </div>
 
                       <h2 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white group-hover:text-letoOrange dark:group-hover:text-letoTurquoise transition-colors">
-                        <Link href={`/blog/${post.id}`}>
+                        <Link href={`/blog/${post.id}`} target="_blank" rel="noopener noreferrer">
                           {post.title}
                         </Link>
                       </h2>
@@ -191,7 +191,7 @@ export default function BlogContent() {
                         </div>
 
                         <Button asChild variant="ghost" className="text-letoOrange dark:text-letoTurquoise hover:text-letoOrange dark:hover:text-letoTurquoise">
-                          <Link href={`/blog/${post.id}`}>
+                          <Link href={`/blog/${post.id}`} target="_blank" rel="noopener noreferrer">
                             阅读全文 →
                           </Link>
                         </Button>

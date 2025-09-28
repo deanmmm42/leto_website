@@ -47,7 +47,15 @@ export const navigation = {
         { name: "AI工具", href: "/solutions/global-tools" },
       ]
     },
-    { name: "博客", href: "/blog" },
+    {
+      name: "文章动态",
+      href: "/blog",
+      subItems: [
+        { name: "技术博客", href: "/blog" },
+        { name: "行业白皮书", href: "/whitepapers" },
+        { name: "成功案例", href: "/case-studies" },
+      ]
+    },
     { name: "联系我们", href: "/#contact" },
   ],
 }
@@ -202,12 +210,11 @@ export const contact = {
 export const footer = {
   companyName: "四川省乐途智行科技有限公司",
   tagline: "智慧正在重新定义商业，为客户打造最前沿的AI解决方案，实现业务的创新发展。",
-  quickLinks: {
-    title: "快速链接",
+  home: {
+    title: "首页",
     links: [
-      { name: "首页", href: "/" },
-      { name: "解决方案", href: "/solutions" },
-      { name: "博客", href: "/blog" },
+      { name: "核心服务", href: "/#about" },
+      { name: "公司使命", href: "/#features" },
       { name: "联系我们", href: "/#contact" },
     ],
   },
@@ -219,11 +226,17 @@ export const footer = {
       { name: "AI工具", href: "/solutions/global-tools" },
     ],
   },
+  blog: {
+    title: "文章动态",
+    links: [
+      { name: "技术博客", href: "/blog" },
+      { name: "行业白皮书", href: "/whitepapers" },
+      { name: "成功案例", href: "/case-studies" },
+    ],
+  },
   resources: {
     title: "资源",
     links: [
-      { name: "案例研究", href: "/case-studies" },
-      { name: "白皮书", href: "/whitepapers" },
       { name: "帮助中心", href: "/help" },
       { name: "隐私政策", href: "/privacy-policy" },
       { name: "站点地图", href: "/sitemap.xml" },
@@ -233,7 +246,7 @@ export const footer = {
     copyright: "© 2025 LetoAI. 保留所有权利.",
     icp: {
       text: "蜀ICP备2024078614号-2",
-      url: "https://beian.miit.gov.cn/"
+      url: "https://beian.miit.gov.cn/#/Integrated/index"
     },
     links: [
       { name: "隐私政策", href: "/privacy-policy" },

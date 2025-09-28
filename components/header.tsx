@@ -15,23 +15,23 @@ import { GradientHoverButton } from "@/components/ui/gradient-hover-button"
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const [dropdownOpen, setDropdownOpen] = useState(false)
+  const [activeDropdown, setActiveDropdown] = useState<number | null>(null)
   const [dropdownTimeout, setDropdownTimeout] = useState<NodeJS.Timeout | null>(null)
   const pathname = usePathname()
   const [activeSection, setActiveSection] = useState("home") // 默认设置为home
 
   // 处理下拉菜单的hover逻辑
-  const handleDropdownEnter = () => {
+  const handleDropdownEnter = (index: number) => {
     if (dropdownTimeout) {
       clearTimeout(dropdownTimeout)
       setDropdownTimeout(null)
     }
-    setDropdownOpen(true)
+    setActiveDropdown(index)
   }
 
   const handleDropdownLeave = () => {
     const timeout = setTimeout(() => {
-      setDropdownOpen(false)
+      setActiveDropdown(null)
     }, 150) // 150ms延时
     setDropdownTimeout(timeout)
   }
@@ -139,11 +139,13 @@ export default function Header() {
                   // 有子菜单的项目
                   <div
                     className="relative"
-                    onMouseEnter={handleDropdownEnter}
+                    onMouseEnter={() => handleDropdownEnter(index)}
                     onMouseLeave={handleDropdownLeave}
                   >
                     <Link
                       href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className={cn(
                         "flex items-center gap-1 transition-colors duration-200 text-slate-600 dark:text-white/70 hover:text-letoOrange dark:hover:text-letoTurquoise",
                         (pathname.startsWith("/solutions")) && "text-letoOrange dark:text-letoTurquoise font-medium",
@@ -154,7 +156,7 @@ export default function Header() {
                     </Link>
                     
                     {/* 下拉菜单 */}
-                    {dropdownOpen && (
+                    {activeDropdown === index && (
                       <motion.div
                         initial={{ opacity: 0, y: -10 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -165,6 +167,8 @@ export default function Header() {
                           <Link
                             key={subIndex}
                             href={subItem.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="block px-4 py-2 text-slate-600 dark:text-white/70 hover:text-letoOrange dark:hover:text-letoTurquoise hover:bg-gray-50 dark:hover:bg-white/5 transition-colors duration-200"
                           >
                             {subItem.name}
@@ -177,6 +181,8 @@ export default function Header() {
                   // 普通菜单项
                   <Link
                     href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={cn(
                       "transition-colors duration-200 text-slate-600 dark:text-white/70 hover:text-letoOrange dark:hover:text-letoTurquoise",
                       isActive(item.href) && "text-letoOrange dark:text-letoTurquoise font-medium",
@@ -226,6 +232,8 @@ export default function Header() {
                     <div>
                       <Link
                         href={item.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className={cn(
                           "py-2 text-slate-600 dark:text-white/70 font-medium hover:text-letoOrange dark:hover:text-letoTurquoise transition-colors duration-200",
                           (pathname.startsWith("/solutions")) && "text-letoOrange dark:text-letoTurquoise"
@@ -239,6 +247,8 @@ export default function Header() {
                           <Link
                             key={subIndex}
                             href={subItem.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="block py-2 text-slate-500 dark:text-white/50 hover:text-letoOrange dark:hover:text-letoTurquoise transition-colors duration-200"
                             onClick={() => setMobileMenuOpen(false)}
                           >
@@ -251,6 +261,8 @@ export default function Header() {
                     // 普通菜单项
                     <Link
                       href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className={cn(
                         "py-2 transition-colors duration-200 text-slate-600 dark:text-white/70 hover:text-letoOrange dark:hover:text-letoTurquoise",
                         isActive(item.href) && "text-letoOrange dark:text-letoTurquoise font-medium",

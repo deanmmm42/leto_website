@@ -1792,43 +1792,43 @@ export default function WhitepaperContent() {
 
                   <div className="space-y-3 text-sm">
                     <div className="border-l-4 border-green-500 pl-3">
-                      <strong><a href="https://diidea.pku.edu.cn/userfiles/resources/202505230956056352.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">Digital Intelligence Education（白皮书）</a></strong> - DI-IDEA（北大牵头），2025<br/>
+                      <strong><a href="https://diidea.pku.edu.cn/userfiles/resources/202505230956056352.pdf" target="_blank" rel="nofollow noopener noreferrer" className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">Digital Intelligence Education（白皮书）</a></strong> - DI-IDEA（北大牵头），2025<br/>
                       <span className="text-slate-600 dark:text-white/60">提出数智教育概念/体系/标准与大量高校案例，兼顾框架与实践路径</span>
                     </div>
 
                     <div className="border-l-4 border-green-500 pl-3">
-                      <strong><a href="https://unesdoc.unesco.org/ark:/48223/pf0000378648" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">人工智能与教育：政策制定者指南</a></strong> - UNESCO，2021<br/>
+                      <strong><a href="https://unesdoc.unesco.org/ark:/48223/pf0000378648" target="_blank" rel="nofollow noopener noreferrer" className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">人工智能与教育：政策制定者指南</a></strong> - UNESCO，2021<br/>
                       <span className="text-slate-600 dark:text-white/60">系统阐述AI与教育融合的风险/效益评估与政策应对，提供治理原则与实施建议</span>
                     </div>
 
                     <div className="border-l-4 border-green-500 pl-3">
-                      <strong><a href="https://bm.cugb.edu.cn/jsfzzx/upload/resources/file/2025/05/26/266517.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">中国智慧教育白皮书</a></strong> - 高校/研究机构，2025<br/>
+                      <strong><a href="https://bm.cugb.edu.cn/jsfzzx/upload/resources/file/2025/05/26/266517.pdf" target="_blank" rel="nofollow noopener noreferrer" className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">中国智慧教育白皮书</a></strong> - 高校/研究机构，2025<br/>
                       <span className="text-slate-600 dark:text-white/60">对国家教育数字化战略行动、智慧教育平台与教育强国（2024–2035）专章解读</span>
                     </div>
 
                     <div className="border-l-4 border-blue-500 pl-3">
-                      <strong><a href="https://www.h3c.com/cn/d_202506/2559096_961592_0.htm" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">教育数字化转型与变革白皮书</a></strong> - 新华三（H3C），2025<br/>
+                      <strong><a href="https://www.h3c.com/cn/d_202506/2559096_961592_0.htm" target="_blank" rel="nofollow noopener noreferrer" className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">教育数字化转型与变革白皮书</a></strong> - 新华三（H3C），2025<br/>
                       <span className="text-slate-600 dark:text-white/60">面向K12/高等教育的整体解决方案与转型路径，聚焦技术底座与场景应用</span>
                     </div>
 
                     <div className="border-l-4 border-blue-500 pl-3">
-                      <strong><a href="https://www.huawei.com/cn/news/2022/9/intelligent-education-maturity-assessment-model-2022hc" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">教育数字化转型的发展机遇（含成熟度模型）</a></strong> - 华为，2022<br/>
+                      <strong><a href="https://www.huawei.com/cn/news/2022/9/intelligent-education-maturity-assessment-model-2022hc" target="_blank" rel="nofollow noopener noreferrer" className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">教育数字化转型的发展机遇（含成熟度模型）</a></strong> - 华为，2022<br/>
                       <span className="text-slate-600 dark:text-white/60">首次提出智慧教育成熟度评估模型（6子维度×5级），用于自评与路线规划</span>
                     </div>
 
 
                     <div className="border-l-4 border-yellow-500 pl-3">
-                      <strong><a href="http://www.sic.gov.cn/sic/82/567/0111/20240111153504508297605_pc.html" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">教育数字化转型的趋势与路径</a></strong> - 国家信息中心，2024<br/>
+                      <strong><a href="http://www.sic.gov.cn/sic/82/567/0111/20240111153504508297605_pc.html" target="_blank" rel="nofollow noopener noreferrer" className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">教育数字化转型的趋势与路径</a></strong> - 国家信息中心，2024<br/>
                       <span className="text-slate-600 dark:text-white/60">强调数据要素、技术融合、顶层设计与统筹推进的四大关键点与实施路径</span>
                     </div>
 
                     <div className="border-l-4 border-yellow-500 pl-3">
-                      <strong><a href="http://www.moe.gov.cn/s78/A16/gongzuo/gzzl_yb/202501/t20250116_1175897.html" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">2025世界数字教育大会资料汇编</a></strong> - 世界数字教育大会，2025<br/>
+                      <strong><a href="http://www.moe.gov.cn/s78/A16/gongzuo/gzzl_yb/202501/t20250116_1175897.html" target="_blank" rel="nofollow noopener noreferrer" className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">2025世界数字教育大会资料汇编</a></strong> - 世界数字教育大会，2025<br/>
                       <span className="text-slate-600 dark:text-white/60">汇编各国政策与实践成果，利于洞察全球趋势与对标先进实践</span>
                     </div>
 
                     <div className="border-l-4 border-orange-500 pl-3">
-                      <strong><a href="https://pdf.dfcfw.com/pdf/H3_AP202408051639144645_1.pdf?1723644716000.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">2024年AI+教育行业发展研究报告</a></strong> - 研究机构，2024<br/>
+                      <strong><a href="https://pdf.dfcfw.com/pdf/H3_AP202408051639144645_1.pdf?1723644716000.pdf" target="_blank" rel="nofollow noopener noreferrer" className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">2024年AI+教育行业发展研究报告</a></strong> - 研究机构，2024<br/>
                       <span className="text-slate-600 dark:text-white/60">聚焦AI赋能教育的技术路线与产业趋势，辅助技术选型与节奏判断</span>
                     </div>
 
