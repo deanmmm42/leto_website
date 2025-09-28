@@ -3,10 +3,13 @@ import HeroGeometric from "@/components/kokonutui/hero-geometric"
 import AboutSection from "@/components/about-section"
 import ServicesSection from "@/components/services-section"
 import FeaturesSection from "@/components/features-section"
+import LatestBlogPostsSection from "@/components/latest-blog-posts-section"
 import ContactSection from "@/components/contact-section"
 import Footer from "@/components/footer"
+import { getLatestPosts } from "@/lib/blog-posts"
 
 export default function Home() {
+  const latestPosts = getLatestPosts(3)
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -67,6 +70,37 @@ export default function Home() {
     "url": "https://www.letoai.tech"
   }
 
+  const latestBlogSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "最新博客文章",
+    "itemListElement": latestPosts.map((post, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "url": `https://www.letoai.tech/blog/${post.id}`,
+      "item": {
+        "@type": "BlogPosting",
+        "headline": post.title,
+        "description": post.excerpt,
+        "datePublished": post.publishDate,
+        "dateModified": post.publishDate,
+        "author": {
+          "@type": "Organization",
+          "name": "LetoAI"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "LetoAI",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.letoai.tech/images/logo.png"
+          }
+        },
+        "mainEntityOfPage": `https://www.letoai.tech/blog/${post.id}`
+      }
+    }))
+  }
+
   return (
     <>
       <script
@@ -81,12 +115,21 @@ export default function Home() {
           __html: JSON.stringify(websiteSchema)
         }}
       />
+      {latestPosts.length > 0 ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(latestBlogSchema)
+          }}
+        />
+      ) : null}
       <main>
         <Header />
         <HeroGeometric />
         <AboutSection />
         <ServicesSection />
         <FeaturesSection />
+        <LatestBlogPostsSection posts={latestPosts} />
         <ContactSection />
         <Footer />
       </main>

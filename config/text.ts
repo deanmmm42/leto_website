@@ -84,6 +84,11 @@ export const home = {
       }
     ]
   },
+  blogSection: {
+    title: "最新博客洞察",
+    description: "紧跟AI营销、教育与全球工具的行业趋势，了解我们如何用技术驱动业务增长。",
+    cta: "浏览全部文章"
+  }
 }
 
 // 解决方案概览部分
@@ -660,4 +665,3 @@ export const globalTools = {
     button: "立即咨询"
   }
 }
-
