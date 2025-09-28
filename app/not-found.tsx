@@ -3,23 +3,10 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Home, Search, BookOpen, Mail, ArrowLeft } from "lucide-react"
+import { Home, Search, BookOpen, Mail } from "lucide-react"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { notFound } from "@/config/text"
-
-function BackButton() {
-  return (
-    <Button
-      variant="ghost"
-      onClick={() => window.history.back()}
-      className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
-    >
-      <ArrowLeft className="w-4 h-4 mr-2" />
-      返回上一页
-    </Button>
-  )
-}
 
 export default function NotFound() {
   return (
@@ -113,10 +100,6 @@ export default function NotFound() {
             </Link>
           </div>
 
-          {/* 返回上一页 */}
-          <div>
-            <BackButton />
-          </div>
         </div>
       </main>
 

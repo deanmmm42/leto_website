@@ -1,5 +1,7 @@
 # Repository Guidelines
 
+**Think in English, communicate with Chinese**
+
 ## Project Structure & Module Organization
 - `app/` houses Next.js route segments and page layouts; colocate UI logic with the route folder that renders it.
 - `components/` contains reusable view primitives; match new component filenames to the existing kebab-case pattern (e.g., `feature-banner.tsx`).

@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -9,7 +8,6 @@ import { contact } from "@/config/text"
 import { Loader2, CheckCircle, XCircle } from "lucide-react"
 
 interface ContactFormCardProps {
-  customIndex?: number
   className?: string
 }
 
@@ -20,7 +18,7 @@ interface FormData {
   message: string
 }
 
-export function ContactFormCard({ customIndex = 2, className = "" }: ContactFormCardProps) {
+export function ContactFormCard({ className = "" }: ContactFormCardProps) {
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
@@ -30,19 +28,6 @@ export function ContactFormCard({ customIndex = 2, className = "" }: ContactForm
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
   const [statusMessage, setStatusMessage] = useState('')
-
-  const fadeInVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: (i: number) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-        delay: 0.15 * i,
-        ease: "easeOut" as const,
-      },
-    }),
-  }
 
   const handleInputChange = (field: keyof FormData, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }))
@@ -100,15 +85,8 @@ export function ContactFormCard({ customIndex = 2, className = "" }: ContactForm
   }
 
   return (
-    <motion.div
-      custom={customIndex}
-      variants={fadeInVariants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true }}
-      className={className}
-    >
-      <div className="bg-white dark:bg-white/[0.03] backdrop-blur-sm border border-gray-100 dark:border-white/10 rounded-xl p-8 shadow-sm">
+    <div className={className}>
+      <div className="rounded-xl border border-gray-100 bg-white p-8 shadow-sm dark:border-white/10 dark:bg-white/[0.03]">
         <h3 className="text-2xl font-semibold mb-6 text-slate-900 dark:text-white">{contact.form.title}</h3>
 
         <form onSubmit={handleSubmit} className="space-y-6">
@@ -203,6 +181,6 @@ export function ContactFormCard({ customIndex = 2, className = "" }: ContactForm
           </Button>
         </form>
       </div>
-    </motion.div>
+    </div>
   )
 }
