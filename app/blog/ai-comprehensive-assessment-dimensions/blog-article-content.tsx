@@ -125,13 +125,13 @@ export default function BlogArticleContent() {
 
                 <div className="space-y-4 text-slate-700 dark:text-white/80 leading-relaxed">
                   <p>
-                    长期以来，中国教育系统深受"唯分数论"困扰。一张试卷、一个分数，成为评判学生优劣的唯一标准。然而，这种单一化的评价方式越来越无法适应新时代的教育需求。<strong className="text-letoOrange dark:text-letoTurquoise">2020年中共中央、国务院印发的《深化新时代教育评价改革总体方案》</strong>明确指出，要"改进结果评价，强化过程评价，探索增值评价，健全综合评价"。
+                    <strong className="text-letoOrange dark:text-letoTurquoise">AI综合素养评价</strong>正在重塑传统教育评价体系。长期以来，中国教育系统深受"唯分数论"困扰。一张试卷、一个分数，成为评判学生优劣的唯一标准。然而，这种单一化的评价方式越来越无法适应新时代的教育需求。<strong className="text-letoOrange dark:text-letoTurquoise">2020年中共中央、国务院印发的《深化新时代教育评价改革总体方案》</strong>明确指出，要"改进结果评价，强化过程评价，探索增值评价，健全综合评价"。这为<strong>AI综合素养评价</strong>的发展指明了方向。
                   </p>
                   <p>
-                    传统分数评价体系的局限性日益凸显：<strong>无法全面反映学生的综合素质</strong>，缺乏对学习过程的关注，忽视了学生的个性化发展需求。据教育部统计，超过<strong className="text-letoOrange dark:text-letoTurquoise">85%的教师</strong>认为现有评价体系过于单一，<strong className="text-letoOrange dark:text-letoTurquoise">90%的家长</strong>希望看到孩子更全面的成长记录。
+                    传统分数评价体系的局限性日益凸显：<strong>无法全面反映学生的综合素质</strong>，缺乏对学习过程的关注，忽视了学生的个性化发展需求。据教育部统计，超过<strong className="text-letoOrange dark:text-letoTurquoise">85%的教师</strong>认为现有评价体系过于单一，<strong className="text-letoOrange dark:text-letoTurquoise">90%的家长</strong>希望看到孩子更全面的成长记录。因此，构建基于<strong>五大核心维度</strong>的AI综合素养评价体系势在必行。
                   </p>
                   <p>
-                    在这一背景下，人工智能技术为教育评价改革带来了前所未有的机遇。通过AI驱动的综合素养评价系统，我们可以<strong>构建学生360°成长画像</strong>，真正实现"五育并举"的教育目标。LetoAI基于10亿+教育数据训练的AI评价系统，已在全国超过<strong className="text-letoOrange dark:text-letoTurquoise">200所学校</strong>成功部署，评价效率提升300%以上。
+                    在这一背景下，<strong>AI综合素养评价</strong>为教育评价改革带来了前所未有的机遇。通过AI驱动的综合素养评价系统，我们可以<strong>构建学生360°成长画像</strong>，真正实现"五育并举"的教育目标。LetoAI基于10亿+教育数据训练的<strong>AI综合素养评价系统</strong>，已在全国超过<strong className="text-letoOrange dark:text-letoTurquoise">200所学校</strong>成功部署，通过<strong>五大核心维度</strong>的全面评价，使评价效率提升300%以上。
                   </p>
                 </div>
               </div>
@@ -152,12 +152,12 @@ export default function BlogArticleContent() {
 
                 <div className="space-y-6">
                   <div className="space-y-4 text-slate-700 dark:text-white/80 leading-relaxed">
-                    <h3 className="text-xl font-semibold text-slate-900 dark:text-white">360°成长画像：从单维度到多维度的评价转变</h3>
+                    <h3 className="text-xl font-semibold text-slate-900 dark:text-white"><strong>AI综合素养评价</strong>的360°成长画像：从单维度到多维度的评价转变</h3>
                     <p>
-                      传统教育评价如同"盲人摸象"，仅凭一次考试成绩就下定论。而AI综合素养评价系统则像"全景摄像头"，<strong>从德、智、体、美、劳五个维度</strong>全方位记录学生成长轨迹。通过多源异构数据融合，包括学习行为数据、社交互动记录、创作作品分析、体育运动数据等，构建立体化的学生成长档案。
+                      传统教育评价如同"盲人摸象"，仅凭一次考试成绩就下定论。而<strong>AI综合素养评价系统</strong>则像"全景摄像头"，<strong>从德、智、体、美、劳五大核心维度</strong>全方位记录学生成长轨迹。通过多源异构数据融合，包括学习行为数据、社交互动记录、创作作品分析、体育运动数据等，<strong>AI综合素养评价</strong>能够构建立体化的学生成长档案。
                     </p>
                     <p>
-                      这种360°成长画像不仅关注<strong>"学生现在是什么样"</strong>，更重要的是预测<strong>"学生将来能成为什么样"</strong>。通过AI算法分析学生的学习模式、兴趣倾向和潜能特质，为个性化教育提供科学依据。
+                      这种<strong>360°成长画像</strong>不仅关注<strong>"学生现在是什么样"</strong>，更重要的是预测<strong>"学生将来能成为什么样"</strong>。通过<strong>AI综合素养评价</strong>算法分析学生的学习模式、兴趣倾向和潜能特质，为个性化教育提供科学依据。这正是<strong>五大核心维度</strong>综合评价的核心价值。
                     </p>
                   </div>
 
@@ -167,7 +167,7 @@ export default function BlogArticleContent() {
                         <BarChart3 className="w-5 h-5 text-blue-500" />
                         <h4 className="font-semibold text-slate-900 dark:text-white">数据驱动评价</h4>
                       </div>
-                      <p className="text-sm text-slate-600 dark:text-white/70">基于10亿+真实教育场景数据训练，涵盖不同年龄段、学科领域和学习风格，确保评价的科学性和准确性。</p>
+                      <p className="text-sm text-slate-600 dark:text-white/70">基于10亿+真实教育场景数据训练，<strong>AI综合素养评价</strong>涵盖不同年龄段、学科领域和学习风格，确保<strong>五大核心维度</strong>评价的科学性和准确性。</p>
                     </div>
 
                     <div className="bg-white/60 dark:bg-white/[0.05] p-6 rounded-xl border border-white/20 dark:border-white/10">
@@ -175,7 +175,7 @@ export default function BlogArticleContent() {
                         <TrendingUp className="w-5 h-5 text-purple-500" />
                         <h4 className="font-semibold text-slate-900 dark:text-white">过程性评价</h4>
                       </div>
-                      <p className="text-sm text-slate-600 dark:text-white/70">不同于传统的结果性评价，AI系统实时追踪学生学习过程，记录每一次进步和突破，真正关注成长轨迹。</p>
+                      <p className="text-sm text-slate-600 dark:text-white/70">不同于传统的结果性评价，<strong>AI综合素养评价系统</strong>实时追踪学生学习过程，记录<strong>五大核心维度</strong>中每一次进步和突破，真正关注成长轨迹。</p>
                     </div>
                   </div>
                 </div>
@@ -190,11 +190,11 @@ export default function BlogArticleContent() {
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
                   <span className="bg-clip-text text-transparent bg-gradient-to-r from-letoOrange via-letoPink to-letoPurple">
-                    五大核心维度深度解析
+                    AI综合素养评价的五大核心维度深度解析
                   </span>
                 </h2>
                 <DescriptionText className="text-lg">
-                  德智体美劳全方位评价体系，构建学生完整成长画像
+                  <strong>德智体美劳</strong>全方位评价体系，构建<strong>360°成长画像</strong>的完整解决方案
                 </DescriptionText>
               </div>
 
@@ -206,8 +206,8 @@ export default function BlogArticleContent() {
                       <Users className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold text-slate-900 dark:text-white">德育维度：品格成长的智能识别</h3>
-                      <p className="text-slate-600 dark:text-white/70">构建品德素养的数字化评价体系</p>
+                      <h3 className="text-2xl font-bold text-slate-900 dark:text-white"><strong>AI综合素养评价</strong>的德育维度：品格成长的智能识别</h3>
+                      <p className="text-slate-600 dark:text-white/70">构建品德素养的数字化评价体系，<strong>五大核心维度</strong>中的重要组成</p>
                     </div>
                   </div>
 
@@ -232,7 +232,7 @@ export default function BlogArticleContent() {
                     </div>
 
                     <div className="space-y-4 text-slate-700 dark:text-white/80">
-                      <p><strong>AI技术应用：</strong>通过行为模式识别、语义情感分析和社交网络分析，系统能够智能识别学生在日常学习生活中的品德表现。例如，通过分析学生的作业提交习惯识别责任感，通过小组合作中的发言频次和质量评估协作能力。</p>
+                      <p><strong>AI技术应用：</strong><strong>AI综合素养评价</strong>通过行为模式识别、语义情感分析和社交网络分析，能够智能识别学生在日常学习生活中的品德表现。例如，通过分析学生的作业提交习惯识别责任感，通过小组合作中的发言频次和质量评估协作能力。这是<strong>五大核心维度</strong>中德育维度的核心优势。</p>
                       <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg border border-green-200 dark:border-green-800/50">
                         <p><strong className="text-green-700 dark:text-green-400">案例效果：</strong>某中学部署德育评价系统后，学生诚信考试比例提升至98.5%，班级团队协作效率提升45%，校园文明行为显著改善。</p>
                       </div>
@@ -247,8 +247,8 @@ export default function BlogArticleContent() {
                       <Brain className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold text-slate-900 dark:text-white">智育维度：学习能力的精准画像</h3>
-                      <p className="text-slate-600 dark:text-white/70">科学评估认知能力与学习效果</p>
+                      <h3 className="text-2xl font-bold text-slate-900 dark:text-white"><strong>AI综合素养评价</strong>的智育维度：学习能力的精准画像</h3>
+                      <p className="text-slate-600 dark:text-white/70">科学评估认知能力与学习效果，<strong>五大核心维度</strong>中的核心组成</p>
                     </div>
                   </div>
 
@@ -273,7 +273,7 @@ export default function BlogArticleContent() {
                     </div>
 
                     <div className="space-y-4 text-slate-700 dark:text-white/80">
-                      <p><strong>AI技术应用：</strong>采用学习轨迹分析、认知诊断模型和个性化推荐算法，系统能够精准识别学生的认知特点和学习模式。通过分析答题过程、错误模式和学习时间分布，为每个学生生成专属的学习能力画像。</p>
+                      <p><strong>AI技术应用：</strong><strong>AI综合素养评价系统</strong>采用学习轨迹分析、认知诊断模型和个性化推荐算法，能够精准识别学生的认知特点和学习模式。通过分析答题过程、错误模式和学习时间分布，为每个学生生成专属的学习能力画像。这在<strong>五大核心维度</strong>中属于智育维度的高级应用。</p>
                       <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg border border-blue-200 dark:border-blue-800/50">
                         <p><strong className="text-blue-700 dark:text-blue-400">数据支撑：</strong>AI智能诊断帮助学生学习效率平均提升50%，知识点掌握率从72%提升至85%以上，学习时间减少30%而效果显著改善。</p>
                       </div>
@@ -288,8 +288,8 @@ export default function BlogArticleContent() {
                       <Zap className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold text-slate-900 dark:text-white">体育维度：身心健康的全面监测</h3>
-                      <p className="text-slate-600 dark:text-white/70">智能化体质健康与运动能力评估</p>
+                      <h3 className="text-2xl font-bold text-slate-900 dark:text-white"><strong>AI综合素养评价</strong>的体育维度：身心健康的全面监测</h3>
+                      <p className="text-slate-600 dark:text-white/70">智能化体质健康与运动能力评估，<strong>五大核心维度</strong>的重要组成</p>
                     </div>
                   </div>
 
@@ -308,8 +308,8 @@ export default function BlogArticleContent() {
                       <Star className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold text-slate-900 dark:text-white">美育维度：审美素养的多元评估</h3>
-                      <p className="text-slate-600 dark:text-white/70">艺术创作与审美能力的智能分析</p>
+                      <h3 className="text-2xl font-bold text-slate-900 dark:text-white"><strong>AI综合素养评价</strong>的美育维度：审美素养的多元评估</h3>
+                      <p className="text-slate-600 dark:text-white/70">艺术创作与审美能力的智能分析，<strong>五大核心维度</strong>中的美育部分</p>
                     </div>
                   </div>
 
@@ -325,8 +325,8 @@ export default function BlogArticleContent() {
                       <BookOpen className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold text-slate-900 dark:text-white">劳育维度：实践能力的综合考量</h3>
-                      <p className="text-slate-600 dark:text-white/70">劳动技能与实践创新的智能评估</p>
+                      <h3 className="text-2xl font-bold text-slate-900 dark:text-white"><strong>AI综合素养评价</strong>的劳育维度：实践能力的综合考量</h3>
+                      <p className="text-slate-600 dark:text-white/70">劳动技能与实践创新的智能评估，<strong>五大核心维度</strong>的完整闭环</p>
                     </div>
                   </div>
 
@@ -347,7 +347,7 @@ export default function BlogArticleContent() {
                   <div className="w-10 h-10 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl flex items-center justify-center">
                     <Mic className="w-5 h-5 text-white" />
                   </div>
-                  <h2 className="text-2xl font-bold text-slate-900 dark:text-white">智能语音交互：让评价更便捷高效</h2>
+                  <h2 className="text-2xl font-bold text-slate-900 dark:text-white"><strong>智能语音交互</strong>：让<strong>AI综合素养评价</strong>更便捷高效</h2>
                 </div>
 
                 <div className="space-y-6">
@@ -355,11 +355,11 @@ export default function BlogArticleContent() {
                     <div className="space-y-4">
                       <h3 className="text-lg font-semibold text-slate-900 dark:text-white flex items-center gap-2">
                         <Smartphone className="w-5 h-5 text-cyan-500" />
-                        核心技术组件
+                        <strong>智能语音交互</strong>核心技术组件
                       </h3>
                       <ul className="space-y-2 text-slate-700 dark:text-white/80">
-                        <li><strong>语音识别(ASR)：</strong>支持多方言、多场景的高精度语音转文字</li>
-                        <li><strong>自然语言理解(NLU)：</strong>精准的意图识别和实体抽取</li>
+                        <li><strong>语音识别(ASR)：</strong>为<strong>AI综合素养评价</strong>支持多方言、多场景的高精度语音转文字</li>
+                        <li><strong>自然语言理解(NLU)：</strong>精准识别<strong>五大核心维度</strong>的意图和实体抽取</li>
                         <li><strong>对话管理：</strong>上下文理解和多轮对话支持</li>
                         <li><strong>语音合成(TTS)：</strong>自然流畅的语音反馈</li>
                       </ul>
@@ -423,22 +423,22 @@ export default function BlogArticleContent() {
                   <div className="w-10 h-10 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-xl flex items-center justify-center">
                     <Brain className="w-5 h-5 text-white" />
                   </div>
-                  <h2 className="text-2xl font-bold text-slate-900 dark:text-white">技术实现：AI算法如何构建成长画像</h2>
+                  <h2 className="text-2xl font-bold text-slate-900 dark:text-white">技术实现：<strong>AI综合素养评价</strong>算法如何构建<strong>360°成长画像</strong></h2>
                 </div>
 
                 <div className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div className="bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20 p-6 rounded-xl">
                       <h3 className="font-semibold text-slate-900 dark:text-white mb-3">数据采集</h3>
-                      <p className="text-sm text-slate-700 dark:text-white/80">多源异构数据的智能融合，包括行为数据、学习记录、作品分析等</p>
+                      <p className="text-sm text-slate-700 dark:text-white/80"><strong>AI综合素养评价</strong>多源异构数据的智能融合，包括<strong>五大核心维度</strong>的行为数据、学习记录、作品分析等</p>
                     </div>
                     <div className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 p-6 rounded-xl">
                       <h3 className="font-semibold text-slate-900 dark:text-white mb-3">模型算法</h3>
-                      <p className="text-sm text-slate-700 dark:text-white/80">深度学习在教育评价中的创新应用，精准识别学习模式</p>
+                      <p className="text-sm text-slate-700 dark:text-white/80">深度学习在<strong>AI综合素养评价</strong>中的创新应用，精准识别学习模式</p>
                     </div>
                     <div className="bg-gradient-to-br from-pink-50 to-red-50 dark:from-pink-900/20 dark:to-red-900/20 p-6 rounded-xl">
                       <h3 className="font-semibold text-slate-900 dark:text-white mb-3">可视化展示</h3>
-                      <p className="text-sm text-slate-700 dark:text-white/80">雷达图、成长曲线、发展轨迹等直观展现学生成长过程</p>
+                      <p className="text-sm text-slate-700 dark:text-white/80">雷达图、成长曲线、发展轨迹等直观展现<strong>360°成长画像</strong></p>
                     </div>
                   </div>
 
@@ -448,7 +448,7 @@ export default function BlogArticleContent() {
                       <h3 className="font-semibold text-slate-900 dark:text-white">隐私保护</h3>
                     </div>
                     <p className="text-slate-700 dark:text-white/80">
-                      严格遵循《数据安全法》和《个人信息保护法》，采用数据脱敏、联邦学习等技术，确保学生隐私安全的同时实现智能评价。所有数据处理均在安全可控的环境中进行，建立完善的数据治理体系。
+                      <strong>AI综合素养评价系统</strong>严格遵循《数据安全法》和《个人信息保护法》，采用数据脱敏、联邦学习等技术，确保学生隐私安全的同时实现<strong>五大核心维度</strong>的智能评价。所有数据处理均在安全可控的环境中进行，建立完善的数据治理体系。
                     </p>
                   </div>
                 </div>
@@ -465,28 +465,28 @@ export default function BlogArticleContent() {
                   <div className="w-10 h-10 bg-gradient-to-r from-emerald-500 to-green-500 rounded-xl flex items-center justify-center">
                     <TrendingUp className="w-5 h-5 text-white" />
                   </div>
-                  <h2 className="text-2xl font-bold text-slate-900 dark:text-white">成功实践：量化效果与案例分析</h2>
+                  <h2 className="text-2xl font-bold text-slate-900 dark:text-white"><strong>AI综合素养评价</strong>成功实践：<strong>教育评价改革</strong>的量化效果与案例分析</h2>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                   <div className="space-y-4">
-                    <h3 className="text-xl font-semibold text-slate-900 dark:text-white">成都某重点中学案例</h3>
+                    <h3 className="text-xl font-semibold text-slate-900 dark:text-white">成都某重点中学<strong>AI综合素养评价</strong>案例</h3>
                     <div className="space-y-3">
                       <div className="flex items-center gap-3">
                         <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
-                        <span className="text-slate-700 dark:text-white/80">评价维度从1个扩展至25个指标</span>
+                        <span className="text-slate-700 dark:text-white/80">评价维度从1个扩展至<strong>五大核心维度</strong>25个指标</span>
                       </div>
                       <div className="flex items-center gap-3">
                         <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
-                        <span className="text-slate-700 dark:text-white/80">教师评价工作效率提升300%</span>
+                        <span className="text-slate-700 dark:text-white/80">教师<strong>AI综合素养评价</strong>工作效率提升300%</span>
                       </div>
                       <div className="flex items-center gap-3">
                         <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
-                        <span className="text-slate-700 dark:text-white/80">家长满意度达95%</span>
+                        <span className="text-slate-700 dark:text-white/80">家长对<strong>教育评价改革</strong>满意度达95%</span>
                       </div>
                       <div className="flex items-center gap-3">
                         <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
-                        <span className="text-slate-700 dark:text-white/80">学生综合素质发展更均衡</span>
+                        <span className="text-slate-700 dark:text-white/80">学生综合素质发展更均衡，<strong>360°成长画像</strong>效果显著</span>
                       </div>
                     </div>
                   </div>
@@ -494,7 +494,7 @@ export default function BlogArticleContent() {
                   <div className="bg-white/60 dark:bg-white/[0.05] p-6 rounded-xl">
                     <h4 className="font-semibold text-slate-900 dark:text-white mb-3">用户反馈</h4>
                     <blockquote className="text-slate-700 dark:text-white/80 italic">
-                      "系统帮助我们真正实现了'五育并举'，学生的全面发展有了科学的衡量标准。通过AI分析，我们能够及时发现每个孩子的闪光点，因材施教不再是空话。"
+                      "<strong>AI综合素养评价系统</strong>帮助我们真正实现了'五育并举'，学生的全面发展有了科学的衡量标准。通过<strong>AI综合素养评价</strong>分析，我们能够及时发现每个孩子的闪光点，因材施教不再是空话。这是<strong>教育评价改革</strong>的重大突破。"
                     </blockquote>
                     <cite className="text-sm text-slate-600 dark:text-white/60 block mt-2">—— 成都某重点中学教务主任</cite>
                   </div>
@@ -512,15 +512,15 @@ export default function BlogArticleContent() {
                   <div className="w-10 h-10 bg-gradient-to-r from-slate-500 to-gray-500 rounded-xl flex items-center justify-center">
                     <Star className="w-5 h-5 text-white" />
                   </div>
-                  <h2 className="text-2xl font-bold text-slate-900 dark:text-white">未来展望：综合素养评价的发展趋势</h2>
+                  <h2 className="text-2xl font-bold text-slate-900 dark:text-white">未来展望：<strong>AI综合素养评价</strong>与<strong>教育评价改革</strong>的发展趋势</h2>
                 </div>
 
                 <div className="space-y-4 text-slate-700 dark:text-white/80 leading-relaxed">
                   <p>
-                    随着人工智能技术的不断发展，<strong>多模态AI、联邦学习</strong>等前沿技术将在教育评价中发挥更重要作用。未来的综合素养评价系统将更加智能化、个性化，能够实现<strong>学校-家庭-社会一体化</strong>的评价生态。
+                    随着人工智能技术的不断发展，<strong>多模态AI、联邦学习</strong>等前沿技术将在<strong>AI综合素养评价</strong>中发挥更重要作用。未来的<strong>AI综合素养评价系统</strong>将更加智能化、个性化，能够实现<strong>学校-家庭-社会一体化</strong>的评价生态，全面覆盖<strong>五大核心维度</strong>。
                   </p>
                   <p>
-                    在国家教育数字化战略的支持下，AI综合素养评价将成为教育现代化的重要组成部分，<strong>真正实现"让每个孩子都能闪闪发光"</strong>的教育理想，为培养德智体美劳全面发展的社会主义建设者和接班人提供科学保障。
+                    在国家教育数字化战略的支持下，<strong>AI综合素养评价</strong>将成为<strong>教育评价改革</strong>和教育现代化的重要组成部分，<strong>真正实现"让每个孩子都能闪闪发光"</strong>的教育理想，为培养<strong>德智体美劳</strong>全面发展的社会主义建设者和接班人提供科学保障。
                   </p>
                 </div>
               </div>
@@ -530,10 +530,10 @@ export default function BlogArticleContent() {
             <section className="text-center">
               <div className="bg-gradient-to-br from-letoOrange/10 to-letoCoolEnd/10 dark:from-letoOrange/20 dark:to-letoCoolEnd/20 backdrop-blur-md border border-letoOrange/20 dark:border-letoCoolEnd/20 rounded-2xl p-8">
                 <h2 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">
-                  准备开启AI综合素养评价新时代？
+                  准备开启<strong>AI综合素养评价</strong>新时代？
                 </h2>
                 <p className="text-slate-700 dark:text-white/80 mb-6">
-                  联系LetoAI，获取专属的教育评价解决方案
+                  联系LetoAI，获取基于<strong>五大核心维度</strong>的专属<strong>教育评价改革</strong>解决方案
                 </p>
                 <Button asChild className="leto-gradient-bg hover:opacity-90 text-white px-8 py-3">
                   <Link href="/contact?from=/blog/ai-comprehensive-assessment-dimensions">
