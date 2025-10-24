@@ -1,0 +1,11 @@
+node_modules
+.next
+.git
+.gitignore
+Dockerfile
+Dockerfile.dev
+npm-debug.log*
+pnpm-lock.yaml
+yarn.lock
+*.log
+coverage

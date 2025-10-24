@@ -1,0 +1,15 @@
+services:
+  web:
+    image: ${IMAGE:-crpi-rxzdkxf96xqy38sp.cn-chengdu.personal.cr.aliyuncs.com/letoai/leto_website:latest}
+    platform: ${PLATFORM:-linux/amd64}
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      NEXT_FONT_GOOGLE_URL: ${NEXT_FONT_GOOGLE_URL:-https://fonts.googleapis.cn}
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+
+networks:
+  default:
+    name: leto-website
