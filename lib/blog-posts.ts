@@ -11,6 +11,17 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "ai-assessment-practice-report",
+    title: "AI赋能中小学生综合素质评价的实践探索 - 龙迪教授成都教育学会学术年会报告",
+    excerpt:
+      "LetoAI首席科学家龙迪教授受邀出席成都教育学会2025年学术年会,深度剖析AI技术如何通过多维素养模型和个性化成长画像,解决传统教育评价体系的三大痛点,开启教育评价改革新篇章。",
+    category: "AI教育",
+    publishDate: "2025-12-09",
+    readTime: "12分钟阅读",
+    featured: true,
+    tags: ["AI教育", "实践案例", "会议报告", "综合素质评价"]
+  },
+  {
     id: "ai-comprehensive-assessment-dimensions",
     title: "告别唯分数论：AI综合素养评价五大核心维度深度解析",
     excerpt:

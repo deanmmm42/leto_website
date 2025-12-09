@@ -47,6 +47,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     },
     {
+      url: `${baseUrl}/blog/ai-assessment-practice-report`,
+      lastModified: new Date('2025-12-09'),
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    },
+    {
       url: `${baseUrl}/blog/ai-marketing-conversion-optimization`,
       lastModified: new Date('2025-09-15'),
       changeFrequency: 'monthly' as const,
