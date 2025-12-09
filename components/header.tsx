@@ -47,7 +47,8 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10)
+      const shouldBeScrolled = window.scrollY > 20
+      setIsScrolled((prev) => (prev !== shouldBeScrolled ? shouldBeScrolled : prev))
 
       // 只在首页检测当前活动的部分
       if (pathname === "/") {

@@ -48,7 +48,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/blog/ai-assessment-practice-report`,
-      lastModified: new Date('2025-12-09'),
+      lastModified: new Date('2025-12-06'),
       changeFrequency: 'monthly' as const,
       priority: 0.6,
     },
