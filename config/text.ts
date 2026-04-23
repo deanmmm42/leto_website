@@ -250,7 +250,7 @@ export const footer = {
   legal: {
     copyright: "© 2025 LetoAI. 保留所有权利.",
     icp: {
-      text: "蜀ICP备2024078614号-2",
+      text: "蜀ICP备2024078614号",
       url: "https://beian.miit.gov.cn/#/Integrated/index"
     },
     links: [
