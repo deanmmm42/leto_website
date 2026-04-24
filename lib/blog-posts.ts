@@ -11,6 +11,17 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "ai-education-practice-path",
+    title: "四川乐途智学的“AI+教育”实践路径：全栈AI驱动 全场景育人",
+    excerpt:
+      "中新网四川报道四川乐途智学以自主可控的AI能力，构建覆盖“教、学、管、评、育”的全场景智慧教育解决方案。",
+    category: "AI教育",
+    publishDate: "2026-04-24",
+    readTime: "8分钟阅读",
+    featured: true,
+    tags: ["媒体报道", "AI教育", "全栈AI", "教育数字人", "综合素质评价"]
+  },
+  {
     id: "ai-assessment-practice-report",
     title: "AI赋能中小学生综合素质评价的实践探索 - 龙迪教授成都教育学会学术年会报告",
     excerpt:
