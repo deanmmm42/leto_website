@@ -81,9 +81,9 @@ export default function RootLayout({
               "logo": "https://www.letoai.tech/images/logo.png",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "天府二街领地环球金融中心A808",
+                "streetAddress": "锦江区三色路新华之星AI大厦2306",
                 "addressLocality": "成都",
-                "addressRegion": "四川省",
+                "addressRegion": "四川",
                 "postalCode": "610000",
                 "addressCountry": "CN"
               },

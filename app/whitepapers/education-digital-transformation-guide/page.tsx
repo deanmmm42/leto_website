@@ -140,9 +140,9 @@ export default function EducationDigitalTransformationGuidePage() {
     },
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "天府二街领地环球金融中心A808",
+      "streetAddress": "锦江区三色路新华之星AI大厦2306",
       "addressLocality": "成都市",
-      "addressRegion": "四川省",
+      "addressRegion": "四川",
       "addressCountry": "CN"
     },
     "knowsAbout": [

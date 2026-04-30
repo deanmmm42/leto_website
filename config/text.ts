@@ -197,7 +197,7 @@ export const contact = {
   info: {
     address: {
       title: "📍 地址",
-      content: "四川省成都市高新区天府二街领地环球金融中心A808",
+      content: "成都市锦江区三色路新华之星AI大厦2306",
     },
     email: {
       title: "✉️ 邮箱",
